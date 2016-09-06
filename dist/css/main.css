@@ -1,0 +1,307 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1em;
+    position: relative;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+    /* Navbar */
+    .navbar-default{
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+    }
+
+    .navbar-default .navbar-toggle{
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #000000;
+    }
+
+    .navbar-toggle .icon-bar{
+        width: 36px;
+        height: 7px;
+    }
+
+    /* Background */
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+        background-color: transparent;
+        background-image: none;
+        box-shadow: none;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default
+    .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+        background-color: transparent;
+    }
+
+    /* Font */
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+        font-size: 40px;
+        color: #000000;
+    }
+
+    /* Main content */
+    .main-content{
+        height: 800px;
+        overflow: auto;
+    }
+
+    .sidebar-nav .navbar p {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+    .indigo{
+        background-color: #a94442;
+        height: 550px;
+    }
+
+    .indigo h1{
+        margin: 0 auto;
+        padding-top: 50px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .travel {
+        background-color: #c9302c;
+        height: 650px;
+    }
+    .mawmapp {
+        background-color: crimson;
+        height: 400px;
+    }
+
+    .comapa {
+        background-color: #843534;
+        height: 600px;
+    }
+
+    .socbox {
+        background-color: #a94442;
+        height: 700px;
+    }
+    .bitfarm{
+        background-color: #b92c28;
+        height: 500px;
+    }
+
+    .click-even {
+        background: #011eff;
+    }
+    .click-odd {
+        background-color: #000000;
+        /*background-image: url("../img/indigo1.png");*/
+    }
+
+
+    /*.travel {*/
+        /*animation-duration: 4s;*/
+        /*animation-delay: 2s;*/
+        /*-webkit-animation-timing-function: ease-out;*/
+        /*animation-name: slidein;*/
+    /*}*/
+
+    /*@keyframes slidein {*/
+        /*from {*/
+            /*margin-left: 0%;*/
+            /*width: 0%;*/
+
+
+        /*}*/
+
+        /*to {*/
+            /*margin-left: 100%;*/
+            /*width: 100%;*/
+        /*}*/
+    /*}*/
+
+    /*==========  Indigo Page  ==========*/
+    .exterior{
+        padding: 0 80px;
+    }
+
+    .header{
+        padding: 40px;
+        left: 0;
+        z-index: 99;
+    }
+
+    .header h1 {
+        margin: 0;
+        padding-bottom: 10px;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 2.2em;
+        font-weight: 900;
+        color: #ffffff;
+    }
+
+    .header p{
+        width: 16%;
+        margin-left: 0;
+        font-family: 'BenchNine', sans-serif;
+        color: #d9edf7;
+    }
+
+
+    div.affix.menu{
+        position: fixed;
+        bottom: 20px;
+        z-index: 99;
+        padding-left: 20px;
+    }
+
+    ul.nav-tabs {
+        margin-top: 20px;
+        z-index: 999;
+        border-bottom: none;
+    }
+
+
+    ul.nav-tabs li:first-child {
+        border-top: none;
+    }
+
+    ul.nav-tabs a {
+        /*font-family: 'BenchNine', sans-serif;*/
+        color: #000000;
+    }
+
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+        color: #fff;
+        text-decoration: line-through;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    ul.nav-tabs li:first-child a {
+        border: none;
+    }
+
+    ul.nav-tabs.affix {
+        top: 0px; /* set the top position of pinned element */
+    }
+
+    div.col-xs-12.portfolio{
+        height: 800px;
+
+    }
+
+    div.section{
+        padding: 60px 150px;
+    }
+
+    div.section h1, h2{
+        padding-bottom: 15px;
+        font-size: 1.4em;
+        font-weight: 900;
+    }
+
+    div.section p{
+        color: #ffffff;
+    }
+
+    #section0 p:nth-child(1) {
+        padding-bottom: 20px;
+        font-family: 'Bowlby One', cursive;
+        font-size: 3.5em;
+        color: yellow;
+        text-align: center;
+    }
+
+    div.carousel-caption{
+        position:static;
+        padding-top: 0;
+        font-size: 0.8em;
+        font-weight: bold;
+        color: #000000;
+        text-shadow: none;
+    }
+
+    div.col-xs-12.col-sm-6.s2{
+        margin: 200px 0;
+    }
+
+    .col-xs-12.col-sm-6.s2 h2{
+        padding-bottom: 10px;
+        color: #d9edf7;
+    }
+
+    div.col-xs-12.col-sm-6.s2 p:nth-child(2) {
+        padding-bottom: 10px;
+        font-weight: 900;
+        font-size: 2.2em;
+        color: #f0f0f0;
+    }
+
+    #section1,#section2, #section3, #section4,#section5,#section6,#section7{
+        margin: 80px 0;
+    }
+    .hero{
+        background-color: #7a43b6;
+        height: 500px;
+    }
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 768px) {
+
+    .body{
+        margin: 80px;
+    }
+
+    .sidebar-nav .navbar .navbar-collapse {
+        padding: 0;
+        max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li a {
+        padding-top: 40px;
+        padding-bottom: 12px;
+    }
+
+    .sidebar-nav .navbar h3,p{
+        /*margin-left: 16px;*/
+    }
+
+    .sidebar-nav .navbar h3{
+        padding-top: 180px;
+    }
+
+    .sidebar-nav .navbar p a{
+        color: #000;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    ul.nav-tabs{
+        width: 180px; /* set nav width on medium devices */
+    }
+}
+@media screen and (min-width: 1200px){
+    ul.nav-tabs{
+        width: 220px; /* set nav width on large devices */
+    }
+}
