@@ -2,8 +2,7 @@
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.1em;
+    background-color: #f7f7f7;
     position: relative;
 }
 
@@ -15,26 +14,50 @@ body{
 
     /* Navbar */
     .navbar-default{
-    background-color: transparent;
-    background-image: none;
-    border-color: transparent;
-    box-shadow: none;
+        background-color: #f7f7f7;
+        background-image: none;
+        border-color: transparent;
+        box-shadow: none;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.8em;
+        text-align: center;
+        padding: 10px 20px;
+        color: #000;
     }
 
+    .navbar-toggle{
+        float: left;
+    }
+
+    /* navbar-collapse btn icon */
     .navbar-default .navbar-toggle{
         border-color: transparent;
     }
 
-    .navbar-default .navbar-toggle .icon-bar{
-        background-color: #000000;
+    .sr-only{
+        position: relative;
     }
 
-    .navbar-toggle .icon-bar{
-        width: 36px;
-        height: 7px;
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #000000;
+        width: 40px;
+        height: 2px;
+        display: table-caption;
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border-color: rgba(1, 1, 1, 0.06);
     }
 
     /* Background */
+    .nav>li>a:focus, .nav>li>a:hover{
+        background-color: transparent;
+        border-color: transparent;
+    }
     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
         background-color: transparent;
         background-image: none;
@@ -46,93 +69,239 @@ body{
         background-color: transparent;
     }
 
-    /* Font */
-    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-        font-size: 40px;
+    /* Navbar-Branc */
+    .navbar-brand{
+        float: inherit;
+    }
+
+    .navbar-default .navbar-brand {
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 2em;
+        color: #0f0f0f;
+    }
+
+    .navbar-default .navbar-nav .navbar-right>li>a .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
         color: #000000;
     }
 
-    /* Main content */
-    .main-content{
-        height: 800px;
-        overflow: auto;
+    /* CSS used here will be applied after bootstrap.css */
+    .nav {
+        margin-bottom: 0;
     }
 
-    .sidebar-nav .navbar p {
-        font-family: 'Open Sans', sans-serif;
+    .nav > li.dropdown.open {
+        position: static;
     }
 
-
-    .indigo{
-        background-color: #a94442;
-        height: 550px;
-    }
-
-    .indigo h1{
-        margin: 0 auto;
-        padding-top: 50px;
+    .nav > li.dropdown.open .dropdown-menu {
+        display:table;
+        width: 100%;
         text-align: center;
+        left:0;
+        right:0;
+    }
+
+    .dropdown-menu{
+        background-color: #f7f7f7;
+        padding: 20px 40px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.8em;
+    }
+
+    .dropdown-menu>li {
+        display: inline-block;
+    }
+
+
+    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+        background-color: transparent;
+        background-image: none;
+        text-decoration: line-through;
+    }
+
+        /* ==========  Main Page  ==========*/
+
+    .hero{
+        background-image: url("../img/1_about.png");
+        background-size: cover;
+        filter: hue-rotate(185deg);
+        /*filter: saturate(8);*/
+        margin: 0;
+        position: relative;
+        top: 0;
+        height: 550px;
         color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
     }
 
-    .travel {
-        background-color: #c9302c;
-        height: 650px;
-    }
-    .mawmapp {
-        background-color: crimson;
-        height: 400px;
-    }
-
-    .comapa {
-        background-color: #843534;
-        height: 600px;
+    .hero h1{
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 8.5em;
+        margin: 0;
+        padding-top: 200px;
+        color: #e7e7e7;
     }
 
-    .socbox {
-        background-color: #a94442;
-        height: 700px;
+    .hero p{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #e7e7e7;
     }
-    .bitfarm{
-        background-color: #b92c28;
+
+    .content{
+        margin: 90px 0;
+        padding: 0 40px;
+        text-align: center;
+
+    }
+
+    .content h4, p {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 100;
+    }
+
+    .content h4{
+        font-size: 2em;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .content h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 4em;
+        font-style: italic;
+    }
+
+    .content h2{
+        font-family: 'Playfair Display', serif;
+        font-weight: 100;
+        font-size: 4em;
+    }
+
+    .content strong{
+        font-weight: bold;
+    }
+    .content p {
+        font-size: 1.3em;
+
+    }
+
+    .content .btn{
+        margin: 20px 0;
+        padding: 12px 70px;
+        background-color: #0f0f0f;
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.6em;
+    }
+
+    .content a{
+        font-weight: 900;
+        color: #0f0f0f;
+    }
+    
+    /* menu - work sample */
+    .work-sample{
+        padding-bottom: 90px;
+        background-color: #fff;
+        color: #2d58ff;
+    }
+    .work h4{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 6.5em;
+    }
+
+    .sample-a{
+        padding: 20px 80px;
+        background-color: #c0a16b;
+        /*background-image: url("../img/1_indigo.png");*/
+        /*background-size: 2000px;*/
+        height: 500px;
+        color: #fff;
+        filter: grayscale(60%);
+    }
+
+    .sample-a h1{
+        margin-bottom: 0;
+        font-size: 9em;
+    }
+
+    .sample-a h3{
+        font-size: 2em;
+    }
+
+    .sample-b{
+        padding: 20px 80px;
+        background-image: url("../img/app.jpg");
+        background-size: cover;
+        height: 500px;
+        color: #fff;
+        filter: grayscale(60%);
+    }
+
+    .sample-c{
+        background-image: url("../img/8_maw.png");
+        padding: 20px 80px;
         height: 500px;
     }
 
-    .click-even {
-        background: #011eff;
-    }
-    .click-odd {
-        background-color: #000000;
-        /*background-image: url("../img/indigo1.png");*/
+    .sample-c h1{
+        margin-bottom: 0;
+        font-size: 6em;
     }
 
-
-    /*.travel {*/
-        /*animation-duration: 4s;*/
-        /*animation-delay: 2s;*/
-        /*-webkit-animation-timing-function: ease-out;*/
-        /*animation-name: slidein;*/
-    /*}*/
-
-    /*@keyframes slidein {*/
-        /*from {*/
-            /*margin-left: 0%;*/
-            /*width: 0%;*/
+    .sample-c h3{
+        font-size: 2em;
+    }
 
 
-        /*}*/
+    .sample-d{
+        padding: 20px 80px;
+        height: 500px;
+    }
 
-        /*to {*/
-            /*margin-left: 100%;*/
-            /*width: 100%;*/
-        /*}*/
-    /*}*/
+    .sample-d h1{
+        margin-bottom: 0;
+        font-size: 6em;
+    }
+
+    .sample-d h3{
+        font-size: 2em;
+    }
+
+    .sample-e{
+        padding: 20px 80px;
+        background-image: url("../img/2_screen.jpg");
+        background-size: cover;
+        height: 500px;
+        color: #fff;
+        filter: grayscale(60%);
+    }
+
+    .sample-f{
+        padding: 20px 80px;
+        background-image: url("../img/4_maw.png");
+        background-size: contain;
+        height: 500px;
+        color: #fff;
+        filter: grayscale(60%);
+    }
+
+    .sample-f h1{
+        margin-bottom: 0;
+        font-size: 9em;
+    }
+
+    .sample-f h3{
+        font-size: 2em;
+    }
+
 
     /*==========  Indigo Page  ==========*/
-    .exterior{
-        padding: 0 80px;
+    ul.nav.nav-tabs.nav-stacked li a{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 900;
     }
-
     .header{
         padding: 40px;
         left: 0;
@@ -176,7 +345,7 @@ body{
 
     ul.nav-tabs a {
         /*font-family: 'BenchNine', sans-serif;*/
-        color: #000000;
+        color: #f0f0f0;
     }
 
     ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
@@ -193,44 +362,40 @@ body{
         top: 0px; /* set the top position of pinned element */
     }
 
-    div.col-xs-12.portfolio{
+    .col-xs-12.portfolio{
         height: 800px;
-
     }
 
-    div.section{
-        padding: 60px 150px;
+    .section{
+        padding: 100px 50px 0 200px;
     }
 
-    div.section h1, h2{
+    .section h1, h2{
         padding-bottom: 15px;
         font-size: 1.4em;
         font-weight: 900;
     }
 
-    div.section p{
-        color: #ffffff;
+    .section p{
+        font-size: 1.23em;
     }
 
-    #section0 p:nth-child(1) {
-        padding-bottom: 20px;
+    .col-xs-12.s0 p{
+        /*color: #1e20ff;*/
+    }
+
+    .col-xs-12.s0 p:nth-child(1) {
+        padding-bottom: 30px;
         font-family: 'Bowlby One', cursive;
         font-size: 3.5em;
-        color: yellow;
+        color: #e0e4e7;
         text-align: center;
+        line-height: 74px;
     }
 
-    div.carousel-caption{
-        position:static;
-        padding-top: 0;
-        font-size: 0.8em;
-        font-weight: bold;
-        color: #000000;
-        text-shadow: none;
-    }
-
-    div.col-xs-12.col-sm-6.s2{
-        margin: 200px 0;
+    .col-xs-12.col-sm-6.s2 {
+        padding-top: 200px;
+        padding-left: 0;
     }
 
     .col-xs-12.col-sm-6.s2 h2{
@@ -238,19 +403,54 @@ body{
         color: #d9edf7;
     }
 
-    div.col-xs-12.col-sm-6.s2 p:nth-child(2) {
+    .col-xs-12.col-sm-6.s2 p:nth-child(1) {
         padding-bottom: 10px;
+        font-family: 'Bowlby One', cursive;
         font-weight: 900;
         font-size: 2.2em;
-        color: #f0f0f0;
+        color: #c5c5c0;
     }
 
-    #section1,#section2, #section3, #section4,#section5,#section6,#section7{
-        margin: 80px 0;
+    .carousel-caption{
+        position:static;
+        padding-top: 0;
+        padding-bottom: 40px;
+        font-size: 0.7em;
+        font-weight: bold;
+        color: #f5f5f5;
+        text-shadow: none;
     }
-    .hero{
-        background-color: #7a43b6;
-        height: 500px;
+
+    .col-xs-12.s3 h2{
+        padding-bottom: 30px;
+        font-family: 'Bowlby One', cursive;
+        font-size: 3.5em;
+        color: #d7d5c8;
+        text-align: center;
+    }
+
+
+    .parallax-window {
+        min-height: 800px;
+        background: transparent;
+    }
+
+
+    /* footer */
+    footer{
+        background-color: #f3f3f3;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    footer a{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1.2em;
+        color: #0f0f0f;
+    }
+
+    footer .nav>li{
+        display: inline-block;
     }
 
 
@@ -259,38 +459,93 @@ body{
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 768px) {
 
-    .body{
-        margin: 80px;
+    /* Navbar */
+    .navbar-default{
+        height: 80px;
     }
 
-    .sidebar-nav .navbar .navbar-collapse {
-        padding: 0;
-        max-height: none;
-    }
-    .sidebar-nav .navbar ul {
-        float: none;
-        display: block;
-    }
-    .sidebar-nav .navbar li {
-        float: none;
-        display: block;
-    }
-    .sidebar-nav .navbar li a {
-        padding-top: 40px;
-        padding-bottom: 12px;
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        padding: 0 400px;
     }
 
-    .sidebar-nav .navbar h3,p{
-        /*margin-left: 16px;*/
+    .navbar-nav>li .hidden-xs{
+        padding-left: 276px;
     }
 
-    .sidebar-nav .navbar h3{
-        padding-top: 180px;
+
+    /* CSS used here will be applied after bootstrap.css */
+    .nav {
+        margin-bottom: 0;
     }
 
-    .sidebar-nav .navbar p a{
-        color: #000;
+    .nav > li.dropdown.open {
+        position: static;
     }
+
+    .nav > li.dropdown.open .dropdown-menu {
+        display:table;
+        width: 100%;
+        text-align: center;
+        left:0;
+        right:0;
+    }
+
+    .dropdown-menu{
+        padding: 20px 40px;
+        font-size: 1.8em;
+    }
+
+    .dropdown-menu>li {
+        display: table-cell;
+    }
+
+    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+        background-color: transparent;
+        background-image: none;
+        text-decoration: line-through;
+    }
+
+    /* ==========  Main Page  ==========*/
+
+    .hero{
+        height: 932px;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .hero h1{
+        margin-bottom: -50px;
+        font-size: 22.5em;
+    }
+
+    .hero p{
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+
+
+    .content{
+        margin: 150px 0;
+        padding: 0 279px;
+        text-align: center;
+    }
+
+    .content h1{
+
+    }
+
+    .content p{
+        font-size: 1.5em;
+    }
+
+    footer{
+        text-align: left;
+    }
+
+
+
+
 }
 
 
