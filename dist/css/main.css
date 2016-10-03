@@ -19,9 +19,9 @@ body{
         border-color: transparent;
         box-shadow: none;
         font-family: 'Playfair Display', serif;
-        font-size: 1.8em;
+        font-size: 1.4em;
         text-align: center;
-        padding: 10px 20px;
+        padding: 0 20px;
         color: #000;
     }
 
@@ -35,6 +35,7 @@ body{
     }
 
     .sr-only{
+        font-size: 0.5em;
         position: relative;
     }
 
@@ -70,18 +71,454 @@ body{
     }
 
     /* Navbar-Branc */
-    .navbar-brand{
-        float: inherit;
-    }
-
     .navbar-default .navbar-brand {
+        padding-top: 30px;
         font-family: 'Reenie Beanie', cursive;
-        font-size: 2em;
+        font-size: 1.6em;
         color: #0f0f0f;
+        float: right;
     }
 
     .navbar-default .navbar-nav .navbar-right>li>a .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
         color: #000000;
+    }
+
+    /* CSS used here will be applied after bootstrap.css */
+    .nav > li.dropdown.open {
+        position: static;
+    }
+
+    .nav > li.dropdown.open .dropdown-menu {
+        display:table;
+        width: 100%;
+        text-align: center;
+        left:0;
+        right:0;
+    }
+
+    .dropdown-menu{
+        background-color: #f7f7f7;
+        padding: 20px 40px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1em;
+        border-top:1px solid rgba(0,0,0,.15);
+        border-radius: 0;
+        background-clip: border-box;
+    }
+
+    .dropdown-menu>li {
+        display: inline-block;
+    }
+
+
+    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+        background-color: transparent;
+        background-image: none;
+        text-decoration: line-through;
+    }
+
+        /*  index.html */
+
+    .hero{
+        background-image: url("../img/1_about.png");
+        background-size: cover;
+        filter: hue-rotate(125deg);
+        /*filter: saturate(8);*/
+        margin: 0;
+        position: relative;
+        top: 0;
+        height: 450px;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .hero h1{
+        padding-top: 140px;
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 5em;
+        color:#f0ffff;
+    }
+
+    .hero h2{
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 4em;
+        margin-bottom: -200px;
+        padding-top: 150px;
+        color:#f0ffff;
+    }
+
+    .content{
+        margin: 60px 0;
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    .content h4, p {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 100;
+    }
+
+    .content h4{
+        font-size: 1em;
+    }
+
+    .content h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    .content h2{
+        font-family: 'Playfair Display', serif;
+        font-weight: 100;
+        font-size: 1.8em;
+    }
+
+    .content strong{
+        font-weight: bold;
+    }
+    .content p {
+        font-size: 1em;
+    }
+
+    .content .btn{
+        margin: 10px 0;
+        padding: 10px 30px;
+        background-color: #0f0f0f;
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2em;
+    }
+
+    .content a{
+        font-weight: 900;
+        color: #0f0f0f;
+    }
+    
+    /* menu - work sample */
+    .ws-section_sample{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .work-sample{
+        background-color: #fff;
+        color: #2d58ff;
+    }
+    .work h4{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 6.5em;
+    }
+
+    .sample{
+        font-family: 'Playfair Display', serif;
+    }
+
+    .sample-a{
+        padding: 20px 80px;
+        /*background-color: #c0a16b;*/
+        background-image: url("../img/app.jpg");
+        height: 500px;
+        color: #fff;
+        filter: grayscale(60%);
+    }
+
+    .sample-a h1{
+        margin-bottom: 0;
+        font-size: 3em;
+    }
+
+    .sample-a h3{
+        font-size: 2em;
+    }
+
+    .sample-b{
+        padding: 20px 80px;
+        background-image: url("../img/app.jpg");
+        height: 500px;
+        color: #fff;
+        filter: grayscale(60%);
+    }
+
+    .sample-c{
+        background-image: url("../img/1_in.png");
+        height: 500px;
+        padding: 20px 80px;
+    }
+
+    .sample-c h1{
+        margin-bottom: 0;
+        font-size: 3em;
+    }
+
+    .sample-c h3{
+        font-size: 2em;
+    }
+
+    .sample-d{
+        background-image: url("../img/4_indigo.png");
+        height: 500px;
+        padding: 20px 80px;
+    }
+
+    .sample-d h1{
+        margin-bottom: 0;
+        font-size: 3em;
+    }
+
+    .sample-d h3{
+        font-size: 2em;
+    }
+
+    .sample-e{
+        padding: 20px 80px;
+        background-image: url("../img/2_screen.jpg");
+        height: 500px;
+        color: #fff;
+        filter: grayscale(60%);
+    }
+
+    .sample-f{
+        padding: 20px 80px;
+        background-image: url("../img/4_maw.png");
+        height: 500px;
+        color: #fff;
+        filter: grayscale(60%);
+    }
+
+    .sample-f h1{
+        margin-bottom: 0;
+        font-size: 3em;
+    }
+
+    .sample-f h3{
+        font-size: 2em;
+    }
+
+    /* footer */
+    footer{
+        background-color: #f3f3f3;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    footer a{
+        font-family: 'Fira Sans', sans-serif;
+        color: #0f0f0f;
+    }
+
+    footer p {
+        padding-top: 15px;
+    }
+
+    footer .nav>li{
+        display: inline-block;
+    }
+
+        /*      indigo.html     */
+    .indigo{
+        background-image: url("../img/4_indigo.png");
+        background-size: 100% 100%;
+    }
+
+    .hero-ind{
+        background-image: url("../img/16_indigo.jpg");
+        background-size: cover;
+        filter: hue-rotate(50deg);
+        height: 550px;
+        margin: 0;
+        position: relative;
+        top: 0;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .hero-ind h1{
+        font-family: Futura;
+        font-size: 15.5em;
+        text-transform: lowercase;
+        color: #f5f5f5;
+    }
+
+    .wrapper{
+        padding: 30px;
+        background-color: rgba(247,247,247,0.99);
+    }
+
+    .wrapper h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+    }
+
+    .wrapper p{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 0.9em;
+    }
+
+    .wrapper ul{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 0.8em;
+        list-style-type: none;
+    }
+
+    .page-header h3{
+        padding-bottom: 10px;
+        font-size: 1.7em;
+        text-align: right;
+    }
+
+    .page-header p {
+        overflow: hidden;
+        text-align: right;
+    }
+    .page-header p:before,
+    .page-header p:after {
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 90%;
+    }
+    .page-header p:before {
+        right: 0.5em;
+        margin-left: -5%;
+    }
+    .page-header p:after {
+        left: 0.5em;
+        margin-right: -90%;
+    }
+
+    .page-content{
+        margin: 0 16px;
+        padding-top: 50px;
+    }
+
+    .cs-section_intro{
+        padding-top: 50px;
+    }
+
+    .cs-section_intro ul>li:first-child{
+        padding-bottom: 10px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 900;
+    }
+
+    .cs-section_app{
+        padding-top: 100px;
+    }
+
+    .cs-section_app h2{
+        padding: 100px 0 40px;
+    }
+
+    .parallax-window {
+        min-height: 800px;
+        background: transparent;
+    }
+
+    /* mawmapp.html */
+    .maw{
+        background-image: url("../img/1_maw.png");
+        background-size: 50%;
+    }
+
+    .hero-maw{
+        background-image: url("../img/11_maw.png");
+        background-size: cover;
+        filter: hue-rotate(160deg);
+        height: 350px;
+        margin: 0;
+        position: relative;
+        top: 0;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .hero-maw h1{
+        padding-top: 100px;
+        font-family: Futura;
+        font-size: 3.5em;
+        color: #497b7b;
+    }
+
+    .cs-maw_design img{
+        margin-top: 0;
+    }
+
+    .cs-maw_app{
+        position: relative;
+    }
+
+    .cs-maw_app .maw-app_header h1{
+        margin-top: 0;
+        font-size: 5em;
+        font-weight: 900;
+    }
+
+    .cs-maw_app .maw-app_text{
+        /*position: absolute;*/
+        /*bottom: 0;*/
+        /*right:0;*/
+    }
+
+    .cs-maw_responce{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cs-maw_responce h2{
+        padding-bottom: 15px;
+    }
+
+    .cs-maw_website img{
+        align-content: center;
+    }
+
+    .cs-maw_website .maw-web_text p{
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    .cs-maw_proto .maw-proto_text h1{
+        margin-bottom: 0;
+        font-size: 6em;
+        font-weight: 900;
+    }
+
+
+    /* about.html */
+    .hero-about{
+        background-image: url("../img/1_in.png");
+        background-size: cover;
+        filter: hue-rotate(68deg);
+        margin: 0;
+        position: relative;
+        top: 0;
+        height: 450px;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .about{
+        background-color: white;
+    }
+
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 768px) {
+
+    /* Navbar */
+    .navbar-nav>li .hidden-xs{
+        padding-left: 200px;
     }
 
     /* CSS used here will be applied after bootstrap.css */
@@ -102,16 +539,13 @@ body{
     }
 
     .dropdown-menu{
-        background-color: #f7f7f7;
         padding: 20px 40px;
-        font-family: 'Playfair Display', serif;
-        font-size: 1.8em;
+        font-size: 0.8em;
     }
 
     .dropdown-menu>li {
-        display: inline-block;
+        display: table-cell;
     }
-
 
     .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
         background-color: transparent;
@@ -119,237 +553,55 @@ body{
         text-decoration: line-through;
     }
 
-        /* ==========  Main Page  ==========*/
+    /* index.html */
 
     .hero{
-        background-image: url("../img/1_about.png");
-        background-size: cover;
-        filter: hue-rotate(125deg);
-        /*filter: saturate(8);*/
-        margin: 0;
-        position: relative;
-        top: 0;
-        height: 550px;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    .hero-about{
-        background-image: url("../img/1_in.png");
-        background-size: cover;
-        filter: hue-rotate(68deg);
-        margin: 0;
-        position: relative;
-        top: 0;
-        height: 550px;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
+        height: 600px;
     }
 
     .hero h1{
-        padding-top: 90px;
-        font-family: 'Reenie Beanie', cursive;
-        font-size: 8.5em;
-        color:#f0ffff;
+        padding-top: 210px;
+        font-size: 11.5em;
     }
 
     .hero h2{
-        font-family: 'Reenie Beanie', cursive;
-        font-size: 6em;
-        margin-bottom: -200px;
-        padding-top: 130px;
-        color:#f0ffff;
+        font-size: 7.5em;
+        margin-bottom: -360px;
     }
-
-    .hero-about h1{
-        padding-top: 90px;
-        font-family: 'Reenie Beanie', cursive;
-        font-size: 8.5em;
-        color:#f0ffff;
-    }
-
-    .hero-about h2{
-        font-family: 'Reenie Beanie', cursive;
-        font-size: 6em;
-        margin-bottom: -200px;
-        padding-top: 130px;
-        color:#f0ffff;
-    }
-
 
     .content{
-        margin: 90px 0;
-        padding: 0 40px;
+        margin: 80px 0;
+        padding: 0 100px;
         text-align: center;
-
     }
 
-    .content h4, p {
-        font-family: 'Fira Sans', sans-serif;
-        font-weight: 100;
-    }
-
-    .content h4{
-        font-size: 2em;
-        position: relative;
-        margin-bottom: 40px;
-    }
-
-    .content h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 4em;
-        font-style: italic;
+    .content h1{
+        font-size: 2.8em;
     }
 
     .content h2{
-        font-family: 'Playfair Display', serif;
-        font-weight: 100;
-        font-size: 4em;
+        font-size: 2em;
     }
 
-    .content strong{
-        font-weight: bold;
-    }
-    .content p {
-        font-size: 1.3em;
-
+    .content p{
+        font-size: 1em;
     }
 
-    .content .btn{
-        margin: 20px 0;
-        padding: 12px 70px;
-        background-color: #0f0f0f;
-        color: #fff;
-        font-family: 'Playfair Display', serif;
-        font-size: 1.6em;
+    footer{
+        text-align: inherit;
     }
 
-    .content a{
-        font-weight: 900;
+    footer p {
+        padding-top: 15px;
+        display: inline-block;
+    }
+
+    footer a{
+        font-size: 1.2em;
         color: #0f0f0f;
     }
-    
-    /* menu - work sample */
-    .work-sample{
-        padding-bottom: 90px;
-        background-color: #fff;
-        color: #2d58ff;
-    }
-    .work h4{
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 6.5em;
-    }
 
-    .sample{
-        font-family: 'Playfair Display', serif;
-    }
-
-    .sample-a{
-        padding: 20px 80px;
-        /*background-color: #c0a16b;*/
-        background-image: url("../img/app.jpg");
-        background-size: 2000px;
-        height: 500px;
-        color: #fff;
-        filter: grayscale(60%);
-    }
-
-    .sample-a h1{
-        margin-bottom: 0;
-        font-size: 9em;
-    }
-
-    .sample-a h3{
-        font-size: 2em;
-    }
-
-    .sample-b{
-        padding: 20px 80px;
-        background-image: url("../img/app.jpg");
-        background-size: cover;
-        height: 500px;
-        color: #fff;
-        filter: grayscale(60%);
-    }
-
-    .sample-c{
-        background-image: url("../img/1_in.png");
-        background-size: cover;
-        height: 500px;
-        padding: 20px 80px;
-        height: 500px;
-    }
-
-    .sample-c h1{
-        margin-bottom: 0;
-        font-size: 6em;
-    }
-
-    .sample-c h3{
-        font-size: 2em;
-    }
-
-
-    .sample-d{
-        background-image: url("../img/4_indigo.png");
-        background-size: cover;
-        height: 500px;
-        padding: 20px 80px;
-        height: 500px;
-    }
-
-    .sample-d h1{
-        margin-bottom: 0;
-        font-size: 6em;
-    }
-
-    .sample-d h3{
-        font-size: 2em;
-    }
-
-    .sample-e{
-        padding: 20px 80px;
-        background-image: url("../img/2_screen.jpg");
-        background-size: cover;
-        height: 500px;
-        color: #fff;
-        filter: grayscale(60%);
-    }
-
-    .sample-f{
-        padding: 20px 80px;
-        background-image: url("../img/4_maw.png");
-        background-size: contain;
-        height: 500px;
-        color: #fff;
-        filter: grayscale(60%);
-    }
-
-    .sample-f h1{
-        margin-bottom: 0;
-        font-size: 9em;
-    }
-
-    .sample-f h3{
-        font-size: 2em;
-    }
-
-
-    /* indigo Page */
-    .indigo{
-        background-image: url("../img/4_indigo.png");
-        background-size: 100% 100%;
-        filter: saturate(9);
-    }
-
-    .wrapper{
-        margin-top: 300px;
-        padding: 100px;
-        background-color:#f7f7f7;
-    }
-
+    /* indigo.html */
     .wrapper h1{
         font-family: 'Playfair Display', serif;
         font-size: 5.6em;
@@ -361,11 +613,9 @@ body{
     }
 
     .wrapper ul{
-        padding-left: 200px;
         font-family: 'Fira Sans', sans-serif;
         list-style-type: none;
     }
-
 
     .page-header p {
         overflow: hidden;
@@ -401,15 +651,6 @@ body{
 
     .cs-section_intro p{
         font-size: 1.5em;
-        text-align: ;
-    }
-
-    .cs-section_intro{
-        padding-top: 50px;
-    }
-
-    .cs-section_intro ul{
-        font-size: 1.4em;
     }
 
     .cs-section_intro ul>li:first-child{
@@ -418,23 +659,12 @@ body{
         font-weight: 900;
     }
 
-
-    .cs-section_sketches{
-        background-image: url("../img/1_indigo.png");
-        background-size: cover;
-        height: 1080px;
-    }
-
     .cs-section_app{
         padding-top: 100px;
     }
-    
-    .cs-section_img{
-        background-image: url("../img/2_indigo.jpg");
-        background-size: 65%;
-        background-repeat: no-repeat;
-        height: 1200px;
 
+    .cs-section_app h2{
+        padding: 100px 0 40px;
     }
 
     .parallax-window {
@@ -442,154 +672,362 @@ body{
         background: transparent;
     }
 
-    /* about page */
-    .about{
-        background-color: white;
-    }
-
-    /* footer */
-    footer{
-        background-color: #f3f3f3;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    footer a{
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 1.2em;
-        color: #0f0f0f;
-    }
-
-    footer .nav>li{
-        display: inline-block;
+    /* about.html */
+    .hero-about{
+        height: 600px;
     }
 
 
 }
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 768px) {
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
 
     /* Navbar */
-    .navbar-default{
-        height: 80px;
-    }
-
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        padding: 0 400px;
+        padding: 0 200px;
     }
 
     .navbar-nav>li .hidden-xs{
-        padding-left: 276px;
-    }
-
-
-    /* CSS used here will be applied after bootstrap.css */
-    .nav {
-        margin-bottom: 0;
-    }
-
-    .nav > li.dropdown.open {
-        position: static;
-    }
-
-    .nav > li.dropdown.open .dropdown-menu {
-        display:table;
-        width: 100%;
-        text-align: center;
-        left:0;
-        right:0;
+        padding-left: 275px;
     }
 
     .dropdown-menu{
-        padding: 20px 40px;
-        font-size: 1.8em;
-    }
-
-    .dropdown-menu>li {
-        display: table-cell;
-    }
-
-    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
-        background-color: transparent;
-        background-image: none;
-        text-decoration: line-through;
+        font-size: 1.5em;
     }
 
     /* ==========  Main Page  ==========*/
 
     .hero{
-        height: 932px;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
+        height: 700px;
     }
-
-    .hero-about{
-        height: 932px;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
-    }
-
 
     .hero h1{
-        font-size: 22.5em;
+        padding-top: 210px;
+        font-size: 17.5em;
     }
 
     .hero h2{
-        font-family: 'Reenie Beanie', cursive;
-        font-size: 13.5em;
-        margin-bottom: -360px;
-        padding-top: 200px;
-        color:#f0ffff;
+        margin-bottom: -420px;
+        padding-top: 160px;
+        font-size: 8.5em;
     }
-
-    .hero-about h1{
-        font-size: 22.5em;
-    }
-
-    .hero-about h2{
-        font-family: 'Reenie Beanie', cursive;
-        font-size: 13.5em;
-        margin-bottom: -360px;
-        padding-top: 200px;
-        color:#f0ffff;
-    }
-
 
     .content{
-        margin: 150px 0;
-        padding: 0 229px;
+        margin: 100px 0;
+        padding: 0 130px;
         text-align: center;
     }
 
     .content h1{
+        font-size: 3.8em;
+    }
 
+    .content h2{
+        font-size: 3em;
+    }
+
+    .content h4{
+        font-size: 1.2em;
     }
 
     .content p{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     footer{
-        text-align: left;
+        text-align: inherit;
+    }
+
+    footer p {
+        padding-top: 15px;
+        display: inline-block;
+    }
+
+    footer a{
+        font-size: 1.2em;
+        color: #0f0f0f;
+    }
+
+    /* indigo Page */
+    .wrapper{
+        /*margin-top: 500px;*/
+        padding: 80px;
+        background-color: rgba(247,247,247,0.99);
+    }
+
+    .wrapper h1, h2, h3{
+        font-family: 'Playfair Display', serif;
+    }
+
+    .wrapper h1{
+        padding-bottom: 20px;
+        font-size: 2.8em;
+    }
+
+    .wrapper h2{
+        font-size: 3em;
+    }
+
+    .wrapper h3{
+        font-size: 2.8em;
+        text-align: end;
+    }
+
+    .wrapper p{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 0.9em;
+    }
+
+    .wrapper ul{
+        font-family: 'Fira Sans', sans-serif;
+        list-style-type: none;
+    }
+
+    .page-header h3{
+        font-size: 1.4em;
+        text-align: right;
+    }
+
+    .page-header p {
+        overflow: hidden;
+        text-align: right;
+    }
+    .page-header p:before,
+    .page-header p:after {
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 90%;
+    }
+
+    .page-header p:before {
+        right: 0.5em;
+        margin-left: -5%;
+    }
+    .page-header p:after {
+        left: 0.5em;
+        margin-right: -90%;
+    }
+
+    .page-content{
+        padding-top: 50px;
+    }
+
+    .cs-section_intro{
+        padding-top: 50px;
+    }
+
+    .cs-section_intro ul>li:first-child{
+        padding-bottom: 10px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 900;
+    }
+
+    .cs-section_app{
+        padding-top: 100px;
+    }
+
+    .cs-section_app p {
+        padding-bottom: 60px;
+        border-bottom: 1px solid #000000;
+        border-width: thick;
+    }
+
+    .cs-section_app h2{
+        padding: 100px 0 40px;
+    }
+
+    .parallax-window {
+        min-height: 800px;
+        background: transparent;
+    }
+
+    .cs-section_sketches{
+        padding-top: 160px;
+    }
+
+    .cs-section_wireframe{
+        padding: 160px 120px;
+        text-align: center;
+    }
+
+    .cs-section_wireframe h2{
+        padding-bottom: 40px;
+    }
+
+    .cs-section_title h1{
+        margin-top: 70px;
+        margin-bottom: -32px;
+        font-size: 9.5em;
+    }
+
+    .cs-section_title h2{
+        font-size: 12em;
+        text-decoration: line-through;
+    }
+
+    .cs-section_mockup{
+        padding-top: 100px;
+    }
+
+    .cs-section_proto{
+        padding-top: 100px;
+    }
+
+    .cs-proto_text{
+        margin-top: 200px;
+    }
+
+    .cs-proto_text h2{
+        padding-bottom: 20px;
     }
 
 
+    /* mawmapp.html */
+    .hero-maw{
+        height: 550px;
+    }
+
+    .hero-maw h1{
+        font-family: Futura;
+        font-size: 13.5em;
+        color: #2f4f4f;
+    }
+
+    .cs-maw_design img{
+        margin-top: -230px;
+    }
+
+    .cs-maw_app{
+        padding-top: 100px;
+        position: relative;
+    }
+
+    .cs-maw_app .maw-app_header h1{
+        margin-top: 0;
+        font-size: 8em;
+        font-weight: 900;
+    }
+
+    .cs-maw_app .maw-app_text{
+        /*position: absolute;*/
+        /*bottom: 0;*/
+        /*right:0;*/
+    }
+
+    .cs-maw_sketches img{
+        margin-top: -120px;
+    }
+
+    .cs-maw_responce{
+        padding: 40px 180px;
+        text-align: center;
+    }
+
+    .cs-maw_responce h2{
+        padding-bottom: 15px;
+    }
+
+    .cs-maw_website img{
+        align-content: center;
+    }
+
+    .cs-maw_website .maw-web_text p{
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    .cs-maw_proto{
+        padding-top: 150px;
+    }
+
+    .cs-maw_proto .maw-proto_text{
+        padding: 0 90px;
+    }
+
+    .cs-maw_proto .maw-proto_text h1{
+        margin-bottom: 0;
+        font-size: 10em;
+        font-weight: 900;
+    }
+
+
+
+    /* about.html */
+    .hero-about{
+        height: 700px;
+    }
 
 
 }
 
 
+@media screen and (min-width: 1440px){
+    /* Navbar */
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        padding: 0 150px;
+    }
 
-@media screen and (min-width: 992px) and (max-width: 1199px){
-    ul.nav-tabs{
-        width: 180px; /* set nav width on medium devices */
+    .navbar-nav>li .hidden-xs{
+        padding-left: 400px;
     }
-}
-@media screen and (min-width: 1200px){
-    ul.nav-tabs{
-        width: 220px; /* set nav width on large devices */
+
+    .dropdown-menu{
+        font-size: 1em;
     }
+
+    /* ==========  Main Page  ==========*/
+
+
+    .hero h1{
+        padding-top: 210px;
+        font-size: 17.5em;
+    }
+
+    .hero h2{
+        margin-bottom: -420px;
+        padding-top: 160px;
+        font-size: 8.5em;
+    }
+
+    .content{
+        margin: 80px 0;
+        padding: 0 239px;
+        text-align: center;
+    }
+
+    .content h1{
+        font-size: 4em;
+    }
+
+    .content h2{
+        font-size: 2.8em;
+    }
+
+    .content h4{
+        font-size: 1.2em;
+    }
+
+    .content p{
+        font-size: 1em;
+    }
+
+    footer{
+        text-align: inherit;
+    }
+
+    footer p {
+        padding-top: 15px;
+        display: inline-block;
+    }
+
+    footer a{
+        font-size: 1.2em;
+        color: #0f0f0f;
+    }
+
 }
