@@ -21,7 +21,7 @@ body{
         font-family: 'Playfair Display', serif;
         font-size: 1.4em;
         text-align: center;
-        padding: 0 20px;
+        padding: 5px 20px;
         color: #000;
     }
 
@@ -316,7 +316,7 @@ body{
         display: inline-block;
     }
 
-        /*      indigo.html     */
+ /*      Indigo.html     */
     .indigo{
         background-image: url("../img/4_indigo.png");
         background-size: 100% 100%;
@@ -420,16 +420,16 @@ body{
         background: transparent;
     }
 
-    /* mawmapp.html */
+/*  Mawmapp.html */
     .maw{
         background-image: url("../img/1_maw.png");
         background-size: 50%;
     }
 
     .hero-maw{
-        background-image: url("../img/11_maw.png");
+        background-image: url("../img/12_maw.jpg");
         background-size: cover;
-        filter: hue-rotate(160deg);
+        /*filter: hue-rotate(160deg);*/
         height: 350px;
         margin: 0;
         position: relative;
@@ -715,7 +715,7 @@ body{
 
     .content{
         margin: 100px 0;
-        padding: 0 130px;
+        padding: 0 230px;
         text-align: center;
     }
 
