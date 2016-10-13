@@ -21,8 +21,12 @@
     <!-- CSS Document -->
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.css">
+
     <!-- animsition.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" />
+
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -31,7 +35,7 @@
 </head>
 <body>
 
-<div class="container-fluid">
+    <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12">
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -42,12 +46,12 @@
                             <span class="sr-only">Menu</span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand visible-xs" href="index.html">Julissa Roa</a>
+                        <a class="navbar-brand" href="index.html">Julissa Roa</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">WORK</a>
                                 <ul class="dropdown-menu">
@@ -58,9 +62,6 @@
                                     <li><a href="socbox.html">Socbox</a></li>
                                 </ul>
                             </li>
-                            <li><a href="index.html" class="hidden-xs">HOME</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
                             <li><a href="about.html">ABOUT</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -68,11 +69,14 @@
             </nav>
         </div>
 
-        <div class="col-xs-12 hero">
+        <div class="col-xs-12 hero parallax-index">
             <h2>UX Lover,</h2>
             <h1> Julissa Roa</h1>
-            <!--<p>USER EXPERIENCE | FRONT-END DEVELOPER</p>-->
+            <div class="arrow-down bounce animated">
+                <!--<img src="dist/img/arrow.png" alt="arrow" >-->
+            </div>
         </div>
+
     </div> <!-- end: row -->
 
     <div class="row">
@@ -91,26 +95,24 @@
     <div class="row">
        <div class="col-xs-12 col-sm-4">
            <div class="row">
-               <div class="col-xs-12 ws-section_sample">
-                   <img src="dist/img/app.jpg" class="img-responsive" alt="">
+               <div class="col-xs-12 ws-section_sample sample_a">
+                   <h1 class="strikethrough"><a href="mawmapp.html">MAWMapp</a></h1>
                </div>
-               <div class="col-xs-12 ws-section_sample">
-                   <img src="dist/img/1_terra.png" class="img-responsive" alt="">
+               <div class="col-xs-12 ws-section_sample sample_b">
+                   <h1 class="strikethrough "><a href="#">Terra-Sense</a></h1>
                </div>
            </div>
        </div>
-        <div class="col-xs-12 col-sm-4 ws-section_sample">
-            <img src="dist/img/2_coma.jpg" class="img-responsive" alt="">
+        <div class="col-xs-12 col-sm-4 ws-section_sample sample_c">
+            <h1 class="strikethrough "><a href="comapa.html">Comapa</a></h1>
         </div>
         <div class="col-xs-12 col-sm-4 ">
             <div class="row">
-                <div class="col-xs-12 ws-section_sample">
-                    <img src="dist/img/1_soc.png" class="img-responsive" alt="">
+                <div class="col-xs-12 ws-section_sample sample_d">
+                    <h1 class="strikethrough "><a href="#">Socbox</a></h1>
                 </div>
-                <div class="col-xs-12 ws-section_sample">
-                    <!--<h1>MAWMapp</h1>-->
-                    <!--<h3>a mobile application</h3>-->
-                    <img src="dist/img/17_indigo.png" class="img-responsive" alt="">
+                <div class="col-xs-12 ws-section_sample sample_e">
+                    <h1 class="strikethrough "><a href="indigo.html">Indigo</a></h1>
                 </div>
             </div>
         </div>
@@ -144,8 +146,8 @@
 
 </div> <!-- end: container-fluid -->
 
-<!-- navbar -->
-<script type="text/javascript">
+    <!-- Scripts -->
+    <script type="text/javascript">
     (function ($) {
         $(document).ready(function(){
 
@@ -170,6 +172,37 @@
     }(jQuery));
 </script>
 
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.strikethrough').addClass("hidden");
+
+        $('.strikethrough').hover(function() {
+            var $this = $(this);
+
+            if ($this.hasClass("hidden")) {
+                $(this).removeClass("hidden").addClass("visible");
+
+            } else {
+                $(this).removeClass("visible").addClass("hidden");
+            }
+        });
+    });
+</script>
+
+    <!--<script>-->
+        <!--$(function(){-->
+            <!--$(".element").typed({-->
+                <!--strings: ["UX Lover,", "Julissa Roa", ],-->
+                <!--typeSpeed: 4-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
+
+    <!--<script>-->
+        <!--$('.hero').addClass('animated zoomIn');-->
+    <!--</script>-->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 
 </body>
 </html>

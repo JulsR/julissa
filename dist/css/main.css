@@ -35,7 +35,7 @@ body{
     }
 
     .sr-only{
-        font-size: 0.5em;
+        font-size: 0.8em;
         position: relative;
     }
 
@@ -54,7 +54,10 @@ body{
         border-color: rgba(1, 1, 1, 0.06);
     }
 
-    /* Background */
+    .nav>li{
+        padding: 2px 10px;
+    }
+
     .nav>li>a:focus, .nav>li>a:hover{
         background-color: transparent;
         border-color: transparent;
@@ -72,7 +75,7 @@ body{
 
     /* Navbar-Branc */
     .navbar-default .navbar-brand {
-        padding-top: 30px;
+        padding-top: 23px;
         font-family: 'Reenie Beanie', cursive;
         font-size: 1.6em;
         color: #0f0f0f;
@@ -117,23 +120,59 @@ body{
         text-decoration: line-through;
     }
 
-        /*  index.html */
+/*  typed.js */
+    .typed-cursor{
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+    @keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+
+/*  Index and About Page */
 
     .hero{
         background-image: url("../img/1_about.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
         filter: hue-rotate(125deg);
-        /*filter: saturate(8);*/
         margin: 0;
         position: relative;
         top: 0;
-        height: 450px;
+        height: 350px;
         color: #ffffff;
         vertical-align: middle;
         text-align: center;
+        transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+        -webkit-transition: all 2s ease;
+        -o-transition: all 2s ease;
+        transition-timing-function: linear;
     }
 
-    .hero h1{
+    /*.hero:hover{*/
+        /*filter: hue-rotate(195deg);*/
+    /*}*/
+
+    .hero h1 {
+        margin-bottom: 0;
         padding-top: 140px;
         font-family: 'Reenie Beanie', cursive;
         font-size: 5em;
@@ -144,13 +183,13 @@ body{
         font-family: 'Reenie Beanie', cursive;
         font-size: 4em;
         margin-bottom: -200px;
-        padding-top: 150px;
+        padding-top: 90px;
         color:#f0ffff;
     }
 
     .content{
         margin: 60px 0;
-        padding: 0 35px;
+        padding: 0 25px;
         text-align: center;
     }
 
@@ -200,107 +239,139 @@ body{
     .ws-section_sample{
         padding-left: 0;
         padding-right: 0;
-    }
-
-    .work-sample{
-        background-color: #fff;
-        color: #2d58ff;
-    }
-    .work h4{
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 6.5em;
-    }
-
-    .sample{
         font-family: 'Playfair Display', serif;
+        text-align: center;
+        display: relative;
+        overflow: hidden;
     }
 
-    .sample-a{
-        padding: 20px 80px;
-        /*background-color: #c0a16b;*/
-        background-image: url("../img/app.jpg");
-        height: 500px;
-        color: #fff;
-        filter: grayscale(60%);
+    .ws-section_sample h1{
+        position: relative;
+        top:40%;
+        overflow: hidden;
     }
 
-    .sample-a h1{
-        margin-bottom: 0;
-        font-size: 3em;
-    }
-
-    .sample-a h3{
+    .ws-section_sample h1>a{
         font-size: 2em;
+        color: yellow;
+        text-decoration: none;
     }
 
-    .sample-b{
-        padding: 20px 80px;
+    .strikethrough {
+        /*display: none;*/
+        position: relative;
+    }
+
+    .strikethrough:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 85%;
+        height: 1px;
+        margin-top: -0.9em;
+        margin-left: 35px;
+        background: #ffffff;
+        transform-origin: center left;
+        animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+        transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+    }
+
+    .strikethrough:hover:after {
+        transform: scaleX(0);
+        transform-origin: center right;
+    }
+
+    /* Keyframes for initial animation */
+
+    @keyframes strikethrough {
+        from {
+            transform: scaleX(0);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    .sample_a{
         background-image: url("../img/app.jpg");
-        height: 500px;
-        color: #fff;
-        filter: grayscale(60%);
+        background-size: cover;
+        height: 350px;
     }
 
-    .sample-c{
+    .sample_a:hover{
+        filter: hue-rotate(25deg);
+    }
+
+    .sample_b{
+        background-image: url("../img/1_terra.png");
+        background-size: cover;
+        height: 350px;
+    }
+
+    .sample_b:hover{
+        filter: hue-rotate(85deg);
+    }
+
+    .sample_c{
+        background-image: url("../img/2_coma.jpg");
+        background-size: cover;
+        height: 700px;
+    }
+
+    .sample_c:hover{
+        filter: hue-rotate(145deg);
+    }
+
+    .sample_d{
+        background-image: url("../img/1_soc.png");
+        background-size: cover;
+        height: 350px;
+    }
+
+    .sample_d:hover{
+        filter: hue-rotate(305deg);
+    }
+
+    .sample_e{
+        background-image: url("../img/17_indigo.png");
+        background-size: cover;
+        height: 350px;
+    }
+
+    .sample_e:hover{
+        filter: hue-rotate(295deg);
+    }
+
+    /* about.html */
+    .hero-about{
         background-image: url("../img/1_in.png");
-        height: 500px;
-        padding: 20px 80px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*filter: hue-rotate(68deg);*/
+        margin: 0;
+        position: relative;
+        top: 0;
+        height: 350px;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
     }
 
-    .sample-c h1{
-        margin-bottom: 0;
-        font-size: 3em;
+    .about{
+        background-color: white;
     }
 
-    .sample-c h3{
-        font-size: 2em;
-    }
-
-    .sample-d{
-        background-image: url("../img/4_indigo.png");
-        height: 500px;
-        padding: 20px 80px;
-    }
-
-    .sample-d h1{
-        margin-bottom: 0;
-        font-size: 3em;
-    }
-
-    .sample-d h3{
-        font-size: 2em;
-    }
-
-    .sample-e{
-        padding: 20px 80px;
-        background-image: url("../img/2_screen.jpg");
-        height: 500px;
-        color: #fff;
-        filter: grayscale(60%);
-    }
-
-    .sample-f{
-        padding: 20px 80px;
-        background-image: url("../img/4_maw.png");
-        height: 500px;
-        color: #fff;
-        filter: grayscale(60%);
-    }
-
-    .sample-f h1{
-        margin-bottom: 0;
-        font-size: 3em;
-    }
-
-    .sample-f h3{
-        font-size: 2em;
-    }
-
-    /* footer */
+    /*  Footer */
     footer{
         background-color: #f3f3f3;
         font-size: 0.8em;
         text-align: center;
+    }
+
+    footer .navbar-brand, .navbar-nav>li>a{
+        padding: 0;
     }
 
     footer a{
@@ -309,6 +380,7 @@ body{
     }
 
     footer p {
+        margin-bottom: 0;
         padding-top: 15px;
     }
 
@@ -316,40 +388,31 @@ body{
         display: inline-block;
     }
 
- /*      Indigo.html     */
-    .indigo{
-        background-image: url("../img/4_indigo.png");
-        background-size: 100% 100%;
-    }
+    /* ========   WORK SAMPLE  ========  */
 
-    .hero-ind{
-        background-image: url("../img/16_indigo.jpg");
-        background-size: cover;
-        filter: hue-rotate(50deg);
-        height: 550px;
-        margin: 0;
-        position: relative;
-        top: 0;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
-    }
+    /* GENERAL STYLES */
 
-    .hero-ind h1{
+    .hero-text h1{
         font-family: Futura;
-        font-size: 15.5em;
-        text-transform: lowercase;
-        color: #f5f5f5;
+        font-size: 3.5em;
+        color: #ffffff;
+        display: inline;
     }
 
-    .wrapper{
-        padding: 30px;
-        background-color: rgba(247,247,247,0.99);
+    .hero-text p{
+        margin-top: 140px;
+        margin-bottom: 0;
+        font-family: 'Lato', Arial, sans-serif;
+        font-size: 1em;
+        color: #fff;
     }
 
     .wrapper h1{
         font-family: 'Playfair Display', serif;
-        font-size: 2em;
+    }
+
+    .wrapper h2{
+        font-family: 'Playfair Display', serif;
     }
 
     .wrapper p{
@@ -363,9 +426,14 @@ body{
         list-style-type: none;
     }
 
+    .page-header{
+        border-bottom: none;
+    }
+
     .page-header h3{
+        margin-top: 0;
         padding-bottom: 10px;
-        font-size: 1.7em;
+        font-size: 1.2em;
         text-align: right;
     }
 
@@ -375,10 +443,9 @@ body{
     }
     .page-header p:before,
     .page-header p:after {
-        background-color: #000;
         content: "";
         display: inline-block;
-        height: 1px;
+        height: 2px;
         position: relative;
         vertical-align: middle;
         width: 90%;
@@ -392,13 +459,13 @@ body{
         margin-right: -90%;
     }
 
-    .page-content{
-        margin: 0 16px;
-        padding-top: 50px;
+    .cs-section_intro{
+    padding: 30px 5px;
+    /*background-color: #f7f7f7;*/
     }
 
-    .cs-section_intro{
-        padding-top: 50px;
+    .cs-section_intro ul{
+        padding-left: 0;
     }
 
     .cs-section_intro ul>li:first-child{
@@ -420,14 +487,33 @@ body{
         background: transparent;
     }
 
-/*  Mawmapp.html */
-    .maw{
-        background-image: url("../img/1_maw.png");
-        background-size: 50%;
+
+    /*      Indigo.html     */
+    .indigo{
+        background-image: url("../img/4_indigo.png");
+        background-size: 100% 100%;
     }
 
+    .hero-ind{
+        background-image: url("../img/16_indigo.jpg");
+        background-size: cover;
+        filter: hue-rotate(50deg);
+        height: 550px;
+        margin: 0;
+        position: relative;
+        top: 0;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+
+    /*  Mawmapp.html */
     .hero-maw{
-        background-image: url("../img/12_maw.jpg");
+        background-image: url("../img/2_maw.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
         /*filter: hue-rotate(160deg);*/
         height: 350px;
@@ -439,35 +525,68 @@ body{
         text-align: center;
     }
 
-    .hero-maw h1{
-        padding-top: 100px;
-        font-family: Futura;
-        font-size: 3.5em;
-        color: #497b7b;
+    .page-header_maw h3{
+        margin-top: 0;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        text-align: right;
     }
 
-    .cs-maw_design img{
-        margin-top: 0;
+    .page-header_maw p {
+        overflow: hidden;
+        text-align: right;
+    }
+    .page-header_maw p:before,
+    .page-header_maw p:after {
+        background-color:#453ea8 ;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 90%;
+    }
+    .page-header_maw p:before {
+        right: 0.5em;
+        margin-left: -5%;
+    }
+    .page-header_maw p:after {
+        left: 0.5em;
+        margin-right: -90%;
     }
 
     .cs-maw_app{
-        position: relative;
+        padding: 40px 5px;
+        background-color: #453ea8;
+        color: #fff;
+    }
+
+    .parallax{
+        background-image: url("../img/1_maw.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .cs-maw_app .maw-app_header{
+        text-align: center;
     }
 
     .cs-maw_app .maw-app_header h1{
         margin-top: 0;
+        margin-bottom: 20px;
         font-size: 5em;
         font-weight: 900;
     }
 
-    .cs-maw_app .maw-app_text{
-        /*position: absolute;*/
-        /*bottom: 0;*/
-        /*right:0;*/
-    }
-
     .cs-maw_responce{
+        margin-left: 0;
+        margin-right: 0;
         padding: 10px;
+        background-color: rgba(87, 72, 207, 0.83);
+        color: #fff;
         text-align: center;
     }
 
@@ -475,41 +594,209 @@ body{
         padding-bottom: 15px;
     }
 
-    .cs-maw_website img{
+    .cs-maw_responce img{
         align-content: center;
     }
 
-    .cs-maw_website .maw-web_text p{
+    .cs-maw_responce .maw-web_text p{
         font-size: 0.7em;
         text-align: center;
     }
 
+    .cs-maw_proto{
+        padding: 0 5px;
+        background-color: #453ea8;
+        color: #fff;
+    }
+
+    .cs-maw_proto .maw-proto_text{
+        padding-bottom: 15px;
+    }
+
     .cs-maw_proto .maw-proto_text h1{
-        margin-bottom: 0;
-        font-size: 6em;
+        margin-bottom: 20px;
+        font-size: 3em;
         font-weight: 900;
     }
 
 
-    /* about.html */
-    .hero-about{
-        background-image: url("../img/1_in.png");
+    /* Comapa.html */
+    .comapa{
+        color: #7d6b50;
+    }
+
+    .hero-coma{
+        background-image: url("../img/16_coma.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        filter: hue-rotate(68deg);
+        /*filter: hue-rotate(180%);*/
+        height: 350px;
         margin: 0;
         position: relative;
         top: 0;
-        height: 450px;
         color: #ffffff;
         vertical-align: middle;
         text-align: center;
     }
 
-    .about{
-        background-color: white;
+    .cs-section_intro h1{
+        padding-bottom: 30px;
+    }
+
+    .page-header_coma h3{
+        margin-top: 0;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        text-align: right;
     }
 
 
+    .page-header_coma p {
+        overflow: hidden;
+        text-align: right;
+    }
+    .page-header_coma p:before,
+    .page-header_coma p:after {
+        background-color:#7d6b50;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 90%;
+    }
+    .page-header_coma p:before {
+        right: 0.5em;
+        margin-left: -5%;
+    }
+    .page-header_coma p:after {
+        left: 0.5em;
+        margin-right: -90%;
+    }
+
+    .cs-coma_design{
+        padding: 50px;
+        background-color:#6b684c;
+        color: #ffffff;
+    }
+
+    .cs-coma_brief .c-left{
+        padding:20px 20px;
+    }
+
+    .cs-coma_brief .c-right{
+        background-image: url("../img/1_coma.jpg");
+        background-size: cover;
+        height: 190px;
+        filter: grayscale(20%);
+    }
+
+    .parallax-coma{
+        background-image: url("../img/11_coma.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 646px;
+    }
+
+    .cs-coma_audience{
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 20px;
+        background-color:rgba(107, 104, 76, 0.96);
+        color: #fff;
+    }
+
+    .audience-text{
+        padding-left: 20px;
+    }
+
+    .cs-coma_audience h3{
+        font-size: 1.8em;
+    }
+
+    .cs-coma_audience p{
+        padding-bottom: 10px;
+    }
+
+    .cs-coma_color{
+        margin-bottom: 0;
+        background-color: #6b684c; /*#7d6b508*/
+        color: #ffffff;
+        text-align: center;
+    }
+
+    #sub-header{
+        padding: 0;
+        font-size: 0.9em;
+    }
+
+    .circles{
+    }
+
+    .circles p:first-child{
+        margin-bottom: 0;
+        padding-top: 70px;
+        font-family: Futura;
+        font-weight: 900;
+    }
+
+    #circle {
+        width: 60px;
+        height: 60px;
+        margin-right: 7px;
+        display: inline-block;
+        background: #B0976D;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    #circle1 {
+        width: 60px;
+        height: 60px;
+        margin-right: 7px;
+        display: inline-block;
+        background-color: #8c7d70 ;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    #circle2 {
+        width: 60px;
+        height: 60px;
+        margin-right: 7px;
+        display: inline-block;
+        background-color: #8d99a4;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    #circle3 {
+        width: 60px;
+        height: 60px;
+        margin-right: 7px;
+        display: inline-block;
+        background-color: #37424a;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    .circles img{
+        margin-top: 30px;
+    }
+
+    .cs-coma_usability{
+        padding: 20px 20px;
+        background-color: #fff;
+        text-align: right;
+    }
 
 }
 
@@ -517,8 +804,21 @@ body{
 @media only screen and (min-width : 768px) {
 
     /* Navbar */
-    .navbar-nav>li .hidden-xs{
-        padding-left: 200px;
+    .navbar-default{
+        padding: 0 40px;
+    }
+
+    /*.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {*/
+        /*margin-top: -10px;*/
+    /*}*/
+
+    .navbar-default .navbar-brand{
+        margin-top: -3px;
+        font-size: 2em;
+    }
+
+    .nav>li{
+        padding:0 10px;
     }
 
     /* CSS used here will be applied after bootstrap.css */
@@ -553,13 +853,14 @@ body{
         text-decoration: line-through;
     }
 
-    /* index.html */
+/* Index and About pages */
 
     .hero{
         height: 600px;
     }
 
     .hero h1{
+        margin-bottom: 0;
         padding-top: 210px;
         font-size: 11.5em;
     }
@@ -587,29 +888,42 @@ body{
         font-size: 1em;
     }
 
+/*  About.html  */
+    .hero-about{
+        height: 600px;
+    }
+
+/* Footer    */
+
     footer{
         text-align: inherit;
     }
 
     footer p {
-        padding-top: 15px;
+        padding-top: 18px;
         display: inline-block;
     }
 
     footer a{
         font-size: 1.2em;
-        color: #0f0f0f;
     }
 
-    /* indigo.html */
+    footer .navbar-brand, .navbar-nav>li>a{
+        padding: 18px 4px;
+    }
+
+/*       WORK SAMPLE     */
+/*  General CSS Style of pages*/
     .wrapper h1{
-        font-family: 'Playfair Display', serif;
-        font-size: 5.6em;
+        font-size: 1.6em;
+    }
+
+    .wrapper h5{
+        font-size: 1.1em;
     }
 
     .wrapper p{
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 1.6em;
+        font-size: 0.9em;
     }
 
     .wrapper ul{
@@ -618,12 +932,13 @@ body{
     }
 
     .page-header p {
+        font-size: 0.9em;
         overflow: hidden;
         text-align: right;
     }
     .page-header p:before,
     .page-header p:after {
-        background-color: #000;
+        background-color: #7d6b50;
         content: "";
         display: inline-block;
         height: 1px;
@@ -641,22 +956,31 @@ body{
     }
 
     .page-header h3{
-        font-size: 2.5em;
+        font-size: 1.5em;
         text-align: right;
     }
 
-    .page-content{
-        padding-top: 50px;
+    .cs-section_intro{
+        padding: 60px 40px;
     }
 
     .cs-section_intro p{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .cs-section_intro ul>li:first-child{
         padding-bottom: 10px;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 900;
+    }
+
+    .intro{
+        margin-left: 0;
+    }
+
+    .intro>ul>li{
+        padding-bottom:7px;
+        font-size: 1.2em;
     }
 
     .cs-section_app{
@@ -672,70 +996,207 @@ body{
         background: transparent;
     }
 
-    /* about.html */
-    .hero-about{
+    .hero-text h1{
+        font-size: 4.5em;
+    }
+
+    .hero-text p{
+        font-size: 1.2em;
+    }
+
+/*  Indigo.html      */
+
+
+/*  Mawmapp.html     */
+    .hero-maw{
+        height: 450px;
+    }
+
+    .page-header_maw h3{
+        margin-top: 0;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        text-align: right;
+    }
+
+    .cs-maw_app{
+        padding: 40px;
+    }
+
+    .cs-maw_app .maw-app_header{
+        padding: 0;
+    }
+
+    .cs-maw_app .maw-app_header h1{
+        font-size: 3em;
+    }
+
+    .cs-maw_responce{
+        padding: 40px;
+    }
+
+    .cs-maw_responce .maw-resp_text{
+        text-align: left;
+    }
+
+    .cs-maw_proto{
+        padding: 40px 40px 0 40px;
+    }
+
+    .cs-maw_proto .maw-proto_text{
+        margin-top: -20px;
+        padding-bottom: 0;
+    }
+
+
+/*  Comapa.html     */
+    .comapa{
+        color: #7d6b50;
+    }
+
+    .hero-coma{
+        height: 450px;
+    }
+
+    .parallax-coma{
         height: 600px;
     }
 
+    .cs-section_intro h1{
+        padding-bottom: 30px;
+        font-size: 2em;
+    }
+
+    .audience-text{
+        padding-left: 40px;
+    }
+
+    .cs-coma_audience h3{
+        font-size: 1.4em;
+    }
+
+    .cs-coma_brief .c-left{
+        padding:20px 40px;
+    }
+
+    .cs-coma_brief .c-right{
+        height: 452px;
+    }
+
+    .cs-coma_audience p{
+        padding-bottom: 10px;
+    }
+
+    .cs-coma_identity{
+        padding: 70px 240px;
+        text-align: center;
+    }
+
+    .cs-coma_color{
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #sub-header{
+        padding: 20px 77px;
+        font-size: 1.1em;
+    }
+
+    .circles{
+        padding-top: 30px;
+    }
+
+    .circles p:first-child{
+        margin-bottom: 0;
+    }
+
+    #circle {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    #circle1 {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    #circle2 {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    #circle3 {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    .circles img{
+        margin-top: 30px;
+    }
 
 }
 
-
-@media screen and (min-width: 1024px) and (max-width: 1440px){
+@media screen and (min-width: 1024px) {
 
     /* Navbar */
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        padding: 0 200px;
+    .navbar-default {
+        padding: 5px 40px;
     }
 
-    .navbar-nav>li .hidden-xs{
-        padding-left: 275px;
+    .dropdown-menu {
+        font-size: 1.2em;
     }
 
-    .dropdown-menu{
-        font-size: 1.5em;
-    }
-
-    /* ==========  Main Page  ==========*/
-
-    .hero{
+/*  Index and About Page     */
+    .hero {
         height: 700px;
     }
 
-    .hero h1{
+    .hero h1 {
+        margin-bottom: 0;
         padding-top: 210px;
-        font-size: 17.5em;
+        font-size: 15.5em;
     }
 
-    .hero h2{
+    .hero h2 {
         margin-bottom: -420px;
         padding-top: 160px;
         font-size: 8.5em;
     }
 
-    .content{
+    .content {
         margin: 100px 0;
-        padding: 0 230px;
+        padding: 0 220px;
         text-align: center;
     }
 
-    .content h1{
+    .content h1 {
         font-size: 3.8em;
     }
 
-    .content h2{
+    .content h2 {
         font-size: 3em;
     }
 
-    .content h4{
+    .content h4 {
         font-size: 1.2em;
     }
 
-    .content p{
+    .content p {
         font-size: 1em;
     }
 
-    footer{
+    /*   About.html  */
+    .hero-about {
+        height: 700px;
+    }
+
+    /*  Footer   */
+    footer {
         text-align: inherit;
     }
 
@@ -744,47 +1205,42 @@ body{
         display: inline-block;
     }
 
-    footer a{
+    footer a {
         font-size: 1.2em;
         color: #0f0f0f;
     }
 
-    /* indigo Page */
-    .wrapper{
-        /*margin-top: 500px;*/
-        padding: 80px;
-        background-color: rgba(247,247,247,0.99);
-    }
-
-    .wrapper h1, h2, h3{
+/*  General CSS Styles - Work Sample     */
+    .wrapper h1, h2, h3 {
         font-family: 'Playfair Display', serif;
     }
 
-    .wrapper h1{
-        padding-bottom: 20px;
+    .wrapper h1 {
+        /*padding-bottom: 20px;*/
         font-size: 2.8em;
     }
 
-    .wrapper h2{
+    .wrapper h2 {
         font-size: 3em;
     }
 
-    .wrapper h3{
-        font-size: 2.8em;
-        text-align: end;
+    .wrapper h3 {
+        font-size: 1.8em;
+        /*text-align: end;*/
     }
 
-    .wrapper p{
+    .wrapper p {
         font-family: 'Fira Sans', sans-serif;
+        font-size: 1em;
+    }
+
+    .wrapper ul {
+        font-family: 'Fira Sans', sans-serif;
+        list-style-type: none;
         font-size: 0.9em;
     }
 
-    .wrapper ul{
-        font-family: 'Fira Sans', sans-serif;
-        list-style-type: none;
-    }
-
-    .page-header h3{
+    .page-header h3 {
         font-size: 1.4em;
         text-align: right;
     }
@@ -793,12 +1249,13 @@ body{
         overflow: hidden;
         text-align: right;
     }
+
     .page-header p:before,
     .page-header p:after {
         background-color: #000;
         content: "";
         display: inline-block;
-        height: 1px;
+        height: apx;
         position: relative;
         vertical-align: middle;
         width: 90%;
@@ -808,26 +1265,28 @@ body{
         right: 0.5em;
         margin-left: -5%;
     }
+
     .page-header p:after {
         left: 0.5em;
         margin-right: -90%;
     }
 
-    .page-content{
-        padding-top: 50px;
+    .page-header p {
+        overflow: hidden;
+        text-align: right;
     }
 
-    .cs-section_intro{
-        padding-top: 50px;
+    .cs-section_intro {
+        padding: 50px 80px;
     }
 
-    .cs-section_intro ul>li:first-child{
+    .cs-section_intro ul > li:first-child {
         padding-bottom: 10px;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 900;
     }
 
-    .cs-section_app{
+    .cs-section_app {
         padding-top: 100px;
     }
 
@@ -837,7 +1296,7 @@ body{
         border-width: thick;
     }
 
-    .cs-section_app h2{
+    .cs-section_app h2 {
         padding: 100px 0 40px;
     }
 
@@ -846,143 +1305,230 @@ body{
         background: transparent;
     }
 
-    .cs-section_sketches{
+    .cs-section_sketches {
         padding-top: 160px;
     }
 
-    .cs-section_wireframe{
+    .cs-section_wireframe {
         padding: 160px 120px;
         text-align: center;
     }
 
-    .cs-section_wireframe h2{
+    .cs-section_wireframe h2 {
         padding-bottom: 40px;
     }
 
-    .cs-section_title h1{
+    .cs-section_title h1 {
         margin-top: 70px;
         margin-bottom: -32px;
         font-size: 9.5em;
     }
 
-    .cs-section_title h2{
+    .cs-section_title h2 {
         font-size: 12em;
         text-decoration: line-through;
     }
 
-    .cs-section_mockup{
+    .cs-section_mockup {
         padding-top: 100px;
     }
 
-    .cs-section_proto{
+    .cs-section_proto {
         padding-top: 100px;
     }
 
-    .cs-proto_text{
+    .cs-proto_text {
         margin-top: 200px;
     }
 
-    .cs-proto_text h2{
+    .cs-proto_text h2 {
         padding-bottom: 20px;
     }
 
-
-    /* mawmapp.html */
-    .hero-maw{
-        height: 550px;
+    .hero-text h1{
+        font-size: 5.5em;
     }
 
-    .hero-maw h1{
-        font-family: Futura;
-        font-size: 13.5em;
-        color: #2f4f4f;
-    }
+    /*  Indigo.html  */
 
-    .cs-maw_design img{
-        margin-top: -230px;
-    }
 
-    .cs-maw_app{
-        padding-top: 100px;
-        position: relative;
-    }
-
-    .cs-maw_app .maw-app_header h1{
+    /*  Mawmapp.html     */
+    .page-header_maw h3 {
         margin-top: 0;
-        font-size: 8em;
-        font-weight: 900;
+        padding-bottom: 10px;
+        font-size: 1.2em;
     }
 
-    .cs-maw_app .maw-app_text{
-        /*position: absolute;*/
-        /*bottom: 0;*/
-        /*right:0;*/
+    .cs-maw_app {
+        /*padding: 30px 0;*/
     }
 
-    .cs-maw_sketches img{
-        margin-top: -120px;
+    .cs-maw_app .maw-app_header {
+        padding-top: 15px;
+        padding-left: 40px;
     }
 
-    .cs-maw_responce{
-        padding: 40px 180px;
-        text-align: center;
+    .cs-maw_app .maw-app_header{
+        text-align: left;
     }
 
-    .cs-maw_responce h2{
+    .cs-maw_app .maw-app_header h1 {
+        padding-bottom: 10px;
+        font-size: 5em;
+    }
+
+    .cs-maw_responce {
+        padding: 40px 60px;
+        text-align: left;
+    }
+
+    .cs-maw_responce h2 {
         padding-bottom: 15px;
     }
 
-    .cs-maw_website img{
-        align-content: center;
+    .cs-maw_responce .maw-resp_text {
+        padding: 200px 100px 0 0;
     }
 
-    .cs-maw_website .maw-web_text p{
+    .cs-maw_responce .maw-web_text h5 {
+        padding-top: 20px;
+    }
+
+    .cs-maw_responce .maw-web_text p {
         font-size: 0.7em;
         text-align: center;
     }
 
-    .cs-maw_proto{
-        padding-top: 150px;
+    .cs-maw_proto {
+        padding-top: 50px;
     }
 
     .cs-maw_proto .maw-proto_text{
-        padding: 0 90px;
+        padding-left: 0;
     }
 
-    .cs-maw_proto .maw-proto_text h1{
-        margin-bottom: 0;
-        font-size: 10em;
+    .cs-maw_proto .maw-proto_text h1 {
+
+        padding-bottom: 5px;
+        font-size: 3.8em;
         font-weight: 900;
     }
 
+    /*   Comapa.html     */
 
-
-    /* about.html */
-    .hero-about{
-        height: 700px;
+    .hero-coma{
+        height: 450px;
     }
+
+    .cs-section_intro h1{
+        padding-bottom: 30px;
+    }
+
+    .intro{
+        margin-left: 8.33333333%;
+    }
+
+    .page-header_coma h3{
+        margin-top: 0;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+
+    .cs-coma_design{
+        padding: 50px;
+    }
+
+    .cs-coma_brief .c-left{
+        padding:20px 25px;
+    }
+
+    .cs-coma_brief .c-right{
+        height: 450px;
+    }
+
+    .parallax-coma{
+        height: 739px;
+    }
+
+    .cs-coma_audience{
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 20px;
+    }
+
+    .cs-coma_audience h3{
+        font-size: 1.8em;
+    }
+
+    .cs-coma_audience p{
+        padding-bottom: 10px;
+    }
+
+    .audience-text{
+        padding-top: 40px;
+    }
+
+    .cs-coma_color{
+        margin-bottom: 0;
+    }
+
+    #sub-header{
+        padding: 0 130px 20px 130px;
+        font-size: 1em;
+    }
+
+
+    .circles p:first-child{
+        margin-bottom: 0;
+        padding-top: 110px;
+    }
+
+    #circle {
+        width: 100px;
+        height: 100px;
+        margin-right: 40px;
+    }
+
+    #circle1 {
+        width: 100px;
+        height: 100px;
+        margin-right: 40px;
+    }
+
+    #circle2 {
+        width: 100px;
+        height: 100px;
+        margin-right: 40px;
+    }
+
+    #circle3 {
+        width: 100px;
+        height: 100px;
+        margin-right: 40px;
+    }
+
+
 
 
 }
 
-
 @media screen and (min-width: 1440px){
     /* Navbar */
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        padding: 0 150px;
+    .navbar-default{
+        padding: 10px 40px;
     }
 
-    .navbar-nav>li .hidden-xs{
-        padding-left: 400px;
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        padding: 0 1px;
     }
 
     .dropdown-menu{
         font-size: 1em;
     }
 
-    /* ==========  Main Page  ==========*/
 
-
+    /*  Index & About Page */
     .hero h1{
         padding-top: 210px;
         font-size: 17.5em;
@@ -996,12 +1542,177 @@ body{
 
     .content{
         margin: 80px 0;
-        padding: 0 239px;
+
         text-align: center;
     }
 
     .content h1{
-        font-size: 4em;
+        font-size: 3em;
+    }
+
+    .content h2{
+        font-size: 2.8em;
+    }
+
+    .content p{
+        font-size: 1.2em;
+    }
+
+
+/* ========== WORK SAMPLE  ==========*/
+/* General Styles */
+    .wrapper h1{
+        font-size: 3.8em;
+    }
+
+    .wrapper h5{
+        font-size: 1.3em;
+    }
+
+    .wrapper p{
+        font-size: 1.1em;
+    }
+
+    .wrapper ul>li{
+        font-size: 1.2em;
+    }
+
+    /*  Mawmapp.html     */
+    .page-header_maw h3 {
+        font-size: 1.6em;
+    }
+
+    .cs-maw_app {
+        padding: 30px 0;
+    }
+
+    .cs-maw_app .maw-app_header {
+        padding-top: 90px;
+        padding-left: 40px;
+    }
+
+    .cs-maw_app .maw-app_header h1 {
+        font-size: 5em;
+    }
+
+    .cs-maw_responce {
+        padding: 40px 60px;
+        text-align: left;
+    }
+
+    .cs-maw_responce h2 {
+        padding-bottom: 15px;
+    }
+
+    .cs-maw_responce .maw-resp_text {
+        padding-top: 200px;
+    }
+
+    .cs-maw_responce .maw-web_text p {
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    .cs-maw_proto {
+        padding-top: 50px;
+    }
+
+    .cs-maw_proto .maw-proto_text{
+        padding-left: 0;
+    }
+
+    .cs-maw_proto .maw-proto_text h1 {
+        padding-bottom: 5px;
+        font-size: 3.8em;
+        font-weight: 900;
+    }
+
+    /* Comapa.html */
+
+    .cs-section_intro>ul{
+        font-size: 0.9em;
+    }
+
+    .intro>ul>li{
+        padding-bottom:7px;
+        font-size: 1.3em;
+    }
+
+    .cs-coma_brief .c-left{
+        padding: 19px 65px;
+    }
+
+    .cs-coma_brief .c-right{
+        height: 488px;
+    }
+
+    .cs-coma_audience{
+        padding-top: 65px;
+    }
+
+    .audience-text{
+        padding-right: 140px;
+    }
+    .cs-coma_audience h3{
+        font-size: 2em;
+    }
+
+
+    #sub-header{
+        padding: 20px 333px;
+    }
+
+    .cs-coma_usability .usability_text{
+        padding: 25px 334px;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 2560px){
+    /* Navbar */
+    .navbar-default{
+        padding: 30px 40px;
+    }
+
+    .nav>li>a{
+        font-size: 1.5em;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        padding: 0 1px;
+    }
+
+    .navbar-default .navbar-brand{
+        font-size: 3em;
+    }
+
+    .dropdown-menu{
+        font-size: 1em;
+    }
+
+
+    /* Index.html */
+    .hero h1{
+        padding-top: 210px;
+        font-size: 17.5em;
+    }
+
+    .hero h2{
+        margin-bottom: -420px;
+        padding-top: 160px;
+        font-size: 8.5em;
+    }
+
+    .content{
+        margin: 80px 0;
+        padding: 0 760px;
+        text-align: center;
+    }
+
+    .content h1{
+        font-size: 5em;
     }
 
     .content h2{
@@ -1009,25 +1720,132 @@ body{
     }
 
     .content h4{
-        font-size: 1.2em;
+        font-size: 2.2em;
     }
 
     .content p{
-        font-size: 1em;
+        font-size: 2em;
     }
 
-    footer{
-        text-align: inherit;
+    /* Footer */
+    .footer{
+        padding: 10px 0;
+        font-size: 1.4em;
     }
 
-    footer p {
-        padding-top: 15px;
-        display: inline-block;
+    /* ========== WORK SAMPLE  ==========*/
+    /* General Styles */
+    .wrapper h1{
+        font-size: 6em;
     }
 
-    footer a{
-        font-size: 1.2em;
-        color: #0f0f0f;
+    .wrapper h2{
+        font-size: 5em;
+    }
+
+    .wrapper h5{
+        font-size: 2.7em;
+    }
+
+    .wrapper p{
+        font-size: 2em;
+    }
+
+    .wrapper ul>li{
+        font-size: 2em;
+    }
+    .cs-section_intro{
+        padding: 100px;
+    }
+
+    .hero-text h1{
+        font-size: 10em;
+    }
+
+    .hero-text p{
+        font-size: 2.8em;
+    }
+
+
+    /* Mawmapp.html     */
+    .hero-maw{
+        height: 580px;
+    }
+
+    .page-header_maw h3{
+        font-size: 2.6em;
+    }
+
+    .cs-maw_app{
+        padding: 100px;
+    }
+
+    .cs-maw_app .maw-app_header h1{
+        font-size: 8em;
+    }
+
+    .cs-maw_responce{
+        padding: 100px
+    }
+
+    .cs-maw_responce .maw-resp_text{
+        padding: 300px 300px 0 100px;
+    }
+
+    .cs-maw_responce .maw-resp_text h5{
+        padding-bottom: 10px;
+    }
+
+    .cs-maw_proto{
+        padding-top: 100px;
+    }
+
+    .cs-maw_proto .maw-proto_text{
+        padding: 0 155px;
+    }
+
+    .cs-maw_proto .maw-proto_text h1{
+        font-size: 7em;
+    }
+
+    .cs-maw_proto .maw-proto_text h4{
+        font-size: 3em;
+    }
+
+    /* Comapa.html */
+
+    .cs-section_intro>ul{
+        font-size: 0.9em;
+    }
+
+    .intro>ul>li{
+        font-size: 2.1em;
+    }
+
+    .cs-coma_audience .c-left{
+        padding: 40px 127px;
+    }
+
+    .cs-coma_brief .c-right{
+        height: 868px;
+    }
+
+    .audience-text{
+        padding-left: 128px;
+        padding-right: 340px;
+    }
+
+    .cs-coma_audience h3{
+        font-size: 2em;
+    }
+
+    #sub-header{
+        padding: 20px 533px;
+        font-size: 2em;
+    }
+
+    .cs-coma_usability .usability_text{
+        padding: 25px 334px;
     }
 
 }

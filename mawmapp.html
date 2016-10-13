@@ -21,6 +21,7 @@
     <!-- CSS Document -->
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css" />
+
     <!-- animsition.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" />
 
@@ -29,10 +30,9 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300|Josefin+Sans:300|Playfair+Display:400,400i|Reenie+Beanie" rel="stylesheet">
 
 </head>
-<div>
+<body>
 
-
-        <div class="container-fluid maw">
+    <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
                     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -43,12 +43,12 @@
                                     <span class="sr-only">Menu</span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand visible-xs" href="index.html">Julissa Roa</a>
+                                <a class="navbar-brand" href="index.html">Julissa Roa</a>
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav navbar-right">
                                     <li class="dropdown active">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">WORK</a>
                                         <ul class="dropdown-menu">
@@ -59,9 +59,6 @@
                                             <li><a href="socbox.html">Socbox</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="index.html" class="hidden-xs">HOME</a></li>
-                                </ul>
-                                <ul class="nav navbar-nav navbar-right">
                                     <li><a href="about.html">ABOUT</a></li>
                                 </ul>
                             </div><!-- /.navbar-collapse -->
@@ -69,28 +66,28 @@
                     </nav>
                 </div>
 
-                <div class="col-xs-12 hero-maw">
+                <div class="col-xs-12 hero-maw hero-text">
                     <p>CASE STUDY</p>
                     <h1> MAWMapp </h1>
                 </div>
             </div> <!-- end: row -->
 
-            <div class="row wrapper">
-                <header class="page-header">
-                    <div class="col-xs-12">
-                        <p><span>CASE</span></p>
-                        <h3>MAWMapp</h3>
-                        <h1>Miami Art Week mApp is an interactive tool
-                            that informs users on art fairs and explore
-                            different landmarks, restaurants, and hotels. </h1>
-                    </div>
-                </header>
-
+            <div class="wrapper">
                 <section class="page-content">
-                    <div class="row">
 
-                        <div class="cs-section_intro">
-                            <div class="col-xs-12 col-md-4 col-md-offset-5">
+                        <div class="row cs-section_intro" style="color: #453ea8">
+                            <div class="page-header_maw">
+                                <div class="col-xs-12">
+                                    <p><span>CASE</span></p>
+                                    <h3>MAWMapp</h3>
+                                    <h1>Miami Art Week mApp is an interactive tool
+                                        that informs users on art fairs and explore
+                                        different landmarks, restaurants, and hotels.
+                                    </h1>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-lg-4 col-lg-offset-5">
                                 <p>Miami Art Week is a once a year, comprising of international art shows for
                                     Modern and contemporary art.. The art fairs and art events take place in
                                     Miami and Miami Beach between the week of Decemeber 1st to 6th. Destinations
@@ -99,9 +96,52 @@
                                     information, explore landmarks, and discover restaurants and local hotels..
                                     Becoming the ultimate guide to Miami Art Week and Art Basel. Miami is a
                                     progressive and well-known destination to artists and creative thinkers
-                                    determining the booming of the arts market as our target audience.</p>
+                                    determining the booming of the arts market as our target audience.
+                                </p>
                             </div>
-                            <div class="col-xs-12 col-md-3">
+
+                            <!-- Small Devices -->
+                            <div class="col-xs-4 hidden-lg">
+                                <ul>
+                                    <li><strong>CLIENT</strong></li>
+                                    <li>Ai Miami International University</li>
+                                </ul>
+                                <ul>
+                                    <li><strong>PROJECT</strong></li>
+                                    <li>MAWMapp</li>
+                                </ul>
+                                <ul>
+                                    <li><strong>DELIVERABLES</strong></li>
+                                    <li>Design</li>
+                                    <li>Mockup</li>
+                                    <li>Promotional Website</li>
+                                </ul>
+
+                            </div>
+                            <div class="col-xs-4 hidden-lg">
+                                <ul>
+                                    <li><strong>TOOLS</strong></li>
+                                    <li>Balsamiq</li>
+                                    <li>Basecamp</li>
+                                    <li>Mapbox</li>
+                                    <li>Bootstrap Ratchet</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Invision</li>
+                                    <li>PhoneGap</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4 hidden-lg">
+                                <ul>
+                                    <li><strong>ROLES</strong></li>
+                                    <li>UX Designer</li>
+                                    <li>Updating JSON files</li>
+                                    <li>Mapbox API management</li>
+                                    <li>SCRUM Master</li>
+                                </ul>
+                            </div>
+
+                            <!-- Medium and Large Devices -->
+                            <div class="col-xs-12 col-md-3 visible-lg">
                                 <ul>
                                     <li><strong>CLIENT</strong></li>
                                     <li>Ai Miami International University</li>
@@ -135,19 +175,15 @@
                                     <li>SCRUM Master</li>
                                 </ul>
                             </div>
+
+                            <!--<div class="col-xs-12">-->
+                                <!--<img src="dist/img/13_maw.png" class="img-responsive" alt="Image">-->
+                            <!--</div>-->
                         </div>
 
-                        <div class="row cs-maw_design">
-                            <div class="col-xs-12">
-                                <img src="dist/img/2_maw.png" class="img-responsive" alt="Image">
-                            </div>
-                        </div>
-
-                        <div class="row cs-maw_app">
-                            <div class="col-xs-12 col-sm-6 maw-app_header">
-                                <h1>Our <span style="text-decoration: line-through;">biggest</span> challenge</h1>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 maw-app_text">
+                        <div class=" row cs-maw_app">
+                            <div class="col-xs-12 col-md-4 maw-app_header">
+                                <h1>Our biggest challenge</h1>
                                 <p>The app was develop by a team of front-end developers and graphic designer from
                                     Ai Miami International University of Art & Design. The challenge was to translate
                                     a printable detailed map and guide about the art fairs into a mobile application.
@@ -157,42 +193,38 @@
                                 <p>Along with our instructors and advisors the team manage to create and built a
                                     concept for the Miami Art Week mobile app. The team used the Scrum methology
                                     in order to collaborate under an organize and cross-functional environment..</p>
-                                <p><span style="font-weight: 900; font-family: Helvetica Neue">Team Members: </span>Rima Gerhard (Instructor) Erica Muñoz, Carlos Cardozo,
-                                    Stvetlana Pant, Jose Gomez, Herodney Emile, Bradley Cummins, Bradley Evans and Julissa Roa.</p>
                             </div>
-                        </div>
-
-                        <div class="row cs-maw_sketches">
-                            <div class="col-xs-12">
+                            <div class="col-xs-12 col-md-8">
                                 <img src="dist/img/3_maw.png"  class="img-responsive" alt="Image">
                             </div>
                         </div>
 
-                        <div class="row cs-maw_responce">
-                            <h2>Our Response</h2>
-                            <p>The app was design to provide an extraordinary and unique experience for
-                                those who wanted to enjoy parties, art installations, top restaurants and
-                                the best hotels of the city. The idea was to allow our users access useful
-                                information regarding the dates, hours, location and ticketing  with just a
-                                single tap on the location of each venue.  </p>
-                            <br>
-                            <h5>Brand Identity & Design</h5>
-                            <p>Miami Art Week app showcases a beautiful purple and pink tones with subtle gradients
-                                that express the brand's identity consistently across the application. The design
-                                process consisted of designing a logo for the brand and creating a style guide
-                                that established the visual style components.  The team unanimously agreed on
-                                font styles, color scheme and UI elements for the app. Before launching the final
-                                product we completed the UX design process. to understand the goal that needed to
-                                be met and create a great experience of the product. mockups and a prototype.</p>
-                        </div>
-
-                        <div class="row cs-maw_website">
-                            <div class="col-xs-12 col-sm-offset-2 col-sm-8 maw-web_text ">
+                        <div class="row parallax">
+                             <div class="row cs-maw_responce">
+                            <div class="col-xs-12 col-sm-6 maw-resp_text">
+                                <h2>Our Response</h2>
+                                <p>The app was design to provide an extraordinary and unique experience for
+                                    those who wanted to enjoy parties, art installations, top restaurants and
+                                    the best hotels of the city. The idea was to allow our users access useful
+                                    information regarding the dates, hours, location and ticketing  with just a
+                                    single tap on the location of each venue.  </p>
+                                <br>
+                                <h5>Brand Identity & Design</h5>
+                                <p>Miami Art Week app showcases a beautiful purple and pink tones with subtle gradients
+                                    that express the brand's identity consistently across the application. The design
+                                    process consisted of designing a logo for the brand and creating a style guide
+                                    that established the visual style components.  The team unanimously agreed on
+                                    font styles, color scheme and UI elements for the app. Before launching the final
+                                    product we completed the UX design process. to understand the goal that needed to
+                                    be met and create a great experience of the product. mockups and a prototype.
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 maw-web_text">
                                 <img src="dist/img/10_maw.png" class="img-responsive" alt="Image">
                                 <p>Promotional Website Mockup design by Julissa Roa</p>
                             </div>
                         </div>
-
+                        </div>
 
                         <div class="row cs-maw_proto">
                             <div class="col-xs-12 col-sm-7 maw-proto_text">
@@ -210,18 +242,18 @@
                                     others. The Miami Art Week app allow me to learn the multidisciplinary
                                     steps of building a mobile application. Naturally in order to promote the
                                     product I'd design a top-nocth promo website. Ratchet and PhoneGap proved to
-                                    be the best <span style="font-weight: 900; font-family: Helvetica Neue"> web technologies</span> to create the app.</p>
-                                <br>
-                                <h4>DONT'T BE AFRAID!</h4>
-                                <p>Take a minute to <span style="font-weight: 900; font-family: Helvetica Neue">PLAY</span> with the mobile interactive prototype on the right.</p>
+                                    be the best <span style="font-weight: 500; font-family: Helvetica Neue"> web technologies</span> to create the app.</p>
+
+                                <p><span style="font-weight: 400; font-family: Helvetica Neue; text-align: right">Team Members: </span>Rima Gerhard (Instructor) Erica Muñoz, Carlos Cardozo,
+                                    Stvetlana Pant, Jose Gomez, Herodney Emile, Bradley Cummins, Bradley Evans and Julissa Roa.</p>
                             </div>
-                            <div class="col-xs-12 col-sm-5 embed-responsive embed-responsive-4by3">
-                                <img src="dist/img/map.png" class="img-responsive" alt="Image">
+                            <div class="col-xs-12 col-sm-5">
+                                <img src="dist/img/map.png" class="img-responsive hidden-lg" alt="Image">
+                                <img src="dist/img/8_maw.png" class="img-responsive visible-lg" alt="Image">
                             </div>
                         </div>
 
-                    </div> <!-- end: case-study -->
-                </section>
+                </section><!-- end: case-study -->
             </div> <!-- end: wrapper -->
 
             <div class="row">
@@ -239,7 +271,7 @@
                 </footer>
             </div> <!-- end: footer -->
 
-        </div> <!-- end: container-fluid -->
+    </div> <!-- end: container-fluid -->
 
     <script type="text/javascript">
         (function ($) {
@@ -266,6 +298,5 @@
         }(jQuery));
     </script>
 
-
-    </body>
+</body>
 </html>
