@@ -677,9 +677,10 @@ body{
     }
 
     .cs-coma_design{
-        padding: 50px;
-        background-color:#6b684c;
+        padding: 30px;
+        background-color:#ae976d;
         color: #ffffff;
+        text-align: center;
     }
 
     .cs-coma_brief .c-left{
@@ -688,6 +689,9 @@ body{
 
     .cs-coma_brief .c-right{
         background-image: url("../img/1_coma.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
         height: 190px;
         filter: grayscale(20%);
@@ -706,8 +710,7 @@ body{
         margin-left: 0;
         margin-right: 0;
         padding-top: 20px;
-        background-color:rgba(107, 104, 76, 0.96);
-        color: #fff;
+        background-color:#ffffff;
     }
 
     .audience-text{
@@ -724,7 +727,7 @@ body{
 
     .cs-coma_color{
         margin-bottom: 0;
-        background-color: #6b684c; /*#7d6b508*/
+        background-color: #3d4a56; /*#7d6b508*/
         color: #ffffff;
         text-align: center;
     }
@@ -734,14 +737,10 @@ body{
         font-size: 0.9em;
     }
 
-    .circles{
-    }
-
     .circles p:first-child{
         margin-bottom: 0;
         padding-top: 70px;
         font-family: Futura;
-        font-weight: 900;
     }
 
     #circle {
@@ -1059,7 +1058,7 @@ body{
     }
 
     .parallax-coma{
-        height: 600px;
+        height: 650px;
     }
 
     .cs-section_intro h1{
@@ -1067,8 +1066,17 @@ body{
         font-size: 2em;
     }
 
+    .cs-coma_design{
+        text-align: left;
+        padding: 18px;
+    }
+
+    .cs-coma_audience{
+        padding: 30px 0;
+    }
+
     .audience-text{
-        padding-left: 40px;
+        padding-left: 41px;
     }
 
     .cs-coma_audience h3{
@@ -1448,7 +1456,7 @@ body{
     }
 
     .parallax-coma{
-        height: 739px;
+        height: 614px;
     }
 
     .cs-coma_audience{
@@ -1467,6 +1475,7 @@ body{
 
     .audience-text{
         padding-top: 40px;
+        padding-right: 160px;
     }
 
     .cs-coma_color{
@@ -1474,10 +1483,9 @@ body{
     }
 
     #sub-header{
-        padding: 0 130px 20px 130px;
+        padding: 0 240px 20px 240px;
         font-size: 1em;
     }
-
 
     .circles p:first-child{
         margin-bottom: 0;
@@ -1487,29 +1495,25 @@ body{
     #circle {
         width: 100px;
         height: 100px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     #circle1 {
         width: 100px;
         height: 100px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     #circle2 {
         width: 100px;
         height: 100px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     #circle3 {
         width: 100px;
         height: 100px;
-        margin-right: 40px;
     }
-
-
-
 
 }
 
@@ -1556,6 +1560,12 @@ body{
 
     .content p{
         font-size: 1.2em;
+    }
+
+
+    /* Footer */
+    .footer a{
+        font-size: 1.3em;
     }
 
 
@@ -1639,7 +1649,7 @@ body{
     }
 
     .cs-coma_brief .c-left{
-        padding: 19px 65px;
+        padding: 19px 60px;
     }
 
     .cs-coma_brief .c-right{
@@ -1651,7 +1661,7 @@ body{
     }
 
     .audience-text{
-        padding-right: 140px;
+        padding-right: 240px;
     }
     .cs-coma_audience h3{
         font-size: 2em;
@@ -1660,10 +1670,6 @@ body{
 
     #sub-header{
         padding: 20px 333px;
-    }
-
-    .cs-coma_usability .usability_text{
-        padding: 25px 334px;
     }
 
 
@@ -1730,8 +1736,8 @@ body{
     /* Footer */
     .footer{
         padding: 10px 0;
-        font-size: 1.4em;
     }
+
 
     /* ========== WORK SAMPLE  ==========*/
     /* General Styles */
@@ -1842,10 +1848,6 @@ body{
     #sub-header{
         padding: 20px 533px;
         font-size: 2em;
-    }
-
-    .cs-coma_usability .usability_text{
-        padding: 25px 334px;
     }
 
 }
