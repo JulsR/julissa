@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0573e7d9-5dd9-4f16-988d-4c397ce64e5c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comapa.html" afterPath="$PROJECT_DIR$/comapa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/main.css" afterPath="$PROJECT_DIR$/dist/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indigo.html" afterPath="$PROJECT_DIR$/indigo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawmapp.html" afterPath="$PROJECT_DIR$/mawmapp.html" />
     </list>
     <ignored path="julissa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,8 +56,8 @@
       <file leaf-file-name="indigo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/indigo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="151" column="62" selection-start-line="151" selection-start-column="62" selection-end-line="151" selection-end-column="62" />
+            <state relative-caret-position="300">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -622,12 +617,12 @@
       <workItem from="1475673762307" duration="13585000" />
       <workItem from="1475849538444" duration="1685000" />
       <workItem from="1475981771571" duration="81739000" />
-      <workItem from="1476385424622" duration="5078000" />
+      <workItem from="1476385424622" duration="5649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266663000" />
+    <option name="totallyTimeSpent" value="267234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="23" width="1241" height="709" extended-state="0" />
@@ -2583,8 +2578,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/indigo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="151" column="62" selection-start-line="151" selection-start-column="62" selection-end-line="151" selection-end-column="62" />
+        <state relative-caret-position="300">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
