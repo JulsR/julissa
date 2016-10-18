@@ -1,11 +1,8 @@
-/*==================================================
-=            Bootstrap 3 Media Queries             =
-==================================================*/
+/*==========CSS Document ========*/
 body{
     background-color: #f7f7f7;
     position: relative;
 }
-
 
 /*==========  Mobile First Method  ==========*/
 
@@ -120,38 +117,15 @@ body{
         text-decoration: line-through;
     }
 
-/*  typed.js */
-    .typed-cursor{
-        opacity: 1;
-        -webkit-animation: blink 0.7s infinite;
-        -moz-animation: blink 0.7s infinite;
-        animation: blink 0.7s infinite;
-    }
-    @keyframes blink{
-        0% { opacity:1; }
-        50% { opacity:0; }
-        100% { opacity:1; }
-    }
-    @-webkit-keyframes blink{
-        0% { opacity:1; }
-        50% { opacity:0; }
-        100% { opacity:1; }
-    }
-    @-moz-keyframes blink{
-        0% { opacity:1; }
-        50% { opacity:0; }
-        100% { opacity:1; }
-    }
-
 /*  Index and About Page */
 
     .hero{
-        background-image: url("../img/1_about.png");
+        background-image: url("../img/1_about-min.png");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: hue-rotate(125deg);
+        /*filter: hue-rotate(125deg);*/
         margin: 0;
         position: relative;
         top: 0;
@@ -167,9 +141,6 @@ body{
         transition-timing-function: linear;
     }
 
-    /*.hero:hover{*/
-        /*filter: hue-rotate(195deg);*/
-    /*}*/
 
     .hero h1 {
         margin-bottom: 0;
@@ -234,7 +205,7 @@ body{
         font-weight: 900;
         color: #0f0f0f;
     }
-    
+
     /* menu - work sample */
     .ws-section_sample{
         padding-left: 0;
@@ -258,7 +229,6 @@ body{
     }
 
     .strikethrough {
-        /*display: none;*/
         position: relative;
     }
 
@@ -461,7 +431,6 @@ body{
 
     .cs-section_intro{
     padding: 30px 5px;
-    /*background-color: #f7f7f7;*/
     }
 
     .cs-section_intro ul{
@@ -515,7 +484,6 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        /*filter: hue-rotate(160deg);*/
         height: 350px;
         margin: 0;
         position: relative;
@@ -727,7 +695,7 @@ body{
 
     .cs-coma_color{
         margin-bottom: 0;
-        background-color: #3d4a56; /*#7d6b508*/
+        background-color: #3d4a56;
         color: #ffffff;
         text-align: center;
     }
@@ -806,10 +774,6 @@ body{
     .navbar-default{
         padding: 0 40px;
     }
-
-    /*.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {*/
-        /*margin-top: -10px;*/
-    /*}*/
 
     .navbar-default .navbar-brand{
         margin-top: -3px;
@@ -911,7 +875,6 @@ body{
         padding: 18px 4px;
     }
 
-/*       WORK SAMPLE     */
 /*  General CSS Style of pages*/
     .wrapper h1{
         font-size: 1.6em;
@@ -1004,7 +967,6 @@ body{
     }
 
 /*  Indigo.html      */
-
 
 /*  Mawmapp.html     */
     .hero-maw{
@@ -1224,7 +1186,6 @@ body{
     }
 
     .wrapper h1 {
-        /*padding-bottom: 20px;*/
         font-size: 2.8em;
     }
 
@@ -1234,7 +1195,6 @@ body{
 
     .wrapper h3 {
         font-size: 1.8em;
-        /*text-align: end;*/
     }
 
     .wrapper p {
@@ -1365,10 +1325,6 @@ body{
         margin-top: 0;
         padding-bottom: 10px;
         font-size: 1.2em;
-    }
-
-    .cs-maw_app {
-        /*padding: 30px 0;*/
     }
 
     .cs-maw_app .maw-app_header {
