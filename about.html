@@ -24,10 +24,65 @@
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300|Josefin+Sans:300|Playfair+Display:400,400i|Reenie+Beanie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300|Playfair+Display|Reenie+Beanie" rel="stylesheet">
 
 </head>
+
+<style>
+    body{
+        background-color;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4d82dd+0,3700ff+100 */
+        background: #4d82dd; /* Old browsers */
+        background: -moz-linear-gradient(top,  #4d82dd 0%, #3700ff 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #4d82dd 0%,#3700ff 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #4d82dd 0%,#3700ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d82dd', endColorstr='#3700ff',GradientType=0 ); /* IE6-9 */
+        color: #ffffff;
+    }
+
+    nav.navbar.navbar-default.navbar-fixed-top{
+        background-color: rgba(59, 11, 235, 0.7);
+        border-bottom: none;
+    }
+
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>li>a{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover{
+        color: #adff2f;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover{
+        color: #ffffff;
+    }
+
+
+    .sr-only{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #ffffff;
+    }
+
+    footer{
+        background-color: #3b0beb;
+    }
+
+    footer a{
+        color: #ffffff;
+    }
+</style>
 
 <body>
 
@@ -65,9 +120,8 @@
                 </nav>
             </div>
 
-            <div class="col-xs-12 hero hero-about">
-                <h2>UX Lover,</h2>
-                <h1> Julissa Roa</h1>
+            <div class="col-xs-12 balls hero hero-about">
+                <h1>It's just us!</h1>
             </div>
         </div> <!-- end: row -->
 
@@ -89,12 +143,33 @@
                     I realized that although fashion was one of my passions I felt more compelled and
                     attracted with the future of Web development and Interactive design.</p>
                 <p>As a creative professional I have gained knowledge on specific skills like;
-                    <strong>HTML5, CSS3, LESS/SASS, JavaScript, Ajax, APIs, jQuery, jQuery Mobile, PHP,
+                    HTML5, CSS3, LESS/SASS, JavaScript, Ajax, APIs, jQuery, jQuery Mobile, PHP,
                         Git, Bower, Grunt, WordPress, Adobe Creative Suite, Bootstrap, Ratchet, Ionic,
                         Skeleton, PhoneGap, Wireframe, Prototype, Sketch, InVision, UXPin, Graphic Design, Illustration
-                        and Photography.</strong></p>
+                        and Photography.</p>
             </div>
         </div><!-- end: row -->
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="row">
+                    <div class="col-xs-12 ws-section_sample sample_a">
+                    </div>
+                    <div class="col-xs-12 ws-section_sample sample_b">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 ws-section_sample sample_c">
+            </div>
+            <div class="col-xs-12 col-sm-4 ">
+                <div class="row">
+                    <div class="col-xs-12 ws-section_sample sample_d">
+                    </div>
+                    <div class="col-xs-12 ws-section_sample sample_e">
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <div class="row about">
@@ -105,6 +180,7 @@
                     <p>Something went wrong! Opps. Here is my email <a href="mailto:julissaroa.w@gmail.com">julissaroa.w@gmail.com</a></p>
                 </div>
         </div><!-- end: content -->
+
 
         <div class="row">
             <footer class="footer">
@@ -125,53 +201,82 @@
     </div> <!-- end: container-fluid -->
 
         <script type="text/javascript">
-        (function ($) {
-            $(document).ready(function(){
+            // Bouncing Balls. By Rob Glazebrook
+            // The balls are randomized in size, color, opacity, and bounce direction. They'll bounce off the walls of their container and generally make a rather pretty show of things.
 
-                // hide .navbar first
-                $(".navbar").hide();
+            var ballCount = 35,
+                    ballMinSize = 40,
+                    ballMaxSize = 125,
+                    container = $('.balls');
 
-                // fade in .navbar
-                $(function () {
-                    $(window).scroll(function () {
-                        // set distance user needs to scroll before we fadeIn navbar
-                        if ($(this).scrollTop() > 100) {
-                            $('.navbar').fadeIn();
-                        } else {
-                            $('.navbar').fadeOut();
-                        }
-                    });
-
-
-                });
-
+            $(function() {
+                initBalls();
+                balls = window.setInterval(moveBalls,40); // 24 FPS
+                $(window).resize(function() { moveBallsIntoBounds(); });
             });
-        }(jQuery));
-    </script>
 
-        <script type="text/javascript">
-            function downloadJSAtOnload() {
-                var element = document.createElement("script");
-                element.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js";
-                document.body.appendChild(element);
+            // Random number generator. Takes a minimum, maximum, and a boolean for whether the random number should be an integer.
+            function rand(min,max,isInt) {
+                var min = min || 0,
+                        max = max || 1,
+                        isInt = isInt || false,
+                        num = Math.random()*(max - min) + min;
+                return (isInt) ? Math.round(num) : num;
             }
-            if (window.addEventListener)
-                window.addEventListener("load", downloadJSAtOnload, false);
-            else if (window.attachEvent)
-                window.attachEvent("onload", downloadJSAtOnload);
-            else window.onload = downloadJSAtOnload;
-        </script>
-        <script type="text/javascript">
-            function downloadJSAtOnload() {
-                var element = document.createElement("script");
-                element.src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js";
-                document.body.appendChild(element);
+
+            // Creates the balls, puts them in the container, and gives them a random size, color, opacity, starting location, and direction/speed of movement.
+            function initBalls() {
+                container.css({'position':'relative'});
+                for (i=0;i<ballCount;i++) {
+                    var newBall = $('<b />').appendTo(container),
+                            size = rand(ballMinSize,ballMaxSize);
+                    newBall.css({
+                        'position':'absolute',
+                        'width': size+'px',
+                        'height': size+'px',
+                        'opacity': rand(.1,.9),
+                        'background-color': 'rgb('+rand(20,05,true)+','+rand(0,105,true)+','+rand(400,505,true)+')',
+                        'top': rand(0,container.height()-size),
+                        'left': rand(0,container.width()-size)
+                    }).attr({
+                        'data-dX':rand(-10,10),
+                        'data-dY':rand(1,10)
+                    });
+                }
             }
-            if (window.addEventListener)
-                window.addEventListener("load", downloadJSAtOnload, false);
-            else if (window.attachEvent)
-                window.attachEvent("onload", downloadJSAtOnload);
-            else window.onload = downloadJSAtOnload;
+
+            // Moves the balls based on their direction/speed of movement (saved as a data attribute). If the movement will take them outside of the container, they reverse direction along that axis.
+            function moveBalls() {
+                var maxX = container.width(),
+                        maxY = container.height();
+                $('b',container).each(function(i,b) {
+                    var ball = $(b),
+                            pos = ball.position()
+                    x = pos.left,
+                            y = pos.top,
+                            dX = parseFloat(ball.attr('data-dX')),
+                            dY = parseFloat(ball.attr('data-dY')),
+                            size = ball.height();
+                    if(x+dX+size > maxX || x+dX < 0) ball.attr('data-dX',(dX=-dX));
+                    if(y+dY+size > maxY || y+dY < 0) ball.attr('data-dY',(dY=-dY));
+                    ball.css({'top':y+dY,'left':x+dX});
+                });
+            }
+
+            // Move the balls back within the bounds of the container if the window (ergo, possibly the container) is resized. Because we're positioning from the top/left corners, we only have to worry about the bottom/right sides.
+            function moveBallsIntoBounds() {
+                var maxX = container.width(),
+                        maxY = container.height();
+                $('b',container).each(function(i,b) {
+                    var ball = $(b),
+                            pos = ball.position()
+                    x = pos.left,
+                            y = pos.top,
+                            size = ball.height();
+                    if (x+size > maxX) ball.css({ left: maxX-size+'px' });;
+                    if (y+size > maxY) ball.css({ top: maxY-size+'px' });;
+                });
+            }
         </script>
 
 </body>
