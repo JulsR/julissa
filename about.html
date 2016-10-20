@@ -121,12 +121,12 @@
             </div>
 
             <div class="col-xs-12 balls hero hero-about">
-                <h1>It's just us!</h1>
+                <h1>It's just Cool!</h1>
             </div>
         </div> <!-- end: row -->
 
         <div class="row">
-            <div class="col-xs-12 content">
+            <div class="col-xs-12 content wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <h4>IT'S PERSONAL</h4>
                 <h1>"I can always find love, but eventually I get horny for my creativity."
                     - Gilda Radner</h1>
@@ -173,7 +173,7 @@
 
 
         <div class="row about">
-                <div class="col-xs-12 content">
+                <div class="col-xs-12 content wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="5">
                     <h4>YOU ARE?</h4>
                     <h2>Passionate, <strong>compassionate</strong> and love building fuctional and beautiful products.</h2>
                     <p><a href="mailto:julissaroa.w@gmail.com" target="_blank" class="btn">EMAIL ME</a></p>
@@ -277,6 +277,20 @@
                     if (y+size > maxY) ball.css({ top: maxY-size+'px' });;
                 });
             }
+        </script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+        <script>
+            new WOW(
+                    {
+                        boxClass: 'wow',
+                        animateClass: 'animated',
+                        offset: 0,
+                        mobile: true,
+                        live: true
+                    }
+            ).init();
         </script>
 
 </body>
