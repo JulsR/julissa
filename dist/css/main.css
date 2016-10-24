@@ -15,8 +15,7 @@ body{
         background-image: none;
         border-color: transparent;
         box-shadow: none;
-        font-family: 'Playfair Display', serif;
-        font-size: 1.4em;
+        font-family: 'Fira Sans', sans-serif;
         text-align: center;
         padding: 5px 20px;
         color: #000;
@@ -34,7 +33,7 @@ body{
     }
 
     .sr-only{
-        font-size: 0.8em;
+        font-size: 1.1em;
         position: relative;
     }
 
@@ -78,24 +77,13 @@ body{
     .navbar-default .navbar-brand {
         padding-top: 23px;
         font-family: 'Reenie Beanie', cursive;
-        font-size: 1.6em;
+        font-size: 2em;
         color: #0f0f0f;
         float: right;
     }
 
     .navbar-default .navbar-nav .navbar-right>li>a .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
         color: #000000;
-    }
-
-
-    #menu {
-        background: hsla(1,0%,100%,.9);
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        min-height: 100%;
-        padding-top: 80px;
     }
 
     /* CSS used here will be applied after bootstrap.css */
@@ -125,10 +113,6 @@ body{
         display: inline-block;
     }
 
-    .dropdown-menu>li>a{
-        /*padding-bottom: 5px;*/
-    }
-
     .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
         background-color: transparent;
         background-image: none;
@@ -138,15 +122,14 @@ body{
 /*  Index and About Page */
 
     .balls {
-        width: 100%;
-        height: 300px;
+
+        height: 50px;
     }
     .balls b {
         border-radius: 50%;
     }
 
     .hero-index{
-        background-color: #3b0beb;
         background-size: cover;
         margin: 0;
         position: relative;
@@ -159,8 +142,8 @@ body{
 
     .hero h1 {
         margin-bottom: 0;
-        padding-top: 130px;
-        font-family: 'Reenie Beanie', cursive;
+        padding-top: 80px;
+        font-family: 'Lato', sans-serif;
         font-size: 4.6em;
         color:#f0ffff;
     }
@@ -180,18 +163,18 @@ body{
     }
 
     .content h4, p {
-        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: 100;
     }
 
     .content h4{
+        font-family: 'Fira Sans', sans-serif;
         font-size: 1em;
     }
 
     .content h1 {
         font-family: 'Playfair Display', serif;
         font-size: 2em;
-        font-style: italic;
     }
 
     .content h2{
@@ -204,7 +187,7 @@ body{
         font-weight: bold;
     }
     .content p {
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
         font-size: 1em;
         font-weight: 100;
     }
@@ -288,7 +271,17 @@ body{
         font-size: 5em;
     }
 
-
+    /* about.html */
+    .hero-about{
+        background-color: #3b0beb;
+        margin: 0;
+        position: relative;
+        top: 0;
+        height: 350px;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
+    }
 
     /* menu - work sample */
     .ws-section_sample{
@@ -311,7 +304,6 @@ body{
         color: yellow;
         text-decoration: none;
     }
-
 
     .sample_a{
         background-image: url("../img/app.jpg");
@@ -341,27 +333,12 @@ body{
         height: 350px;
     }
 
-
     .sample_e{
         background-image: url("../img/17_indigo-min.png");
         background-size: cover;
         filter: grayscale(100%);
         height: 350px;
     }
-
-
-    /* about.html */
-    .hero-about{
-        background-color: #3b0beb;
-        margin: 0;
-        position: relative;
-        top: 0;
-        height: 350px;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
-    }
-
 
     /*  Footer */
     footer{
@@ -391,9 +368,8 @@ body{
     /* ========   WORK SAMPLE  ========  */
 
     /* GENERAL STYLES */
-
     .hero-text h1{
-        font-family: "Futura PT";
+        font-family: inherit;
         font-size: 3.5em;
         color: #ffffff;
         display: inline;
@@ -408,13 +384,14 @@ body{
     }
 
     .wrapper h1{
-        font-family: 'Playfair Display', serif;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.1em;
     }
 
     .wrapper h2{
-        font-family: 'Playfair Display', serif;
-        /*font-family: 'Lato', Arial, sans-serif;*/
-        font-weight: 100;
+        font-family: 'Lato', Arial, sans-serif;
+        font-weight: 900;
+        font-size: 1em;
     }
 
     .wrapper h4{
@@ -430,6 +407,23 @@ body{
         font-family: 'Fira Sans', sans-serif;
         font-size: 0.8em;
         list-style-type: none;
+    }
+
+    .behind-text{
+        font-size: 9em;
+        color: rgba(255, 255, 255, 0.07);
+        z-index: 1;
+        position: fixed;
+    }
+
+    .behind-text p{
+        padding-top: 130px;
+        padding-left: 105px;
+    }
+
+    .page-content{
+        position: relative;
+        z-index: 99;
     }
 
     .page-header{
@@ -466,30 +460,7 @@ body{
     }
 
     .cs-section_intro{
-    padding: 30px 5px;
-    }
-
-    .cs-section_intro ul{
-        padding-left: 0;
-    }
-
-    .cs-section_intro ul>li:first-child{
-        padding-bottom: 10px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 900;
-    }
-
-    .cs-section_app{
-        padding-top: 100px;
-    }
-
-    .cs-section_app h2{
-        padding: 100px 0 40px;
-    }
-
-    .parallax-window {
-        min-height: 800px;
-        background: transparent;
+        padding-top: 150px;
     }
 
 
@@ -763,34 +734,22 @@ body{
 
 
     /* Comapa.html */
-    .comapa{
-        color: #7d6b50;
-    }
-
-    .hero-coma{
-        background-image: url("../img/16_coma.jpg");
-        background-size: cover;
-        /*filter: hue-rotate(180%);*/
-        height: 350px;
-        margin: 0;
-        position: relative;
-        top: 0;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
-    }
 
     .cs-section_intro h1{
         padding-bottom: 30px;
     }
 
+    .cs-section_intro .intro ul{
+        padding-left: 0;
+    }
+
     .page-header_coma h3{
         margin-top: 0;
         padding-bottom: 10px;
-        font-size: 1.2em;
+        font-family: 'Bungee Outline', cursive;
+        font-size: 4.2em;
         text-align: right;
     }
-
 
     .page-header_coma p {
         overflow: hidden;
@@ -798,7 +757,7 @@ body{
     }
     .page-header_coma p:before,
     .page-header_coma p:after {
-        background-color:#7d6b50;
+        background-color:#ffffff;
         content: "";
         display: inline-block;
         height: 1px;
@@ -807,131 +766,50 @@ body{
         width: 90%;
     }
     .page-header_coma p:before {
-        right: 0.5em;
+        right: -33.5em;
         margin-left: -5%;
     }
     .page-header_coma p:after {
-        left: 0.5em;
+        left: -13.5em;
         margin-right: -90%;
     }
 
-    .cs-coma_design{
-        padding: 30px;
-        background-color:#ae976d;
-        color: #ffffff;
-        text-align: center;
+    .cs-section_intro .intro_img{
+        padding-top: 20px;
+    }
+
+    .parallax-coma{
+        margin: 20px 0;
+        background-image: url("../img/17_coma.png");
+        background-size: cover;
+        height: 450px;
     }
 
     .cs-coma_brief .c-left{
         padding:20px 20px;
     }
 
-    .cs-coma_brief .c-right{
-        background-image: url("../img/1_coma.jpg");
-        /*background-attachment: fixed;*/
-        /*background-position: center;*/
-        /*background-repeat: no-repeat;*/
-        background-size: cover;
-        height: 190px;
-        filter: grayscale(20%);
-    }
-
-    .parallax-coma{
-        background-image: url("../img/11_coma.jpg");
-        background-size: cover;
-        height: 646px;
-    }
-
-    .cs-coma_audience{
-        margin-left: 0;
-        margin-right: 0;
+    .cs-coma_brand{
         padding-top: 20px;
-        background-color:#ffffff;
     }
 
-    .audience-text{
-        padding-left: 20px;
+    .coma-brand_text{
+        padding-bottom: 20px;
     }
 
-    .cs-coma_audience h3{
-        font-size: 1.8em;
+    .coma-design_text h1 {
+        font-size: 2em;
+        margin-bottom: 2px;
     }
 
-    .cs-coma_audience p{
-        padding-bottom: 10px;
+    .coma-brand_img{
+        padding-top: 20px;
     }
 
     .cs-coma_color{
-        margin-bottom: 0;
-        background-color: #3d4a56;
-        color: #ffffff;
-        text-align: center;
+        margin: 10px 0;
     }
 
-    #sub-header{
-        padding: 0;
-        font-size: 0.9em;
-    }
-
-    .circles p:first-child{
-        margin-bottom: 0;
-        padding-top: 70px;
-        font-family: Futura;
-    }
-
-    #circle {
-        width: 60px;
-        height: 60px;
-        margin-right: 7px;
-        display: inline-block;
-        background: #B0976D;
-        -moz-border-radius: 50px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-    }
-
-    #circle1 {
-        width: 60px;
-        height: 60px;
-        margin-right: 7px;
-        display: inline-block;
-        background-color: #8c7d70 ;
-        -moz-border-radius: 50px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-    }
-
-    #circle2 {
-        width: 60px;
-        height: 60px;
-        margin-right: 7px;
-        display: inline-block;
-        background-color: #8d99a4;
-        -moz-border-radius: 50px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-    }
-
-    #circle3 {
-        width: 60px;
-        height: 60px;
-        margin-right: 7px;
-        display: inline-block;
-        background-color: #37424a;
-        -moz-border-radius: 50px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-    }
-
-    .circles img{
-        margin-top: 30px;
-    }
-
-    .cs-coma_usability{
-        padding: 20px 20px;
-        background-color: #fff;
-        text-align: right;
-    }
 
 }
 
@@ -940,12 +818,15 @@ body{
 
     /* Navbar */
     .navbar-default{
-        padding: 0 40px;
+        font-size: 1em;
+        padding: 25px 40px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 100;
     }
 
     .navbar-default .navbar-brand{
-        margin-top: -3px;
-        font-size: 2em;
+        margin-top: -5px;
+        font-size: 2.5em;
     }
 
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
@@ -999,6 +880,14 @@ body{
 
 /* Index and About pages */
 
+    .balls {
+        width: 100%;
+        height: 300px;
+    }
+    .balls b {
+        border-radius: 50%;
+    }
+
     .hero{
         background-attachment: fixed;
         background-position: center;
@@ -1008,7 +897,6 @@ body{
 
     .hero h1{
         margin-bottom: 0;
-        padding-top: 180px;
         font-size: 10.5em;
     }
 
@@ -1020,7 +908,7 @@ body{
     .content{
         margin: 80px 0;
         padding: 0 100px;
-        text-align: center;
+        text-align: left;
     }
 
     .content h1{
@@ -1031,7 +919,12 @@ body{
         font-size: 2em;
     }
 
+    .content h4{
+        font-family: 'Lato', sans-serif;;
+    }
+
     .content p{
+        font-family: 'Lato', sans-serif;;
         font-size: 1em;
     }
 
@@ -1055,15 +948,15 @@ body{
         height: 2px;
         position: relative;
         vertical-align: middle;
-        width: 74%;
+        width: 57%;
     }
     .section_cases h2:before {
-        right: 68.5em;
+        right: 28.5em;
         margin-left: -5%;
     }
     .section_cases h2:after {
-        left: 1em;
-        margin-right: -60%;
+        left: 2em;
+        margin-right: -33%;
     }
 
     .section_cases ul{
@@ -1111,6 +1004,7 @@ body{
 /* Footer    */
 
     footer{
+        padding: 40px 10px;
         text-align: inherit;
     }
 
@@ -1137,30 +1031,18 @@ body{
     }
 
     .wrapper p{
-        font-size: 0.9em;
-    }
-
-    .wrapper ul{
-        font-family: 'Fira Sans', sans-serif;
-        list-style-type: none;
-    }
-
-    .cs-section_intro{
-        padding: 60px 40px;
-    }
-
-    .cs-section_intro p{
+        font-family: 'Lato', sans-serif;
         font-size: 1em;
     }
 
-    .cs-section_intro ul>li:first-child{
-        padding-bottom: 10px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 900;
+    .wrapper ul{
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9em;
+        font-weight: 100;
     }
 
-    .intro{
-        margin-left: 0;
+    .cs-section_intro{
+        padding: 180px 40px 0 40px;
     }
 
     .intro>ul>li{
@@ -1309,108 +1191,27 @@ body{
 
 
 /*  Comapa.html     */
-    .comapa{
-        color: #7d6b50;
-    }
-
-    .hero-coma{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 450px;
-    }
-
-    .parallax-coma{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 650px;
-    }
-
-    .cs-section_intro h1{
-        padding-bottom: 30px;
-        font-size: 2em;
-    }
 
     .cs-coma_design{
-        text-align: left;
-        padding: 18px;
+        padding: 0 40px;
     }
 
-    .cs-coma_audience{
-        padding: 30px 0;
-    }
-
-    .audience-text{
-        padding-left: 41px;
-    }
-
-    .cs-coma_audience h3{
-        font-size: 1.4em;
+    .coma-design_text h2{
+        padding-bottom: 5px;
     }
 
     .cs-coma_brief .c-left{
         padding:20px 40px;
     }
 
-    .cs-coma_brief .c-right{
-        height: 452px;
+    .cs-coma_brand{
+        padding: 10px 40px;
     }
 
-    .cs-coma_audience p{
-        padding-bottom: 10px;
+    .coma-color_text{
+        padding: 10px 40px;
     }
 
-    .cs-coma_identity{
-        padding: 70px 240px;
-        text-align: center;
-    }
-
-    .cs-coma_color{
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    #sub-header{
-        padding: 20px 77px;
-        font-size: 1.1em;
-    }
-
-    .circles{
-        padding-top: 30px;
-    }
-
-    .circles p:first-child{
-        margin-bottom: 0;
-    }
-
-    #circle {
-        width: 60px;
-        height: 60px;
-        margin-right: 20px;
-    }
-
-    #circle1 {
-        width: 60px;
-        height: 60px;
-        margin-right: 20px;
-    }
-
-    #circle2 {
-        width: 60px;
-        height: 60px;
-        margin-right: 20px;
-    }
-
-    #circle3 {
-        width: 60px;
-        height: 60px;
-        margin-right: 20px;
-    }
-
-    .circles img{
-        margin-top: 30px;
-    }
 
 }
 
@@ -1418,7 +1219,7 @@ body{
 
     /* Navbar */
     .navbar-default {
-        padding: 5px 40px;
+        /*padding: 5px 40px;*/
     }
 
     .dropdown-menu {
@@ -1432,7 +1233,7 @@ body{
 
     .hero h1 {
         margin-bottom: 0;
-        padding-top: 170px;
+        padding-top: 20px;
         font-size: 15.5em;
     }
 
@@ -1461,7 +1262,7 @@ body{
     }
 
     .content p {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .section_cases a{
@@ -1475,6 +1276,7 @@ body{
 
     /*  Footer   */
     footer {
+        padding: 20px 0;
         text-align: inherit;
     }
 
@@ -1489,30 +1291,12 @@ body{
     }
 
 /*  General CSS Styles - Work Sample     */
-    .wrapper h1, h2, h3 {
-        font-family: 'Playfair Display', serif;
-    }
-
     .wrapper h1 {
-        font-size: 3em;
-    }
-
-    .wrapper h2 {
-        font-size: 3em;
+        font-size: 1.5em;
     }
 
     .wrapper h3 {
-        font-size: 1.8em;
-    }
-
-    .wrapper p {
-        font-size: 1em;
-    }
-
-    .wrapper ul {
-        font-family: 'Fira Sans', sans-serif;
-        list-style-type: none;
-        font-size: 0.9em;
+        font-size: 5.8em;
     }
 
     .page-header p {
@@ -1521,41 +1305,15 @@ body{
     }
 
     .cs-section_intro {
-        padding: 50px 80px;
-    }
-
-    .cs-section_intro ul > li:first-child {
-        padding-bottom: 10px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 900;
-    }
-
-    .cs-section_app {
-        padding-top: 100px;
-    }
-
-    .cs-section_app p {
-        padding-bottom: 60px;
-        border-bottom: 1px solid #000000;
-        border-width: thick;
-    }
-
-    .cs-section_app h2 {
-        padding: 100px 0 40px;
-    }
-
-    .parallax-window {
-        min-height: 800px;
-        background: transparent;
+        padding: 175px 100px 0px 100px;
     }
 
     .cs-section_sketches {
         padding-top: 160px;
     }
 
-
     .hero-text h1{
-        font-size: 5.5em;
+        font-size: 14.5em;
     }
 
     /*  Indigo.html  */
@@ -1613,11 +1371,12 @@ body{
         padding-bottom: 20px;
     }
 
+
     /*  Mawmapp.html     */
     .page-header_maw h3 {
         margin-top: 0;
         padding-bottom: 10px;
-        font-size: 1.2em;
+        font-size: 11.2em;
     }
 
     .cs-maw_app .maw-app_header {
@@ -1674,7 +1433,7 @@ body{
     /*   Comapa.html     */
 
     .hero-coma{
-        height: 450px;
+        height: 613px;
     }
 
     .cs-section_intro h1{
@@ -1687,81 +1446,48 @@ body{
 
     .page-header_coma h3{
         margin-top: 0;
-        padding-bottom: 10px;
-        font-size: 1.2em;
+        padding-bottom: 5px;
+        font-size: 3.2em;
+    }
+
+    .behind-text {
+        font-size: 16em;
     }
 
     .cs-coma_design{
-        padding: 50px;
+        padding: 20px 0;
+    }
+
+    .cs-coma_brief{
+        padding: 60px 0;
     }
 
     .cs-coma_brief .c-left{
-        padding:20px 25px;
-    }
-
-    .cs-coma_brief .c-right{
-        height: 450px;
-    }
-
-    .parallax-coma{
-        height: 614px;
-    }
-
-    .cs-coma_audience{
-        margin-left: 0;
-        margin-right: 0;
-        padding-top: 17px;
-    }
-
-    .cs-coma_audience h3{
-        font-size: 1.4em;
-    }
-
-    .cs-coma_audience p{
-        padding-bottom: 5px;
-    }
-
-    .audience-text{
-        padding-top: 100px;
-        padding-right: 160px;
+        text-align: right;
+        padding:0 25px;
     }
 
     .cs-coma_color{
-        margin-bottom: 0;
+        padding:60px 100px;
     }
 
-    #sub-header{
-        padding: 0 240px 20px 240px;
-        font-size: 1em;
+    .cs-coma_brand{
+        padding: 10px 0;
     }
 
-    .circles p:first-child{
-        margin-bottom: 0;
-        padding-top: 110px;
+    .coma-brand_text{
+        margin-left: 0;
     }
 
-    #circle {
-        width: 100px;
-        height: 100px;
-        margin-right: 20px;
+    .coma-color_text{
+        padding: 40px 0;
     }
 
-    #circle1 {
-        width: 100px;
-        height: 100px;
-        margin-right: 20px;
+    .cs-coma_final{
+        background-color: #0f0f0f;
+        height: 550px;
     }
 
-    #circle2 {
-        width: 100px;
-        height: 100px;
-        margin-right: 20px;
-    }
-
-    #circle3 {
-        width: 100px;
-        height: 100px;
-    }
 
 }
 
@@ -1782,8 +1508,8 @@ body{
 
     /*  Index & About Page */
     .hero h1{
-        padding-top: 210px;
-        font-size: 17.5em;
+        padding-top: 40px;
+        font-size: 14.5em;
     }
 
     .hero h2{
@@ -1820,7 +1546,11 @@ body{
 /* ========== WORK SAMPLE  ==========*/
 /* General Styles */
     .wrapper h1{
-        font-size: 3.8em;
+        font-size: 2em;
+    }
+
+    .wrapper h2{
+        font-size: 1.2em;
     }
 
     .wrapper h5{
@@ -1833,6 +1563,10 @@ body{
 
     .wrapper ul>li{
         font-size: 1.2em;
+    }
+
+    .cs-section_intro{
+        padding: 180px 0px 0 0px;
     }
 
     /*  Indigo Page  */
@@ -1922,34 +1656,14 @@ body{
         font-size: 0.9em;
     }
 
-    .intro>ul>li{
-        padding-bottom:7px;
-        font-size: 1.3em;
-    }
-
     .cs-coma_brief .c-left{
         padding: 19px 60px;
     }
 
-    .cs-coma_brief .c-right{
-        height: 488px;
+    .cs-coma_color{
+        padding: 0;
     }
 
-    .cs-coma_audience{
-        padding-top: 65px;
-    }
-
-    .audience-text{
-        padding-right: 240px;
-    }
-
-    .cs-coma_audience h3{
-        font-size: 2em;
-    }
-
-    #sub-header{
-        padding: 20px 333px;
-    }
 
 }
 
@@ -1960,14 +1674,14 @@ body{
     }
 
     .nav>li>a{
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         padding: 0 1px;
     }
 
     .navbar-default .navbar-brand{
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .dropdown-menu{
@@ -1977,8 +1691,7 @@ body{
 
     /* Index.html */
     .hero h1{
-        padding-top: 210px;
-        font-size: 17.5em;
+        font-size: 19.5em;
     }
 
     .hero h2{
@@ -2011,18 +1724,26 @@ body{
 
     /* Footer */
     .footer{
-        padding: 10px 0;
+        padding: 50px 0;
+    }
+
+    .footer a{
+        font-size: 2em;
     }
 
 
     /* ========== WORK SAMPLE  ==========*/
     /* General Styles */
+    .container{
+        width: 2000px;
+    }
+
     .wrapper h1{
-        font-size: 6em;
+        font-size: 4em;
     }
 
     .wrapper h2{
-        font-size: 5em;
+        font-size: 2.3em;
     }
 
     .wrapper h5{
@@ -2038,7 +1759,8 @@ body{
     }
 
     .cs-section_intro{
-        padding: 100px;
+        padding-top: 250px;
+        padding-bottom: 20px;
     }
 
     .hero-text h1{
@@ -2142,30 +1864,13 @@ body{
         font-size: 0.9em;
     }
 
-    .intro>ul>li{
-        font-size: 2.1em;
+    .page-header_coma h3{
+        font-size: 9.3em;
     }
 
     .cs-coma_audience .c-left{
         padding: 40px 127px;
     }
 
-    .cs-coma_brief .c-right{
-        height: 868px;
-    }
-
-    .audience-text{
-        padding-left: 128px;
-        padding-right: 340px;
-    }
-
-    .cs-coma_audience h3{
-        font-size: 2em;
-    }
-
-    #sub-header{
-        padding: 20px 533px;
-        font-size: 2em;
-    }
 
 }
