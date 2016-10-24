@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0573e7d9-5dd9-4f16-988d-4c397ce64e5c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/12_coma-min.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/13_coma-min.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/17_coma.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/3_coma-min.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/5_coma-min.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/6_coma-min.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/18_coma.png" afterPath="$PROJECT_DIR$/dist/img/18_coma.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/1_coma.jpg" afterPath="$PROJECT_DIR$/dist/img/1_coma.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/img/4_coma.png" afterPath="$PROJECT_DIR$/dist/img/4_coma.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comapa.html" afterPath="$PROJECT_DIR$/comapa.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/main.css" afterPath="$PROJECT_DIR$/dist/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indigo.html" afterPath="$PROJECT_DIR$/indigo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawmapp.html" afterPath="$PROJECT_DIR$/mawmapp.html" />
     </list>
     <ignored path="julissa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,17 +73,17 @@
       <file leaf-file-name="comapa.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comapa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="243" column="51" selection-start-line="243" selection-start-column="51" selection-end-line="243" selection-end-column="51" />
+            <state relative-caret-position="295">
+              <caret line="233" column="58" selection-start-line="233" selection-start-column="58" selection-end-line="233" selection-end-column="58" />
               <folding>
+                <element signature="n#style#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#footer#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -89,8 +94,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="419" column="19" selection-start-line="419" selection-start-column="19" selection-end-line="419" selection-end-column="19" />
+            <state relative-caret-position="315">
+              <caret line="782" column="40" selection-start-line="782" selection-start-column="40" selection-end-line="782" selection-end-column="40" />
               <folding>
                 <element signature="e#578#653#0" expanded="false" />
                 <element signature="e#724#766#0" expanded="false" />
@@ -646,12 +651,12 @@
       <workItem from="1475673762307" duration="13585000" />
       <workItem from="1475849538444" duration="1685000" />
       <workItem from="1475981771571" duration="81739000" />
-      <workItem from="1476385424622" duration="108122000" />
+      <workItem from="1476385424622" duration="112975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369707000" />
+    <option name="totallyTimeSpent" value="374560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="23" width="1241" height="709" extended-state="0" />
@@ -2349,8 +2354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="419" column="19" selection-start-line="419" selection-start-column="19" selection-end-line="419" selection-end-column="19" />
+        <state relative-caret-position="315">
+          <caret line="782" column="40" selection-start-line="782" selection-start-column="40" selection-end-line="782" selection-end-column="40" />
           <folding>
             <element signature="e#578#653#0" expanded="false" />
             <element signature="e#724#766#0" expanded="false" />
@@ -2653,17 +2658,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comapa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="243" column="51" selection-start-line="243" selection-start-column="51" selection-end-line="243" selection-end-column="51" />
+        <state relative-caret-position="295">
+          <caret line="233" column="58" selection-start-line="233" selection-start-column="58" selection-end-line="233" selection-end-column="58" />
           <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#p#0;n#div#0;n#footer#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
