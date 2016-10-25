@@ -465,274 +465,22 @@ body{
 
 
     /*      Indigo.html     */
-    .indigo{
-        color: #26505c;
-    }
-
-    .hero-ind{
-        background-image: url("../img/1_gallery-min.png");
-        background-size: cover;
-        filter: hue-rotate(30deg);
-        height: 350px;
-        margin: 0;
-        position: relative;
-        top: 0;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    .page-header_ind h3{
-        margin-top: 0;
-        padding-bottom: 10px;
-        font-size: 1.2em;
-        text-align: right;
-    }
-
-    .page-header_ind p {
-        overflow: hidden;
-        text-align: right;
-    }
-    .page-header_ind p:before,
-    .page-header_ind p:after {
-        background-color:#4f7a85;
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
-        width: 90%;
-    }
-    .page-header_ind p:before {
-        right: 0.5em;
-        margin-left: -5%;
-    }
-    .page-header_ind p:after {
-        left: 0.5em;
-        margin-right: -90%;
-    }
-
-    .cs-ind_app{
-        padding: 20px 0;
-        background-color: #4d91a3;
+    .wrapper a{
         color: #ffffff;
     }
 
-    .ind-app_right{
-        padding: 20px;
-    }
-    
-    .cs-ind_sketches{
-        padding-top: 20px;
-        background-color: rgb(65, 139, 159);
-        color: #ffffff;
+    .wrapper a:hover{
+        color: gainsboro;
     }
 
-    .ind-sketches_left{
-        padding-left: 20px;
-    }
-
-    .ind-sketches_left h2{
-        padding-bottom: 10px;
-    }
-
-    .ind-sketches_left a{
-        color: #ffffff;
-        text-decoration: underline;
-    }
-
-    .ind-sketches_left a:hover{
-        color: #e6e5e5;
-    }
-    
-    .cs-ind_wireframe{
-        background-color:#387e91;
-        color: #ffffff;
-    }
-
-    .ind-wireframe_right{
-        text-align: center;
-    }
-
-    .ind-wireframe_right a{
-        color: #ffffff;
-    }
-
-    .ind-wireframe_right a:hover{
-        color: #e6e5e5;
-        text-decoration: underline;
-    }
-
-    .cs-ind_logo{
-        background-color: #326b7a;
-        color: #ffffff;
-    }
-
-    .ind-logo_right{
-        padding: 20px;
-    }
-
-    .cs-ind_title{
-        padding: 10px 0;
-        background-color: #26505c;
-        color: #ffffff;
-        text-align: center;
-    }
-
-    .ind-title_right h4{
-        font-size: 0.9em;
-    }
-
-    .ind-title_right a{
-        color: #ffffff;
-    }
-
-    .ind-title_right a:hover{
-        color: #e6e5e5;
-        text-decoration: underline;
-    }
-
-    .parallax-ind{
-        background-image: url("../img/1_gallery-min.png");
-        background-size: cover;
-    }
-
-    .cs-ind_mockup{
-        margin-left: 0;
-        margin-right: 0;
-        padding: 15px 4px;
-        background-color: rgba(50, 107, 122, 0.86);
-        color: #ffffff;
-    }
-
-    .ind-mockup_left h2{
-        padding-bottom: 10px;
-    }
-
-    .cs-ind_proto{
-        background-color: #26505c;
-        color: #ffffff;
-    }
-
-    .ind-proto_text h2{
-        padding-bottom: 10px;
-    }
-
-    .ind-proto_left iframe{
-        /*width: 438px;*/
-        /*height: 930px;*/
-        transform: scale(0.4);
-    }
-
-    .ind-proto_text{
-        padding: 20px;
-    }
 
     /*  Mawmapp.html */
-    .hero-maw{
-        background-image: url("../img/2_maw.jpg");
+    .parallax-maw{
+        margin: 20px 0;
+        background-image: url("../img/12_maw.gif");
         background-size: cover;
-        height: 350px;
-        margin: 0;
-        position: relative;
-        top: 0;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
+        height: 450px;
     }
-
-    .page-header_maw h3{
-        margin-top: 0;
-        padding-bottom: 10px;
-        font-size: 1.2em;
-        text-align: right;
-    }
-
-    .page-header_maw p {
-        overflow: hidden;
-        text-align: right;
-    }
-    .page-header_maw p:before,
-    .page-header_maw p:after {
-        background-color:#453ea8 ;
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
-        width: 90%;
-    }
-    .page-header_maw p:before {
-        right: 0.5em;
-        margin-left: -5%;
-    }
-    .page-header_maw p:after {
-        left: 0.5em;
-        margin-right: -90%;
-    }
-
-    .cs-maw_app{
-        padding: 40px 5px;
-        background-color: #453ea8;
-        color: #fff;
-    }
-
-    .parallax{
-        background-image: url("../img/1_maw-min.png");
-        background-size: cover;
-        height: 100%;
-    }
-
-    .cs-maw_app .maw-app_header{
-        text-align: center;
-    }
-
-    .cs-maw_app .maw-app_header h1{
-        margin-top: 0;
-        margin-bottom: 20px;
-        font-size: 5em;
-        font-weight: 900;
-    }
-
-    .cs-maw_responce{
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px;
-        background-color: rgba(87, 72, 207, 0.83);
-        color: #fff;
-        text-align: center;
-    }
-
-    .cs-maw_responce h2{
-        padding-bottom: 15px;
-    }
-
-    .cs-maw_responce img{
-        align-content: center;
-    }
-
-    .cs-maw_responce .maw-web_text p{
-        font-size: 0.7em;
-        text-align: center;
-    }
-
-    .cs-maw_proto{
-        padding: 0 5px;
-        background-color: #453ea8;
-        color: #fff;
-    }
-
-    .cs-maw_proto .maw-proto_text{
-        padding-bottom: 15px;
-    }
-
-    .cs-maw_proto .maw-proto_text h1{
-        margin-bottom: 20px;
-        font-size: 3em;
-        font-weight: 900;
-    }
-
-
     /* Comapa.html */
 
     .cs-section_intro h1{
@@ -785,9 +533,6 @@ body{
         height: 450px;
     }
 
-    .cs-coma_brief .c-left{
-        padding:20px 20px;
-    }
 
     .cs-coma_brand{
         padding-top: 20px;
@@ -1072,122 +817,11 @@ body{
     }
 
 /*  Indigo.html      */
-    .hero-ind{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 450px;
-    }
-
-    .cs-ind_app{
-        padding: 40px 0;
-
-    }
-
-    .ind-app_right{
-        padding: 0;
-    }
-
-    .ind-sketches_left h2{
-        padding-bottom: 10px;
-    }
-
-    .cs-ind_wireframe{
-        padding: 30px 0;
-    }
-
-    .ind-wireframe_right{
-        padding: 6px 80px;
-    }
-
-    .ind-wireframe_right a{
-        text-align: left;
-    }
-
-    .cs-ind_title{
-        padding: 50px;
-        text-align: left;
-    }
-
-    .ind-title_right h4{
-        font-size: 0.9em;
-    }
-
-    .parallax-ind{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .cs-ind_mockup{
-        padding-top: 50px;
-        padding-left: 10px;
-        padding-bottom: 50px;
-    }
-
-    .ind-mockup_left h2{
-        padding-bottom: 10px;
-    }
-
-    .ind-proto_left iframe{
-        transform: scale(0.8);
-
-    }
-
-    .ind-proto_text{
-        padding-top: 170px;
-        padding-bottom: 0;
+    .coma-brand_ind{
+        padding-top: 98px;
     }
 
     /*  Mawmapp.html     */
-    .hero-maw{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 450px;
-    }
-
-    .page-header_maw h3{
-        margin-top: 0;
-        padding-bottom: 10px;
-        font-size: 1.2em;
-        text-align: right;
-    }
-
-    .cs-maw_app{
-        padding: 40px;
-    }
-
-    .parallax{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .cs-maw_app .maw-app_header{
-        padding: 0;
-    }
-
-    .cs-maw_app .maw-app_header h1{
-        font-size: 3em;
-    }
-
-    .cs-maw_responce{
-        padding: 40px;
-    }
-
-    .cs-maw_responce .maw-resp_text{
-        text-align: left;
-    }
-
-    .cs-maw_proto{
-        padding: 40px 40px 0 40px;
-    }
-
-    .cs-maw_proto .maw-proto_text{
-        margin-top: -20px;
-        padding-bottom: 0;
-    }
 
 
 /*  Comapa.html     */

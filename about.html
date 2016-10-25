@@ -9,14 +9,14 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- CSS Document -->
     <link href="dist/css/main.css" rel="stylesheet">
@@ -24,23 +24,23 @@
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Fira+Sans:300|Lato:100|Playfair+Display|Reenie+Beanie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline|Bungee+Shade|Fira+Sans:300|Lato:100,400|Playfair+Display|Reenie+Beanie" rel="stylesheet">
+
 </head>
 
 <style>
     body{
-        background-color;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4d82dd+0,3700ff+100 */
-        background: #4d82dd; /* Old browsers */
-        background: -moz-linear-gradient(top,  #4d82dd 0%, #3700ff 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #4d82dd 0%,#3700ff 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #4d82dd 0%,#3700ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d82dd', endColorstr='#3700ff',GradientType=0 ); /* IE6-9 */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,474747+32,131313+100 */
+        background: #4c4c4c; /* Old browsers */
+        background: -moz-linear-gradient(top,  #4c4c4c 0%, #474747 32%, #131313 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #4c4c4c 0%,#474747 32%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #4c4c4c 0%,#474747 32%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
         color: #ffffff;
     }
 
     nav.navbar.navbar-default.navbar-fixed-top{
-        background-color: rgba(59, 11, 235, 0.02);
+        background-color: rgba(74, 74, 74, 0.01);
         border-bottom: none;
     }
 
@@ -75,216 +75,194 @@
     }
 
     footer{
-        background-color: #3b0beb;
+        background-color: #181818;
     }
 
     footer a{
         color: #ffffff;
     }
+
+    footer a:hover{
+        color: #dcdcdc;
+        text-decoration: line-through;
+    }
 </style>
 
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Menu</span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Julissa Roa</a>
+                    </div>
 
-        <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12">
-                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Menu</span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html">Julissa Roa</a>
-                        </div>
-
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CASE STUDIES</a>
-                                    <!--<ul class="dropdown-menu">-->
-                                        <!--<li><a href="indigo.html">Indigo</a></li>-->
-                                        <!--<li><a href="mawmapp.html">MAWMApp</a></li>-->
-                                        <!--<li><a href="comapa.html">Comapa</a></li>-->
-                                        <!--<li><a href="#">Terra-Sense</a></li>-->
-                                        <!--<li><a href="#">Socbox</a></li>-->
-                                    <!--</ul>-->
-                                </li>
-                                <li><a href="about.html">ABOUT</a></li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
-            </div>
-
-            <div class="col-xs-12 balls hero hero-about">
-                <h1>KEEP IT SIMPLE</h1>
-            </div>
-        </div> <!-- end: row -->
-
-        <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
-            <div class="col-xs-12 content">
-                <h4>IT'S PERSONAL</h4>
-                <h1>"I can always find love, but eventually I get horny for my creativity."
-                    - Gilda Radner</h1>
-                <p>My hands-on expertise is on UX design which allows me to create concepts and interactive
-                    initiatives. The challenge of translating a products vision and business goals into
-                    compelling user experience has giving me the security to build high-level design strategies
-                    which I greatly enjoy and do my best to see the concept prevailed. Personally I'm drawn by
-                    the innovative solution and take great pleasure in using my creativity, logic and design skills
-                    while developing cross-platform design services and applications. Out of my passion for design
-                    I am driven and strive for excellence when creating digital experiences.</p>
-                <p>
-                    After working as a fashion stylist for a few years, I have decided to get an BFA
-                    in Web/Interactive Media at Ai Miami International University of Art & Design.
-                    I realized that although fashion was one of my passions I felt more compelled and
-                    attracted with the future of Web development and Interactive design.</p>
-                <p> <strong>Skills and Focus</strong></p>
-                <p>  User Experience, Visual Design, Graphic Design, Photography</p>
-                <p> HTML5, CSS3, LESS/SASS, JavaScript, Ajax, APIs, jQuery, jQuery Mobile, PHP,
-                        Git, Bower, Grunt, WordPress, Adobe Creative Suite, Bootstrap, Ratchet, Ionic,
-                        Skeleton, PhoneGap, Wireframe, Prototype, Sketch, InVision, UXPin.
-                </p>
-            </div>
-        </div><!-- end: row -->
-
-        <div class="row wow" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="5">
-            <div class="col-xs-12 col-sm-4">
-                <div class="row">
-                    <div class="col-xs-12 ws-section_sample sample_a"></div>
-                    <div class="col-xs-12 ws-section_sample sample_b"></div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 ws-section_sample sample_c">
-            </div>
-            <div class="col-xs-12 col-sm-4 ">
-                <div class="row">
-                    <div class="col-xs-12 ws-section_sample sample_d"></div>
-                    <div class="col-xs-12 ws-section_sample sample_e"></div>
-                </div>
-            </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CASE STUDIES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="indigo.html">Indigo</a></li>
+                                    <li><a href="mawmapp.html">MAWMApp</a></li>
+                                    <li><a href="comapa.html">Comapa</a></li>
+                                    <li><a href="terra.html">Terra-Sense</a></li>
+                                    <li><a href="socbox.html">Socbox</a></li>
+                                </ul>
+                                <!--</li>-->
+                                <!--<li style="text-align: center"><a href="index.html" class="hidden-xs">HOME</a></li>-->
+                            <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
         </div>
 
-        <div class="row about wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="5">
-            <div class="col-xs-12 content">
-                <h4>YOU ARE?</h4>
-                <h2>Passionate, <strong>compassionate</strong> and love building fuctional and beautiful products.</h2>
-                <p><a href="mailto:julissaroa.w@gmail.com" target="_blank" class="btn">EMAIL ME</a></p>
-                <p>Something went wrong! Opps. Here is my email <a href="mailto:julissaroa.w@gmail.com">julissaroa.w@gmail.com</a></p>
-            </div>
-        </div><!-- end: content -->
+    </div> <!-- end: row -->
 
-        <div class="row">
-            <footer class="footer">
-                <div class="container">
-                    <p style="display:inline-block; padding-top:20px"><a href="index.html">&copy;JulissaRoa2016</a></p>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.linkedin.com/in/julissa-roa-81abaa43">LinkedIn</a></li>
-                        <li><a href="https://twitter.com/roajulissa">Twitter</a></li>
-                        <li><a href="https://www.facebook.com/julissaroadesigner">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/julissaroa/">Instagram</a></li>
-                        <li><a href="https://www.behance.net/julissaroa">Behance</a></li>
+
+    <div class="container wrapper">
+
+        <div class="col-xs-12 behind-text">
+            <h2>USER EXPERIENCE</h2>
+        </div>
+
+
+        <div class="page-content">
+            <div class="row cs-section_intro">
+                <div class="">
+                    <div class="col-xs-12 col-md-9">
+                        <h4>IT'S PERSONAL</h4>
+                        <h3>"I can always find love, but eventually I get horny for my creativity."
+                            - Gilda Radner</h3>
+                        <br>
+                        <p>My hands-on expertise is on UX design which allows me to create concepts and interactive
+                            initiatives. The challenge of translating a products vision and business goals into
+                            compelling user experience has giving me the security to build high-level design strategies
+                            which I greatly enjoy and do my best to see the concept prevailed. Personally I'm drawn by
+                            the innovative solution and take great pleasure in using my creativity, logic and design skills
+                            while developing cross-platform design services and applications. Out of my passion for design
+                            I am driven and strive for excellence when creating digital experiences.</p>
+                        <p>
+                            After working as a fashion stylist for a few years, I have decided to get an BFA
+                            in Web/Interactive Media at Ai Miami International University of Art & Design.
+                            I realized that although fashion was one of my passions I felt more compelled and
+                            attracted with the future of Web development and Interactive design.</p>
+
+                        <br>
+                        <h4>YOU ARE?</h4>
+                        <p>Passionate, <strong>compassionate</strong> and love building fuctional and beautiful products. Then
+                        <a href="mailto:julissaroa.w@gmail.com" target="_blank" class="btn" style="padding-left: 0;padding-right: 0">email me</a>, but if
+                         something goes wrong! Opps. Here is my email <a href="mailto:julissaroa.w@gmail.com"><strong>julissaroa.w@gmail.com</strong></a></p>
+                    </div>
+                </div>
+
+                <!-- Small Devices -->
+                <div class="col-xs-4 hidden-lg intro">
+                    <ul>
+                        <li><strong>FOCUS</strong></li>
+                        <li>User Experience</li>
+                        <li>Visual Designer</li>
+                        <li>Graphic Design</li>
+                        <li>Front-End Developer</li>
                     </ul>
                 </div>
-            </footer>
-        </div>
+                <div class="col-xs-4 hidden-lg intro">
+                    <ul>
+                        <li><strong>SKILLS</strong></li>
+                        <li>HTML5, CSS3 - LESS/SASS</li>
+                        <li>JavaScript</li>
+                        <li>Ajax - APIs</li>
+                        <li> jQuery - jQuery Mobile</li>
+                        <li>PHP</li>
+                        <li>Git</li>
+                        <li>Bower - Grunt</li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 hidden-lg intro">
+                    <ul>
+                        <li><strong></strong></li>
+                        <li>WordPress</li>
+                        <li>Bootstrap</li>
+                        <li>Ratchet - Ionic</li>
+                        <li> PhoneGap</li>
+                        <li> Adobe Creative Suite</li>
+                        <li>Sketch</li>
+                        <li>UXPin - InVision</li>
+                        <li>Wireframing - Prototyping</li>
+                    </ul>
+                </div>
 
-    </div> <!-- end: container-fluid -->
 
-        <script type="text/javascript">
-            // Bouncing Balls. By Rob Glazebrook
-            // The balls are randomized in size, color, opacity, and bounce direction. They'll bounce off the walls of their container and generally make a rather pretty show of things.
+                <br>
+                <!-- Medium and Large Devices -->
+                <div class="col-xs-12 col-md-3 visible-lg">
+                    <ul>
+                        <li><strong>FOCUS</strong></li>
+                        <li>User Experience</li>
+                        <li>Visual Designer</li>
+                        <li>Graphic Design</li>
+                        <li>Front-End Developer</li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li><strong>SKILLS</strong></li>
+                        <li>HTML5, CSS3 - LESS/SASS</li>
+                        <li>JavaScript</li>
+                        <li>Ajax - APIs</li>
+                        <li> jQuery - jQuery Mobile</li>
+                        <li>PHP</li>
+                        <li>Git</li>
+                        <li>Bower - Grunt</li>
+                        <li>WordPress -  Skeleton</li>
+                        <li>Bootstrap</li>
+                        <li>Ratchet - Ionic</li>
+                        <li> PhoneGap</li>
+                        <li> Adobe Creative Suite</li>
+                        <li>Sketch</li>
+                        <li>UXPin - InVision</li>
+                        <li>Wireframing - Prototyping</li>
+                    </ul>
+                </div>
 
-            var ballCount = 25,
-                    ballMinSize = 20,
-                    ballMaxSize = 65,
-                    container = $('.balls');
+                <div class="col-xs-12 intro_img">
+                    <!--<img src="dist/img/11_maw.png" class="img-responsive" alt="Image">-->
+                </div>
+            </div>
 
-            $(function() {
-                initBalls();
-                balls = window.setInterval(moveBalls,40); // 24 FPS
-                $(window).resize(function() { moveBallsIntoBounds(); });
-            });
 
-            // Random number generator. Takes a minimum, maximum, and a boolean for whether the random number should be an integer.
-            function rand(min,max,isInt) {
-                var min = min || 0,
-                        max = max || 1,
-                        isInt = isInt || false,
-                        num = Math.random()*(max - min) + min;
-                return (isInt) ? Math.round(num) : num;
-            }
 
-            // Creates the balls, puts them in the container, and gives them a random size, color, opacity, starting location, and direction/speed of movement.
-            function initBalls() {
-                container.css({'position':'relative'});
-                for (i=0;i<ballCount;i++) {
-                    var newBall = $('<b />').appendTo(container),
-                            size = rand(ballMinSize,ballMaxSize);
-                    newBall.css({
-                        'position':'absolute',
-                        'width': size+'px',
-                        'height': size+'px',
-                        'opacity': rand(.1,.9),
-                        'background-color': 'rgb('+rand(20,05,true)+','+rand(0,105,true)+','+rand(400,505,true)+')',
-                        'top': rand(0,container.height()-size),
-                        'left': rand(0,container.width()-size)
-                    }).attr({
-                        'data-dX':rand(-10,10),
-                        'data-dY':rand(1,10)
-                    });
-                }
-            }
 
-            // Moves the balls based on their direction/speed of movement (saved as a data attribute). If the movement will take them outside of the container, they reverse direction along that axis.
-            function moveBalls() {
-                var maxX = container.width(),
-                        maxY = container.height();
-                $('b',container).each(function(i,b) {
-                    var ball = $(b),
-                            pos = ball.position()
-                    x = pos.left,
-                            y = pos.top,
-                            dX = parseFloat(ball.attr('data-dX')),
-                            dY = parseFloat(ball.attr('data-dY')),
-                            size = ball.height();
-                    if(x+dX+size > maxX || x+dX < 0) ball.attr('data-dX',(dX=-dX));
-                    if(y+dY+size > maxY || y+dY < 0) ball.attr('data-dY',(dY=-dY));
-                    ball.css({'top':y+dY,'left':x+dX});
-                });
-            }
+        </div><!-- end: case-study -->
+    </div> <!-- end: container -->
 
-            // Move the balls back within the bounds of the container if the window (ergo, possibly the container) is resized. Because we're positioning from the top/left corners, we only have to worry about the bottom/right sides.
-            function moveBallsIntoBounds() {
-                var maxX = container.width(),
-                        maxY = container.height();
-                $('b',container).each(function(i,b) {
-                    var ball = $(b),
-                            pos = ball.position()
-                    x = pos.left,
-                            y = pos.top,
-                            size = ball.height();
-                    if (x+size > maxX) ball.css({ left: maxX-size+'px' });;
-                    if (y+size > maxY) ball.css({ top: maxY-size+'px' });;
-                });
-            }
-        </script>
+    <div class="row footer">
+        <footer class="footer">
+            <div class="container">
+                <p style="display:inline-block; padding-top:20px"><a href="index.html">&copy;JulissaRoa2016</a></p>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.linkedin.com/in/julissa-roa-81abaa43">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/roajulissa">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/julissaroadesigner">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/julissaroa/">Instagram</a></li>
+                    <li><a href="https://www.behance.net/julissaroa">Behance</a></li>
+                </ul>
+            </div>
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        </footer>
+    </div> <!-- end: footer -->
 
-        <script>
-            new WOW(
-                    {
-                        boxClass: 'wow',
-                        animateClass: 'animated',
-                        offset: 0,
-                        mobile: true,
-                        live: true
-                    }
-            ).init();
-        </script>
+</div> <!-- end: container-fluid -->
+
+
+
+
 
 </body>
 </html>

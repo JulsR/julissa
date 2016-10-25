@@ -24,273 +24,336 @@
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Fira+Sans:300|Lato:100|Playfair+Display|Reenie+Beanie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline|Bungee+Shade|Fira+Sans:300|Lato:100,400|Playfair+Display|Reenie+Beanie" rel="stylesheet">
 
 </head>
 
+<style>
+    body{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,474747+32,131313+100 */
+        background: #4c4c4c; /* Old browsers */
+        background: -moz-linear-gradient(top,  #4c4c4c 0%, #474747 32%, #131313 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #4c4c4c 0%,#474747 32%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #4c4c4c 0%,#474747 32%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+        color: #ffffff;
+    }
+
+    nav.navbar.navbar-default.navbar-fixed-top{
+        background-color: rgba(74, 74, 74, 0.01);
+        border-bottom: none;
+    }
+
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>li>a{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover{
+        color: #adff2f;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover{
+        color: #ffffff;
+    }
+
+
+    .sr-only{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #ffffff;
+    }
+
+    footer{
+        background-color: #181818;
+    }
+
+    footer a{
+        color: #ffffff;
+    }
+
+    footer a:hover{
+        color: #dcdcdc;
+        text-decoration: line-through;
+    }
+</style>
+
 <body>
-
-    <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                        <div class="container-fluid">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                    <span class="sr-only">Menu</span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a class="navbar-brand" href="index.html">Julissa Roa</a>
-                            </div>
-
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li class="dropdown active">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">WORK</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="indigo.html">Indigo</a></li>
-                                            <li><a href="mawmapp.html">MAWMApp</a></li>
-                                            <li><a href="comapa.html">Comapa</a></li>
-                                            <li><a href="terra.html">Terra-Sense</a></li>
-                                            <li><a href="socbox.html">Socbox</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">ABOUT</a></li>
-                                </ul>
-                            </div><!-- /.navbar-collapse -->
-                        </div><!-- /.container-fluid -->
-                    </nav>
-                </div>
-
-                <div class="col-xs-12 hero-maw hero-text">
-                        <p>CASE STUDY</p>
-                        <h1> MAWMapp </h1>
-                </div>
-            </div> <!-- end: row -->
-
-            <div class="wrapper">
-                <section class="page-content">
-
-                        <div class="row cs-section_intro" style="color: #453ea8">
-                            <div class="page-header_maw">
-                                <div class="col-xs-12">
-                                    <p><span>CASE</span></p>
-                                    <h3>MAWMapp</h3>
-                                    <h1>Miami Art Week Mapp is an interactive tool
-                                        that informs users on art fairs and explore
-                                        different landmarks, restaurants, and hotels.
-                                    </h1>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-lg-4 col-lg-offset-5">
-                                <p>Miami Art Week is a once a year, comprising of international art shows for
-                                    Modern and contemporary art.. The art fairs and art events take place in
-                                    Miami and Miami Beach between the week of December 1st to 6th. Destinations
-                                    to top artist around the world and sophisticated art events like Art Basel.</p>
-                                <p>The app’s interactive map allows users to navigate art fairs, access gallery
-                                    information, explore landmarks, and discover restaurants and local hotels..
-                                    Becoming the ultimate guide to Miami Art Week and Art Basel. Miami is a
-                                    progressive and well-known destination to artists and creative thinkers
-                                    determining the booming of the arts market as our target audience.
-                                </p>
-                            </div>
-
-                            <!-- Small Devices -->
-                            <div class="col-xs-4 hidden-lg">
-                                <ul>
-                                    <li><strong>CLIENT</strong></li>
-                                    <li>Ai Miami International University</li>
-                                </ul>
-                                <ul>
-                                    <li><strong>PROJECT</strong></li>
-                                    <li>MAWMapp</li>
-                                </ul>
-                                <ul>
-                                    <li><strong>DELIVERABLES</strong></li>
-                                    <li>Design</li>
-                                    <li>Mockup</li>
-                                    <li>Promotional Website</li>
-                                </ul>
-
-                            </div>
-                            <div class="col-xs-4 hidden-lg">
-                                <ul>
-                                    <li><strong>TOOLS</strong></li>
-                                    <li>Balsamiq</li>
-                                    <li>Basecamp</li>
-                                    <li>Mapbox</li>
-                                    <li>Bootstrap Ratchet</li>
-                                    <li>Adobe Photoshop</li>
-                                    <li>Invision</li>
-                                    <li>PhoneGap</li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-4 hidden-lg">
-                                <ul>
-                                    <li><strong>ROLES</strong></li>
-                                    <li>UX Designer</li>
-                                    <li>Updating JSON files</li>
-                                    <li>Mapbox API management</li>
-                                    <li>SCRUM Master</li>
-                                </ul>
-                            </div>
-
-                            <!-- Medium and Large Devices -->
-                            <div class="col-xs-12 col-md-3 visible-lg">
-                                <ul>
-                                    <li><strong>CLIENT</strong></li>
-                                    <li>Ai Miami International University</li>
-                                </ul>
-                                <ul>
-                                    <li><strong>PROJECT</strong></li>
-                                    <li>MAWMapp</li>
-                                </ul>
-                                <ul>
-                                    <li><strong>DELIVERABLES</strong></li>
-                                    <li>Design</li>
-                                    <li>Mockup</li>
-                                    <li>Promotional Website</li>
-                                </ul>
-
-                                <ul>
-                                    <li><strong>TOOLS</strong></li>
-                                    <li>Balsamiq</li>
-                                    <li>Basecamp</li>
-                                    <li>Mapbox</li>
-                                    <li>Bootstrap Ratchet</li>
-                                    <li>Adobe Photoshop</li>
-                                    <li>Invision</li>
-                                    <li>PhoneGap</li>
-                                </ul>
-                                <ul>
-                                    <li><strong>ROLES</strong></li>
-                                    <li>UX Designer</li>
-                                    <li>Updating JSON files</li>
-                                    <li>Mapbox API management</li>
-                                    <li>SCRUM Master</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class=" row cs-maw_app">
-                            <div class="col-xs-12 col-md-4 maw-app_header">
-                                <h1>Our biggest challenge</h1>
-                                <p>The app was develop by a team of front-end developers and graphic designer from
-                                    Ai Miami International University of Art & Design. The challenge was to translate
-                                    a printable detailed map and guide about the art fairs into a mobile application.
-                                    Every year for the first week of December Ai MIami gave away a guide where
-                                    visitors and students could found information about the events, galleries
-                                    and exhibitions throughout the city.</p>
-                                <p>Along with our instructors and advisers the team manage to create and built a
-                                    concept for the Miami Art Week mobile app. The team used the Scrum methodology
-                                    in order to collaborate under an organize and cross-functional environment..</p>
-                            </div>
-                            <div class="col-xs-12 col-md-8">
-                                <img src="dist/img/3_maw-min.png"  class="img-responsive" alt="Image">
-                            </div>
-                        </div>
-
-                        <div class="row parallax">
-                             <div class="row cs-maw_responce">
-                            <div class="col-xs-12 col-sm-6 maw-resp_text">
-                                <h2>Our Response</h2>
-                                <p>The app was design to provide an extraordinary and unique experience for
-                                    those who wanted to enjoy parties, art installations, top restaurants and
-                                    the best hotels of the city. The idea was to allow our users access useful
-                                    information regarding the dates, hours, location and ticketing  with just a
-                                    single tap on the location of each venue.</p>
-                                <br>
-                                <h5>Brand Identity & Design</h5>
-                                <p>Miami Art Week app showcases a beautiful purple and pink tones with subtle gradients
-                                    that express the brand's identity consistently across the application. The design
-                                    process consisted of designing a logo for the brand and creating a style guide
-                                    that established the visual style components.  The team unanimously agreed on
-                                    font styles, color scheme and UI elements for the app. Before launching the final
-                                    product we completed the UX design process. We understood the goal that needed to
-                                    be met and in order to create a great experience of the product.
-                                </p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 maw-web_text">
-                                <img src="dist/img/10_maw-min.png" class="img-responsive" alt="Image">
-                                <p>Promotional Website Mockup design by Julissa Roa</p>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="row cs-maw_proto">
-                            <div class="col-xs-12 col-sm-7 maw-proto_text">
-                                <h1>The Result</h1>
-                                <p>Miami Art Week app was launched in November 2015 available to download on
-                                    Google Play. The app feature a well organize interactive map displaying the
-                                    landmarks, artists and art events according to an specific area in Miami.
-                                    As a result the MIU Web Club team built an application that facilitated the
-                                    experience of those exploring Miami during the Art week of 2015.</p>
-                                <br>
-                                <h4>Achievements and Roles</h4>
-                                <p>During the project I had the opportunity of developing several
-                                    roles and engaging in the product development. Such activities
-                                    included; UX design ideas, user research, Mapbox API integration among
-                                    others. The Miami Art Week app allow me to learn the multidisciplinary
-                                    steps of building a mobile application. Naturally in order to promote the
-                                    product I'd design a top-nocth promo website. Ratchet and PhoneGap proved to
-                                    be the best <span style="font-weight: 500; font-family: Helvetica Neue"> web technologies</span> to create the app.</p>
-
-                                <p><span style="font-weight: 400; font-family: Helvetica Neue; text-align: right">Team Members: </span>Rima Gerhard (Instructor) Erica Muñoz, Carlos Cardozo,
-                                    Stvetlana Pant, Jose Gomez, Herodney Emile, Bradley Cummins, Bradley Evans and Julissa Roa.</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-5">
-                                <img src="dist/img/map-min.png" class="img-responsive hidden-lg" alt="Image">
-                                <img src="dist/img/8_maw-min.png" class="img-responsive visible-lg" alt="Image">
-                            </div>
-                        </div>
-
-                </section><!-- end: case-study -->
-            </div> <!-- end: wrapper -->
-
-            <div class="row">
-                <footer class="footer">
-                    <div class="container">
-                        <p style="display:inline-block; padding-top:20px"><a href="index.html">&copy;JulissaRoa2016</a></p>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="https://www.linkedin.com/in/julissa-roa-81abaa43">LinkedIn</a></li>
-                            <li><a href="https://twitter.com/roajulissa">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/julissaroadesigner">Facebook</a></li>
-                            <li><a href="https://www.instagram.com/julissaroa/">Instagram</a></li>
-                            <li><a href="https://www.behance.net/julissaroa">Behance</a></li>
-                        </ul>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Menu</span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Julissa Roa</a>
                     </div>
-                </footer>
-            </div> <!-- end: footer -->
 
-    </div> <!-- end: container-fluid -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CASE STUDIES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="indigo.html">Indigo</a></li>
+                                    <li><a href="mawmapp.html">MAWMApp</a></li>
+                                    <li><a href="comapa.html">Comapa</a></li>
+                                    <li><a href="terra.html">Terra-Sense</a></li>
+                                    <li><a href="socbox.html">Socbox</a></li>
+                                </ul>
+                                <!--</li>-->
+                                <!--<li style="text-align: center"><a href="index.html" class="hidden-xs">HOME</a></li>-->
+                            <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
 
-    <script type="text/javascript">
-        (function ($) {
-            $(document).ready(function(){
-
-                // hide .navbar first
-                $(".navbar").hide();
-
-                // fade in .navbar
-                $(function () {
-                    $(window).scroll(function () {
-                        // set distance user needs to scroll before we fadeIn navbar
-                        if ($(this).scrollTop() > 100) {
-                            $('.navbar').fadeIn();
-                        } else {
-                            $('.navbar').fadeOut();
-                        }
-                    });
+    </div> <!-- end: row -->
 
 
-                });
+    <div class="container wrapper">
 
-            });
-        }(jQuery));
-    </script>
+        <div class="col-xs-12 behind-text">
+            <h2>CONTEMPORARY ART SHOWS</h2>
+        </div>
+
+
+        <div class="page-content">
+            <div class="row cs-section_intro">
+                <div class="page-header_coma">
+                    <div class="col-xs-12">
+                        <p><span>CASE</span></p>
+                        <h3>MAWMapp</h3>
+                        <h1>Miami Art Week Mapp is an interactive tool
+                            that informs users on art fairs and explore
+                            different landmarks, restaurants, and hotels.</h1>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4 intro">
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <p>Miami Art Week is a once a year, comprising of international art shows for
+                        Modern and contemporary art.. The art fairs and art events take place in
+                        Miami and Miami Beach between the week of December 1st to 6th. Destinations
+                        to top artist around the world and sophisticated art events like Art Basel.
+                    </p>
+                    <p>The app’s interactive map allows users to navigate art fairs, access gallery
+                        information, explore landmarks, and discover restaurants and local hotels..
+                        Becoming the ultimate guide to Miami Art Week and Art Basel. Miami is a
+                        progressive and well-known destination to artists and creative thinkers
+                        determining the booming of the arts market as our target audience.</p>
+                </div>
+
+                <!-- Small Devices -->
+                <div class="col-xs-4 hidden-lg intro">
+                    <ul>
+                        <li><strong>CLIENT</strong></li>
+                        <li>Ai Miami International University</li>
+                    </ul>
+                    <ul>
+                        <li><strong>PROJECT</strong></li>
+                        <li>MAWMapp</li>
+                    </ul>
+                    <ul>
+                        <li><strong>DELIVERABLES</strong></li>
+                        <li>Design</li>
+                        <li>Mockup</li>
+                        <li>Promotional Website</li>
+                    </ul>
+
+                </div>
+                <div class="col-xs-4 hidden-lg intro">
+                    <ul>
+                        <li><strong>TOOLS</strong></li>
+                        <li>Balsamiq</li>
+                        <li>Basecamp</li>
+                        <li>Mapbox</li>
+                        <li>Bootstrap Ratchet</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Invision</li>
+                        <li>PhoneGap</li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 hidden-lg intro">
+                    <ul>
+                        <li><strong>ROLES</strong></li>
+                        <li>UX Designer</li>
+                        <li>Updating JSON files</li>
+                        <li>Mapbox API management</li>
+                        <li>SCRUM Master</li>
+                    </ul>
+                </div>
+
+                <!-- Medium and Large Devices -->
+                <div class="col-xs-12 col-md-3 visible-lg">
+                    <ul>
+                        <li><strong>CLIENT</strong></li>
+                        <li>Ai Miami International University</li>
+                    </ul>
+                    <ul>
+                        <li><strong>PROJECT</strong></li>
+                        <li>MAWMapp</li>
+                    </ul>
+                    <ul>
+                        <li><strong>DELIVERABLES</strong></li>
+                        <li>Design & Mockup</li>
+                        <li>Promotional Website</li>
+                    </ul>
+
+                    <ul>
+                        <li><strong>TOOLS</strong></li>
+                        <!--<li>Balsamiq</li>-->
+                        <!--<li>Basecamp</li>-->
+                        <li>Mapbox</li>
+                        <li>Bootstrap Ratchet</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Invision</li>
+                        <li>PhoneGap</li>
+                    </ul>
+                    <ul>
+                        <li><strong>ROLES</strong></li>
+                        <li>UX Designer / Web Developer</li>
+                        <li>Updating JSON files</li>
+                        <li>Mapbox API management</li>
+                        <li>SCRUM Master</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 intro_img">
+                    <img src="dist/img/11_maw.png" class="img-responsive" alt="Image">
+                </div>
+            </div>
+
+            <div class="row parallax-maw">
+            </div>
+
+            <div class="row cs-coma_design">
+                <div class="col-xs-12 col-md-4 coma-design_text">
+                    <h1>Development Challenge</h1>
+                    ___________________
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h2>The Challenge</h2>
+                    <p>The app was develop by a team of front-end developers and graphic designer from
+                        Ai Miami International University of Art & Design. The challenge was to translate
+                        a printable detailed map and guide about the art fairs into a mobile application.
+                        Every year for the first week of December Ai MIami gave away a guide where visitors
+                        and students could found information about the events, galleries and exhibitions throughout the city.</p>
+                    <p>Along with our instructors and advisers the team manage to create and built a concept
+                        for the Miami Art Week mobile app. The team used the Scrum methodology in order to
+                        collaborate under an organize and cross-functional environment..</p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h2>Our Response</h2>
+                    <p> The app was design to provide an extraordinary and unique experience for those who wanted
+                        to enjoy parties, art installations, top restaurants and the best hotels of the city.
+                        The idea was to allow our users access useful information regarding the dates, hours,
+                        location and ticketing with just a single tap on the location of each venue.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row cs-coma_brief">
+                <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                    <img src="dist/img/6_maw.png" class="img-responsive" alt="Image">
+                </div>
+
+                <div class="col-xs-12 col-sm-5">
+                    <img src="dist/img/2_maw.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+
+            <div class="row cs-coma_brand">
+                <div class="col-xs-12 col-md-4 col-md-offset-1 coma-brand_text">
+                    <h3>Brand Identity & Design</h3>
+                    <p>Miami Art Week app showcases a beautiful purple and pink tones with subtle gradients
+                        that express the brand's identity consistently across the application. The design process
+                        consisted of designing a logo for the brand and creating a style guide that established
+                        the visual style components. The team unanimously agreed on font styles, color scheme and
+                        UI elements for the app. Before launching the final product we completed the UX design process.
+                        We understood the goal that needed to be met and in order to create a great
+                        experience of the product.</p>
+                </div>
+                <div class="col-xs-12 col-md-6 col-md-offset-1">
+                    <img src="dist/img/9_maw.gif" class="img-responsive" alt="Image">
+                </div>
+                <div class="col-xs-12 col-xs-12 col-sm-11 col-sm-offset-1 coma-brand_img">
+                    <img src="dist/img/1_maw.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+
+            <div class="row cs-coma_color">
+                <div class="col-xs-12 col-md-5 col-md-offset-1 coma-color_text">
+                    <h2>The Final Result</h2>
+                    <p>Miami Art Week app was launched in November 2015 available to download on Google Play.
+                        The app feature a well organize interactive map displaying the landmarks, artists and
+                        art events according to an specific area in Miami. As a result the MIU Web Club team built
+                        an application that facilitated the experience of those exploring Miami
+                        during the Art week of 2015.
+                    </p>
+                    <p>Image Below: Promotional Website Mockup design by Julissa Roa</p>
+                </div>
+                <div class="col-xs-12 col-md-5 col-md-offset-1 coma-color_text">
+                    <h4>Achievements and Roles</h4>
+                    <p>During the project I had the opportunity of developing several roles and engaging in
+                        the product development. Such activities included; UX design ideas, user research,
+                        Mapbox API integration among others. The Miami Art Week app allow me to learn the
+                        multidisciplinary steps of building a mobile application. Naturally in order to promote
+                        the product I'd design a top-nocth promo website. Ratchet and PhoneGap proved to be the
+                        best <strong>web technologies</strong> to create the app.
+                    </p>
+                    <p><strong>Team Members:</strong> Rima Gerhard (Instructor) Erica Muñoz, Carlos Cardozo,
+                        Stvetlana Pant, Jose Gomez, Herodney Emile, Bradley Cummins, Bradley Evans and Julissa Roa.</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+                    <img src="dist/img/10_maw-min.png" class="img-responsive" alt="Image">
+                </div>
+            </div>
+
+        </div><!-- end: case-study -->
+    </div> <!-- end: container -->
+
+    <div class="row">
+        <footer class="footer">
+            <div class="container">
+                <p style="display:inline-block; padding-top:20px"><a href="index.html">&copy;JulissaRoa2016</a></p>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.linkedin.com/in/julissa-roa-81abaa43">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/roajulissa">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/julissaroadesigner">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/julissaroa/">Instagram</a></li>
+                    <li><a href="https://www.behance.net/julissaroa">Behance</a></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div> <!-- end: footer -->
+
+</div> <!-- end: container-fluid -->
+
+
+
+
 
 </body>
 </html>

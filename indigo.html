@@ -24,13 +24,72 @@
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Fira+Sans:300|Lato:100|Playfair+Display|Reenie+Beanie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline|Bungee+Shade|Fira+Sans:300|Lato:100,400|Playfair+Display|Reenie+Beanie" rel="stylesheet">
 
 </head>
 
-<body>
+<style>
+    body{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,474747+32,131313+100 */
+        background: #4c4c4c; /* Old browsers */
+        background: -moz-linear-gradient(top,  #4c4c4c 0%, #474747 32%, #131313 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #4c4c4c 0%,#474747 32%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #4c4c4c 0%,#474747 32%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+        color: #ffffff;
+    }
 
-    <div class="container-fluid">
+    nav.navbar.navbar-default.navbar-fixed-top{
+        background-color: rgba(74, 74, 74, 0.01);
+        border-bottom: none;
+    }
+
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>li>a{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover{
+        color: #adff2f;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover{
+        color: #ffffff;
+    }
+
+
+    .sr-only{
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #ffffff;
+    }
+
+    footer{
+        background-color: #181818;
+    }
+
+    footer a{
+        color: #ffffff;
+    }
+
+    footer a:hover{
+        color: #dcdcdc;
+        text-decoration: line-through;
+    }
+</style>
+
+<body>
+<div class="container-fluid">
     <div class="row">
         <div class="col-xs-12">
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -48,7 +107,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">WORK</a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CASE STUDIES</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="indigo.html">Indigo</a></li>
                                     <li><a href="mawmapp.html">MAWMApp</a></li>
@@ -56,64 +115,77 @@
                                     <li><a href="terra.html">Terra-Sense</a></li>
                                     <li><a href="socbox.html">Socbox</a></li>
                                 </ul>
-                            </li>
+                                <!--</li>-->
+                                <!--<li style="text-align: center"><a href="index.html" class="hidden-xs">HOME</a></li>-->
                             <li><a href="about.html">ABOUT</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
-        <div class="col-xs-12 hero-ind hero-text">
-            <p>CASE STUDY</p>
-            <h1> INDIGO</h1>
-        </div>
+
     </div> <!-- end: row -->
 
-    <div class="wrapper">
-        <section class="page-content indigo">
 
-             <div class="row cs-section_intro">
-                <div class="page-header_ind">
+    <div class="container wrapper">
+
+        <div class="col-xs-12 behind-text">
+            <h2>CONTEMPORARY ART SHOWS</h2>
+        </div>
+
+
+        <div class="page-content">
+            <div class="row cs-section_intro">
+                <div class="page-header_coma">
                     <div class="col-xs-12">
                         <p><span>CASE</span></p>
-                        <h3>INDIGO</h3>
+                        <h3>Indigo</h3>
                         <h1>An idea built as an space for visual art, photography and design,
                             Indigo represents a new community for artists around the world.</h1>
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-md-4 col-md-offset-4 col-lg-offset-5">
+
+                <div class="col-xs-12 col-md-4 intro">
                     <p>The app will embrace the culture of those who desire to exhibit their personal journeys to
                         friends, family and even to others around the world. Indigo app is a wonderful way to discover,
                         explore, connect and share with others in the community the same passion for the visual medias.
                         Ready to Live . Seek . Love The app will be best known for its journals entry, a feature that
                         allow users to post a journal entry in order to keep track of their journeys and adventures.
-                        Indigo targets the young adults of Generation Z, who desires to connect and shared their
-                        experiences via their mobiles phones and smart devices (Android, iPhone, Ipad). Indigo App
-                        offers new and unique features, in order to distinguish ourself from our competitors.
                     </p>
                 </div>
 
+                <div class="col-xs-12 col-md-4">
+                    <p> Indigo targets the young adults of Generation Z, who desires to connect and shared their
+                        experiences via their mobiles phones and smart devices (Android, iPhone, Ipad).
+                        Indigo App offers new and unique features, in order to distinguish ourself from our competitors.
+                        The app’s interactive map allows users to navigate art fairs, access gallery
+                        information, explore landmarks, and discover restaurants and local hotels..
+                        Becoming the ultimate guide to Miami Art Week and Art Basel. Miami is a
+                        progressive and well-known destination to artists and creative thinkers
+                        determining the booming of the arts market as our target audience.</p>
+                </div>
+
                 <!-- Small Devices -->
-                <div class="col-xs-4 hidden-lg">
+                <div class="col-xs-4 hidden-lg intro">
                     <ul>
                         <li><strong>PROJECT</strong></li>
                         <li>Indigo</li>
                     </ul>
                 </div>
-                <div class="col-xs-4 hidden-lg">
-                     <ul>
-                         <li><strong>DELIVERABLES</strong></li>
-                         <li>Research</li>
-                         <li>Sketches</li>
-                         <li>Wireframes</li>
-                         <li>Style Tile</li>
-                         <li>Style Guide</li>
-                         <li>Mockups</li>
-                         <li>Interactive Prototype</li>
-                     </ul>
-                 </div>
-                <div class="col-xs-4 hidden-lg">
+                <div class="col-xs-4 hidden-lg intro">
+                    <ul>
+                        <li><strong>DELIVERABLES</strong></li>
+                        <li>Research</li>
+                        <li>Sketches</li>
+                        <li>Wireframes</li>
+                        <li>Style Tile</li>
+                        <li>Style Guide</li>
+                        <li>Mockups</li>
+                        <li>Interactive Prototype</li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 hidden-lg intro">
                     <ul>
                         <li><strong>TOOLS</strong></li>
                         <li>Adobe Indesign</li>
@@ -149,140 +221,124 @@
                         <li>Invision</li>
                     </ul>
                 </div>
+
+                <div class="col-xs-12 intro_img">
+                    <img src="dist/img/11_maw.png" class="img-responsive" alt="Image">
+                </div>
             </div>
 
-             <div class="row cs-ind_app">
-                <div class="col-xs-12 col-sm-3 col-sm-offset-2 cs-section_img">
-                    <img src="dist/img/3_indigo-min.png" class="img-responsive hidden-lg"  style="padding-left: 5px;" alt="Image">
-                    <img src="dist/img/2_indigo.jpg" class="img-responsive visible-lg" alt="app photo">
+            <div class="row parallax-maw">
+            </div>
+
+            <div class="row cs-coma_design">
+                <div class="col-xs-12 col-md-4 coma-design_text">
+                    <h1>The Design Process</h1>
+                    ___________________
                 </div>
-                <div class="col-xs-12 col-sm-6 col-lg-5 ind-app_right">
-                    <h2>Indigo is an interactive initiative that empowers users to create, discover, and connect.</h2>
-                    <p>The concept behind Indigo is to built a platform where users record and share their daily
-                        activities, events and memories through photos and videos. The app is a flexible photo
-                        community that provides its users a modern and user-friendly solution to upload their
-                        images, videos onto a minimalistic grid.The concept behind Indigo is to built a platform
-                        where users record and share their daily activities, events and memories through photos
-                        and videos. The app is a flexible photo community that provides its users a modern and
-                        user-friendly solution to upload their images, videos onto a minimalistic grid.</p>
-                </div>
-             </div>
-
-             <div class="row cs-ind_sketches">
-                  <div class="col-xs-12 col-sm-4 col-md-5 ind-sketches_left">
-                      <h2>Mobile Sketches</h2>
-                       <p>After market research and competitors analysis studies show that there are
-                                    few similar mobile apps, that provide the same functionality, but they
-                                    all offer very complex and buggy solutions.</p>
-                       <p><a href="https://popapp.in/w/projects/56accf8dfbb6e8456132a930/mockups" target="_blank">Click here</strong>
-                       </a>to view  all of the sketches of the app in<strong> POPAPP.</strong></p>
-                  </div>
-                  <div class="col-xs-12 col-sm-7 col-sm-offset-1 col-md-6" style="padding-right:0;">
-                      <img src="dist/img/7_indigo-min.png" class="img-responsive" alt="Photo">
-                  </div>
-             </div>
-
-             <div class="row cs-ind_wireframe">
-                 <div class="col-xs-12 col-md-8">
-                     <img src="dist/img/1_indigo-min.png" class="img-responsive" alt="Image">
-                 </div>
-                 <div class="col-xs-12 col-md-4 ind-wireframe_right">
-                     <h2>Wireframes</h2>
-                     <p>The idea was to create a great user-centered experience that meet the user expectations
-                         by allowing them to easily share their moments. The concept represented similar characteristics
-                         as the top social media apps specially from apps like; VSCO and Instagram. Task flows helped
-                         when thinking through the design, before a feature was developed. Indigo is a personal challenge
-                         that I toook to learn the process  of building and developing a mobile application from the
-                         very beginning.  With a graphical design background and technical skills I was able to design
-                         the screen blueprints of the app, visualizing the user task flow, patterns and the structure.
-                         The goal was to built simple yet funtional high-fidelity deliverables.</p>
-                     <p><a href="https://collaborate.uxpin.com/5b9adc0126ea1553638b311947786e08dcbece30#/pages/57412730" class="btn">DOWNLOAD WIREFRAMES</a></p>
-                 </div>
-             </div>
-
-             <div class="row cs-ind_logo">
-                <div class="col-xs-12 col-sm-6 ind-logo_right">
-                    <h2>Brand Identity</h2>
-                    <p>The research was short but effective. The best approach was to create a detailed
-                        competitor analysis that will provide insights and set priorities that will
-                        differentiate the product from the other apps. The next step was to continue by
-                        creating the mockups use for user validation.</p>
+                <div class="col-xs-12 col-md-4">
+                    <h2>Concept</h2>
+                    <p>Indigo is an interactive initiative that empowers users to create, discover, and connect.
+                        The concept behind Indigo is to built a platform where users record and share their
+                        daily activities, events and memories through photos and videos. The app is a flexible
+                        photo community that provides its users a modern and user-friendly solution to upload
+                        their images, videos onto a minimalistic grid.The concept behind Indigo is to built a
+                        platform where users record and share their daily activities, events and memories through
+                        photos and videos. The app is a flexible photo community that provides its users a modern
+                        and user-friendly solution to upload their images, videos onto a minimalistic grid.
+                    </p>
+                    <h2>Research</h2>
+                    <p> After market research and competitors analysis studies show that there are
+                        few similar mobile apps, that provide the same functionality, but they all
+                        offer very complex and buggy solutions.
+                    </p>
                     <p>
-                        The mockups display the visual elements and visual patterns from one screen
-                        to the other. Indigo was design not just to attract user for it's modern looks
-                        and feel, but most importantly for the way the app behaves and interact.</p>
+                        <a href="https://popapp.in/w/projects/56accf8dfbb6e8456132a930/mockups" target="_blank">
+                           <strong> Click here </strong></a>to view  all of the sketches of the app in<strong>
+                        POPAPP.</strong>
+                    </p>
                 </div>
-                <div class="col-xs-12 col-sm-6" style="padding-right: 0; padding-left: 0;">
-                    <img src="dist/img/logo-Indigo.png" class="img-responsive" alt="Image">
+                <div class="col-xs-12 col-md-4">
+                    <h2>Design Deliverables</h2>
+                    <p>The idea was to create a great user-centered experience that meet the user expectations
+                        by allowing them to easily share their moments. The concept represented similar characteristics
+                        as the top social media apps specially from apps like; VSCO and Instagram. Task flows helped
+                        when thinking through the design, before a feature was developed. Indigo is a personal challenge
+                        that I toook to learn the process  of building and developing a mobile application from the
+                        very beginning.  With a graphical design background and technical skills I was able to design
+                        the screen blueprints of the app, visualizing the user task flow, patterns and the structure.
+                        The goal was to built simple yet funtional high-fidelity deliverables.</p>
+                    <p>Wireframes Deliverables -<a href="https://collaborate.uxpin.com/5b9adc0126ea1553638b311947786e08dcbece30#/pages/57412730"
+                          class="btn" style="padding-left: 0;">Download the complete wireframes</a></p>
+                    <h2>Mockup</h2>
+                    <p> The mockups display the visual elements and visual patterns from one screen to the other.
+                        Indigo was design not just to attract user for it's modern looks and feel, but most
+                        importantly for the way the app behaves and interact.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row cs-coma_brief">
+                <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                    <img src="dist/img/7_indigo-min.png" class="img-responsive" alt="Image">
+                </div>
+
+                <div class="col-xs-12 col-sm-5">
+                    <img src="dist/img/5_indigo-min.png" class="img-responsive" alt="Image">
                 </div>
             </div>
 
-             <div class="row cs-ind_title">
-                 <div class="col-xs-12 col-sm-7 col-md-7">
-                     <img src="dist/img/5_indigo-min.png" class="img-responsive" alt="Image">
-                 </div>
-                 <div class="col-xs-12 col-sm-5 col-md-4 ind-title_right">
-                     <h2>Style Title</h2>
-                     <p>Our color palette present the monochromatic, black & white,
-                         full colors or neutral colors.
-                         Indigo custom color palette represents the style of the brand and as well as how
-                         each color is used on the UI elements. </p>
-                     <br>
-                     <h4><a href="dist/img/StyleGuide.pdf" download="StyleGuide.pdf" class="download_file">CLICK TO DOWNLOAD THE STYLE GUIDE</a></h4>
-                     <p> Used as a referral for all of the graphical elements, typeface families,
-                         color palette and visual elements of the Indigo brand.</p>
-                 </div>
-             </div>
-
-             <div class="row parallax-ind">
-                <div class="row cs-ind_mockup">
-                    <div class="col-xs-12 col-sm-5 ind-mockup_left">
-                        <h2>Mockup Design</h2>
-                        <p>The research was short but effective. The best approach was to create a detailed
-                            competitor analysis that will provide insights and set priorities that will
-                            differentiate the product from the other apps. The next step was to continue by
-                            creating the mockups use for user validation.</p>
-                        <p>
-                            The mockups display the visual elements and visual patterns from one screen
-                            to the other. Indigo was design not just to attract user for it's modern looks
-                            and feel, but most importantly for the way the app behaves and interact.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-7 ">
-                        <img src="dist/img/18_indigo-min.png" class="img-responsive" alt="Image">
-                    </div>
+            <div class="row cs-coma_brand">
+                <div class="col-xs-12 col-md-5 col-md-offset-1 coma-brand_text">
+                    <h3>Brand Identity</h3>
+                    <p>The research was short but effective. The best approach was to create a detailed competitor
+                        analysis that will provide insights and set priorities that will differentiate the product
+                        from the other apps. The next step was to continue by creating the mockups use for user validation.
+                    </p>
+                    <p></p>
                 </div>
-             </div>
+                <div class="col-xs-12 col-md-5 col-md-offset-1 coma-brand_ind">
+                    <h2>Style Title</h2>
+                    <p> Our color palette present the monochromatic, black & white, full colors or neutral colors.
+                        Indigo custom color palette represents the style of the brand and as well as how each color
+                        is used on the UI elements.
+                    </p>
+                    <h2><a href="dist/img/StyleGuide.pdf" download="StyleGuide.pdf" class="download_file">Click to DOWNLOAD the STYLE GUIDE</a></h2>
+                    <p> Used as a referral for all of the graphical elements, typeface families,
+                        color palette and visual elements of the Indigo brand.</p>
+                </div>
+                <div class="col-xs-12 col-xs-12 col-sm-11 col-sm-offset-1 coma-brand_img">
+                    <img src="dist/img/14_indigo-min.png" class="img-responsive" alt="Image">
+                </div>
+            </div>
 
-             <div class="row cs-ind_proto">
+            <div class="row cs-coma_color">
+                <div class="col-xs-12 col-md-5 col-md-offset-0 coma-color_text">
+                    <h3>Final Product</h3>
+                    <h2>Interactive Prototype</h2>
+                    <p>After the whole process of creating the low-fidelity and high-fidelity deliverables
+                        were completed, I proceed to create an interactive prototype to test the
+                        functionalities and user flow. The prototype simulate the navigation and gestures,
+                        as well as, micro interactions and clever transitions. These were added to fill
+                        in the gaps of one screen to the other one transition.
+                    </p>
+                    <p>It's a quick and dirty way to test and validate a product before design and development..
+                        The final product. Feedback provided by the test users, helped to regroup and iterate
+                        over the wireframes to improve the user experience. After a long and fun process it
+                        took about 2 week to complete the Indigo app, starting from the brand identity design to
+                        the UI/UX design process. The app is yet to be built however updates will be coming very soon...</p>
 
-                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-4 col-lg-offset-1 ind-proto_left hidden-xs">
+                    <p class="hidden-xs"> Now take a minute to <span style="font-weight: 900; font-family: Helvetica Neue">PLAY</span>
+                        with the mobile interactive prototype on the right.</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-sm-offset-1">
                     <iframe width="438" height="930" src="//invis.io/AU61CDIRD" frameborder="0" allowfullscreen></iframe>
                 </div>
-
-                <div class="col-xs-12 col-sm-5 col-sm-offset-4 col-md-5 col-lg-6 col-lg-offset-0 ind-proto_text">
-                    <h2>Interactive Prototype</h2>
-                    <p>After the whole process of creating the low-fidelity and high-fidelity deliverables were
-                        completed, I proceed to create an interactive prototype to test the functionalities and
-                        user flow. The prototype simulate the navigation and gestures, as well as, micro
-                        interactions and clever transitions. These were addded to fill in the gaps of one screen
-                        to the other one transition.</p>
-                    <p>
-                        It's a quick and dirty way to test and validate a product before design and
-                        development.. The final product. Feedback provided by the test users, helped
-                        to regroup and iterate over the wireframes to improve the user experience. After
-                        a long and fun procress it took about 2 week to complete the Indigo app, strating
-                        from the brand identity design to the UI/UX design process. The app is yet to be
-                        built however updates will be coming very soon...</p>
-                    <br>
-                    <h4 class="hidden-xs">DONT'T BE AFRAID!</h4>
-                    <p class="hidden-xs"> Take a minute to <span style="font-weight: 900; font-family: Helvetica Neue">PLAY</span>
-                        with the mobile interactive prototype on the left.</p>
-                </div>
-
             </div>
 
-        </section><!-- end: case-study -->
-    </div> <!-- end: wrapper -->
+        </div><!-- end: case-study -->
+    </div> <!-- end: container -->
 
     <div class="row">
         <footer class="footer">
@@ -296,34 +352,14 @@
                     <li><a href="https://www.behance.net/julissaroa">Behance</a></li>
                 </ul>
             </div>
+
         </footer>
     </div> <!-- end: footer -->
 
 </div> <!-- end: container-fluid -->
-  <script type="text/javascript">
-    (function ($) {
-        $(document).ready(function(){
-
-            // hide .navbar first
-            $(".navbar").hide();
-
-            // fade in .navbar
-            $(function () {
-                $(window).scroll(function () {
-                    // set distance user needs to scroll before we fadeIn navbar
-                    if ($(this).scrollTop() > 100) {
-                        $('.navbar').fadeIn();
-                    } else {
-                        $('.navbar').fadeOut();
-                    }
-                });
 
 
-            });
 
-        });
-    }(jQuery));
-</script>
 
 
 </body>
