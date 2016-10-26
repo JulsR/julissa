@@ -120,231 +120,125 @@ body{
     }
 
 /*  Index and About Page */
-
-    .balls {
-
-        height: 50px;
-    }
-    .balls b {
-        border-radius: 50%;
-    }
-
-    .hero-index{
+    .background{
+        background-image: url("../img/test.png");
         background-size: cover;
-        margin: 0;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: opacity(80%);
+        height: 690px;
+    }
+
+    .list{
+        padding-top: 150px;
+    }
+
+    .list li{
+        padding: 0 20px;
+        font-family:;
+        font-size: 20em;
+        float: left;
+    }
+
+    .list li>a{
+        color: #0f0f0f;
+    }
+
+    .list li>a:hover{
+        width: 100px;
+        height: 100px;
+        background-color: red;
         position: relative;
-        top: 0;
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 4s;
+        animation-delay: 2s;
+    }
+
+    @keyframes example {
+        0% {
+            background-color: red;
+            left: 0px;
+        }
+        50% {
+            background-color: yellow;
+            left: 200px;
+        }
+        100% {
+            background-color: red;
+            left: 0px;
+        }
+    }
+
+    .item1{
+        background-image: url("../img/23_coma.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: opacity(80%);
         height: 350px;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
     }
 
-    .hero h1 {
-        margin-bottom: 0;
-        padding-top: 80px;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.6em;
-        color:#f0ffff;
+    .item2{
+        background-image: url("../img/11_maw.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: opacity(80%);
+        height: 350px;
     }
 
-    .hero h2{
-        font-family: 'Reenie Beanie', cursive;
-        font-size: 4em;
-        margin-bottom: -200px;
-        padding-top: 90px;
-        color:#f0ffff;
+    .item3{
+        background-image: url("../img/14_indigo-min.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: opacity(80%);
+        height: 350px;
     }
 
-    .content{
-        margin: 60px 0;
-        padding: 0 35px;
-        text-align: center;
-    }
-
-    .content h4, p {
-        font-family: 'Lato', sans-serif;
-        font-weight: 100;
-    }
-
-    .content h4{
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 1em;
-    }
-
-    .content h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 2em;
-    }
-
-    .content h2{
-        font-family: 'Playfair Display', serif;
-        font-weight: 100;
-        font-size: 1.8em;
-    }
-
-    .content strong{
-        font-weight: bold;
-    }
-    .content p {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 1em;
-        font-weight: 100;
-    }
-
-    .content .btn{
-        margin: 10px 0;
-        padding: 10px 30px;
-        background-color: #0f0f0f;
-        color: #fff;
-        font-family: 'Playfair Display', serif;
-        font-size: 1.2em;
-    }
-
-    .content a{
-        font-weight: 400;
-        color: #ffffff;
-    }
-
-    .section_cases{
-        text-align: center;
-    }
-
-    .section_cases h2{
-        padding-bottom: 30px;
-    }
-
-    .section_cases h2 {
-        overflow: hidden;
-        text-align: right;
-    }
-    .section_cases h2:before,
-    .section_cases h2:after {
-        background-color:#ffffff;
-        content: "";
-        display: inline-block;
-        height: 2px;
-        position: relative;
-        vertical-align: middle;
-        width: 74%;
-    }
-    .section_cases h2:before {
-        right: 68.5em;
-        margin-left: -5%;
-    }
-    .section_cases h2:after {
-        left: 1em;
-        margin-right: -60%;
-    }
-
-    .section_cases ul{
-        list-style-type: none;
-    }
-
-    .section_cases li{
-        font-family: 'Bungee Outline', cursive;
-    }
-
-    .section_cases a{
-        color: #ffffff;
-        margin-right: -25px;
-    }
-
-    .section_cases li>a:hover{
-        color: #adff2f;
-        text-decoration: underline;
-    }
-
-    .section_cases li:nth-child(1){
-        font-size:5.1em;
-    }
-
-    .section_cases li:nth-child(2){
-        font-size:3.3em;
-    }
-
-    .section_cases li:nth-child(3){
-        font-size:4.5em;
-    }
-
-    .section_cases li:nth-child(4){
-        font-size: 5em;
+    .item4{
+        background-image: url("../img/23_coma.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: opacity(80%);
+        height: 350px;
     }
 
     /* about.html */
-    .hero-about{
-        background-color: #3b0beb;
-        margin: 0;
-        position: relative;
-        top: 0;
-        height: 350px;
-        color: #ffffff;
-        vertical-align: middle;
-        text-align: center;
+    .intro_bio h2{
+        font-size: 2.5em;
     }
 
-    /* menu - work sample */
-    .ws-section_sample{
-        padding-left: 0;
-        padding-right: 0;
-        font-family: 'Playfair Display', serif;
-        text-align: center;
-        display: relative;
-        overflow: hidden;
+    .intro_contact h4{
+        font-size: 1.8em;
     }
 
-    .ws-section_sample h1{
-        position: relative;
-        top:40%;
-        overflow: hidden;
+    .intro_list h3{
+        font-size: 1em;
     }
 
-    .ws-section_sample h1>a{
-        font-size: 2em;
-        color: yellow;
-        text-decoration: none;
+    .intro_list a{
+        font-size: 1.7em;
     }
 
-    .sample_a{
-        background-image: url("../img/app.jpg");
-        background-size: cover;
-        filter: grayscale(100%);
-        height: 350px;
-    }
-
-    .sample_b{
-        background-image: url("../img/1_terra-min.png");
-        background-size: cover;
-        filter: grayscale(100%);
-        height: 350px;
-    }
-
-    .sample_c{
-        background-image: url("../img/2_coma.jpg");
-        background-size: cover;
-        filter: grayscale(100%);
-        height: 700px;
-    }
-
-    .sample_d{
-        background-image: url("../img/1_soc-min.png");
-        background-size: cover;
-        filter: grayscale(100%);
-        height: 350px;
-    }
-
-    .sample_e{
-        background-image: url("../img/17_indigo-min.png");
-        background-size: cover;
-        filter: grayscale(100%);
-        height: 350px;
-    }
 
     /*  Footer */
     footer{
-        background-color: #f3f3f3;
         font-size: 0.8em;
         text-align: center;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: 0;
     }
 
     footer .navbar-brand, .navbar-nav>li>a{
@@ -479,8 +373,9 @@ body{
         margin: 20px 0;
         background-image: url("../img/12_maw.gif");
         background-size: cover;
-        height: 450px;
+        height: 200px;
     }
+
     /* Comapa.html */
 
     .cs-section_intro h1{
@@ -530,7 +425,7 @@ body{
         margin: 20px 0;
         background-image: url("../img/25_coma.gif");
         background-size: cover;
-        height: 450px;
+        height: 200px;
     }
 
 
@@ -623,128 +518,23 @@ body{
         text-decoration: line-through;
     }
 
+    .page-content{
+        padding-bottom: 120px;
+    }
+
 /* Index and About pages */
 
-    .balls {
-        width: 100%;
-        height: 300px;
-    }
-    .balls b {
-        border-radius: 50%;
-    }
-
-    .hero{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 600px;
-    }
-
-    .hero h1{
-        margin-bottom: 0;
-        font-size: 10.5em;
-    }
-
-    .hero h2{
-        font-size: 7.5em;
-        margin-bottom: -360px;
-    }
-
-    .content{
-        margin: 80px 0;
-        padding: 0 100px;
-        text-align: left;
-    }
-
-    .content h1{
-        font-size: 2.8em;
-    }
-
-    .content h2{
-        font-size: 2em;
-    }
-
-    .content h4{
-        font-family: 'Lato', sans-serif;;
-    }
-
-    .content p{
-        font-family: 'Lato', sans-serif;;
-        font-size: 1em;
-    }
-
-    .section_cases{
-        text-align: center;
-    }
-
-    .section_cases h2{
-        padding-bottom: 30px;
-    }
-
-    .section_cases h2 {
-        overflow: hidden;
-        text-align: right;
-    }
-    .section_cases h2:before,
-    .section_cases h2:after {
-        background-color:#ffffff;
-        content: "";
-        display: inline-block;
-        height: 2px;
-        position: relative;
-        vertical-align: middle;
-        width: 57%;
-    }
-    .section_cases h2:before {
-        right: 28.5em;
-        margin-left: -5%;
-    }
-    .section_cases h2:after {
-        left: 2em;
-        margin-right: -33%;
-    }
-
-    .section_cases ul{
-        list-style-type: none;
-    }
-
-    .section_cases li{
-        font-family: 'Bungee Outline', cursive;
-    }
-
-    .section_cases a{
-        color: #ffffff;
-    }
-
-    .section_cases li>a:hover{
-        color: #adff2f;
-        text-decoration: underline;
-    }
-
-    .section_cases li:nth-child(1){
-        font-size:7em;
-    }
-
-    .section_cases li:nth-child(2){
-        font-size:9em;
-    }
-
-    .section_cases li:nth-child(3){
-        font-size:6em;
-    }
-
-    .section_cases li:nth-child(4){
-        font-size: 12em;
-    }
 
 
     /*  About.html  */
-    .hero-about{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 600px;
+    .intro_bio h2{
+        font-size: 2.5em;
     }
+
+    #contact{
+        font-size: 2.6em;
+    }
+
 
 /* Footer    */
 
@@ -816,15 +606,18 @@ body{
         font-size: 1.2em;
     }
 
-/*  Indigo.html      */
+    /*  Indigo.html      */
     .coma-brand_ind{
         padding-top: 98px;
     }
 
     /*  Mawmapp.html     */
+    .parallax-maw{
+        height: 450px;
+    }
 
 
-/*  Comapa.html     */
+    /*  Comapa.html     */
 
     .cs-coma_design{
         padding: 0 40px;
@@ -834,8 +627,8 @@ body{
         padding-bottom: 5px;
     }
 
-    .cs-coma_brief .c-left{
-        padding:20px 40px;
+    .parallax-coma{
+        height: 450px;
     }
 
     .cs-coma_brand{
@@ -861,52 +654,10 @@ body{
     }
 
 /*  Index and About Page     */
-    .hero {
-        height: 700px;
-    }
 
-    .hero h1 {
-        margin-bottom: 0;
-        padding-top: 20px;
-        font-size: 15.5em;
-    }
-
-    .hero h2 {
-        margin-bottom: -420px;
-        padding-top: 160px;
-        font-size: 8.5em;
-    }
-
-    .content {
-        margin: 100px 0;
-        padding: 0 220px;
-        text-align: center;
-    }
-
-    .content h1 {
-        font-size: 3.8em;
-    }
-
-    .content h2 {
-        font-size: 3em;
-    }
-
-    .content h4 {
-        font-size: 1.2em;
-    }
-
-    .content p {
-        font-size: 1.1em;
-    }
-
-    .section_cases a{
-        margin-right: -16px;
-    }
 
     /*   About.html  */
-    .hero-about {
-        height: 700px;
-    }
+
 
     /*  Footer   */
     footer {
@@ -951,118 +702,9 @@ body{
     }
 
     /*  Indigo.html  */
-    .ind-app_right{
-        padding-top: 80px;
-        padding-left: 60px;
-    }
-
-    .ind-sketches_left{
-        padding-top: 30px;
-    }
-
-    .cs-ind_wireframe h2 {
-        padding-bottom: 20px;
-    }
-
-    .ind-wireframe_right {
-        padding: 0 22px;
-        text-align: right;
-    }
-
-    .ind-logo_right{
-        padding: 90px;
-    }
-
-    .cs-ind_title{
-        padding-top: 80px;
-    }
-
-    .ind-title_right{
-        padding-top: 100px;
-    }
-
-    .cs-ind_title h2 {
-        font-size: 4em;
-    }
-
-    .cs-ind_title h4 {
-        font-size: 1.2em;
-    }
-
-    .cs-ind_mockup {
-        padding: 50px 5px;
-    }
-
-    .ind-mockup_left{
-        padding: 100px;
-    }
-
-    .ind-proto_text {
-        margin-top: 0px;
-    }
-
-    .cs-ind_text h2 {
-        padding-bottom: 20px;
-    }
 
 
     /*  Mawmapp.html     */
-    .page-header_maw h3 {
-        margin-top: 0;
-        padding-bottom: 10px;
-        font-size: 11.2em;
-    }
-
-    .cs-maw_app .maw-app_header {
-        padding-top: 15px;
-        padding-left: 40px;
-    }
-
-    .cs-maw_app .maw-app_header{
-        text-align: left;
-    }
-
-    .cs-maw_app .maw-app_header h1 {
-        padding-bottom: 10px;
-        font-size: 5em;
-    }
-
-    .cs-maw_responce {
-        padding: 40px 60px;
-        text-align: left;
-    }
-
-    .cs-maw_responce h2 {
-        padding-bottom: 15px;
-    }
-
-    .cs-maw_responce .maw-resp_text {
-        padding: 200px 100px 0 0;
-    }
-
-    .cs-maw_responce .maw-web_text h5 {
-        padding-top: 20px;
-    }
-
-    .cs-maw_responce .maw-web_text p {
-        font-size: 0.7em;
-        text-align: center;
-    }
-
-    .cs-maw_proto {
-        padding-top: 50px;
-    }
-
-    .cs-maw_proto .maw-proto_text{
-        padding-left: 0;
-    }
-
-    .cs-maw_proto .maw-proto_text h1 {
-
-        padding-bottom: 5px;
-        font-size: 3.8em;
-        font-weight: 900;
-    }
 
     /*   Comapa.html     */
 
@@ -1204,85 +846,8 @@ body{
     }
 
     /*  Indigo Page  */
-    .ind-app_right{
-        padding: 90px 50px;
-    }
-
-    .ind-logo_right{
-        padding: 110px;
-    }
-
-    .ind-logo_right h2{
-        padding-bottom: 10px;
-    }
-
-    .cs-ind_title{
-        padding-top: 45px;
-    }
-
-    .cs-ind_title h2{
-        padding-bottom: 10px;
-        font-size: 6em;
-    }
-
-    .ind-mockup_left{
-        padding: 120px;
-    }
-
-    .ind-title_right h4{
-        font-size: 1.3em;
-    }
-
 
     /*  Mawmapp.html     */
-    .page-header_maw h3 {
-        font-size: 1.6em;
-    }
-
-    .cs-maw_app {
-        padding: 30px 0;
-    }
-
-    .cs-maw_app .maw-app_header {
-        padding-top: 90px;
-        padding-left: 40px;
-    }
-
-    .cs-maw_app .maw-app_header h1 {
-        font-size: 5em;
-    }
-
-    .cs-maw_responce {
-        padding: 40px 60px;
-        text-align: left;
-    }
-
-    .cs-maw_responce h2 {
-        padding-bottom: 15px;
-    }
-
-    .cs-maw_responce .maw-resp_text {
-        padding-top: 200px;
-    }
-
-    .cs-maw_responce .maw-web_text p {
-        font-size: 0.7em;
-        text-align: center;
-    }
-
-    .cs-maw_proto {
-        padding-top: 50px;
-    }
-
-    .cs-maw_proto .maw-proto_text{
-        padding-left: 0;
-    }
-
-    .cs-maw_proto .maw-proto_text h1 {
-        padding-bottom: 5px;
-        font-size: 3.8em;
-        font-weight: 900;
-    }
 
     /* Comapa.html */
 
@@ -1406,91 +971,8 @@ body{
     }
 
     /* Indigo.html      */
-    .ind-app_right{
-        padding-top: 60px;
-        padding-left: 40px;
-    }
-
-    .ind-sketches_left{
-        padding: 60px;
-    }
-
-    .ind-wireframe_right{
-        padding: 40px 40px;
-    }
-
-    .ind-wireframe_right a{
-        font-size: 1.2em;
-    }
-
-    .ind-logo_right{
-        padding-right: 300px;
-    }
-
-    .ind-logo_right h2{
-        padding-bottom: 10px;
-    }
-
-    .ind-logo_right h4{
-        font-size: 1.3em;
-    }
-
-    .ind-title_right{
-        padding: 250px 150px;
-    }
-
-    .cs-ind-title h2{
-        padding-bottom: 20px;
-    }
-
-    .cs-ind-title h4{
-        font-size: 1.5em;
-    }
 
     /* Mawmapp.html     */
-    .hero-maw{
-        height: 580px;
-    }
-
-    .page-header_maw h3{
-        font-size: 2.6em;
-    }
-
-    .cs-maw_app{
-        padding: 100px;
-    }
-
-    .cs-maw_app .maw-app_header h1{
-        font-size: 8em;
-    }
-
-    .cs-maw_responce{
-        padding: 100px
-    }
-
-    .cs-maw_responce .maw-resp_text{
-        padding: 300px 300px 0 100px;
-    }
-
-    .cs-maw_responce .maw-resp_text h5{
-        padding-bottom: 10px;
-    }
-
-    .cs-maw_proto{
-        padding-top: 100px;
-    }
-
-    .cs-maw_proto .maw-proto_text{
-        padding: 0 155px;
-    }
-
-    .cs-maw_proto .maw-proto_text h1{
-        font-size: 7em;
-    }
-
-    .cs-maw_proto .maw-proto_text h4{
-        font-size: 3em;
-    }
 
     /* Comapa.html */
 

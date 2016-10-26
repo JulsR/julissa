@@ -9,39 +9,43 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <!-- CSS Document -->
     <link href="dist/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Fira+Sans:300|Lato:100|Playfair+Display|Reenie+Beanie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline|Bungee+Shade|Fira+Sans:300|Lato:100,400|Playfair+Display|Reenie+Beanie" rel="stylesheet">
 
 </head>
 
 <style>
     body{
-        background-color;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4d82dd+0,3700ff+100 */
-        background: #4d82dd; /* Old browsers */
-        background: -moz-linear-gradient(top,  #4d82dd 0%, #3700ff 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #4d82dd 0%,#3700ff 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #4d82dd 0%,#3700ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d82dd', endColorstr='#3700ff',GradientType=0 ); /* IE6-9 */
+        background-color: #3700ff;
+        /*background-color;*/
+        /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4d82dd+0,3700ff+100 *!*/
+        /*background: #4d82dd; !* Old browsers *!*/
+        /*background: -moz-linear-gradient(top,  #4d82dd 0%, #3700ff 100%); !* FF3.6-15 *!*/
+        /*background: -webkit-linear-gradient(top,  #4d82dd 0%,#3700ff 100%); !* Chrome10-25,Safari5.1-6 *!*/
+        /*background: linear-gradient(to bottom,  #4d82dd 0%,#3700ff 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d82dd', endColorstr='#3700ff',GradientType=0 ); !* IE6-9 *!*/
         color: #ffffff;
     }
 
+
     nav.navbar.navbar-default.navbar-fixed-top{
-        background-color: rgba(59, 11, 235, 0.02);
+        background-color: rgba(74, 74, 74, 0.01);
         border-bottom: none;
     }
 
@@ -71,12 +75,21 @@
         color: #ffffff;
     }
 
+    /*.page-content{*/
+    /*padding-bottom: 120px;*/
+    /*}*/
+
     .navbar-default .navbar-toggle .icon-bar{
         background-color: #ffffff;
     }
 
+    .intro{
+        padding-left: 30px;
+    }
+
+
     footer{
-        background-color: #3b0beb;
+        background-color: #3700ff;
     }
 
     footer a{
@@ -90,210 +103,96 @@
 </style>
 
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Menu</span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Julissa Roa</a>
+                    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12">
-                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Menu</span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html">Julissa Roa</a>
-                        </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CASE STUDIES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="indigo.html">Indigo</a></li>
+                                    <li><a href="mawmapp.html">MAWMApp</a></li>
+                                    <li><a href="comapa.html">Comapa</a></li>
+                                    <li><a href="terra.html">Terra-Sense</a></li>
+                                    <li><a href="socbox.html">Socbox</a></li>
+                                </ul>
+                                <!--</li>-->
+                                <!--<li style="text-align: center"><a href="index.html" class="hidden-xs">HOME</a></li>-->
+                            <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown active">
-                                    <a href="#cases" class="dropdown-toggle" data-toggle="dropdown">CASE STUDIES</a>
-                                    <!--<ul class="dropdown-menu">-->
-                                        <!--<li><a href="indigo.html">Indigo</a></li>-->
-                                        <!--<li><a href="mawmapp.html">MAWMApp</a></li>-->
-                                        <!--<li><a href="comapa.html">Comapa</a></li>-->
-                                        <!--<li><a href="terra.hmtl">Terra-Sense</a></li>-->
-                                        <!--<li><a href="socbox.html">Socbox</a></li>-->
-                                    <!--</ul>-->
-                                </li>
+    </div> <!-- end: row -->
 
-                                <li><a href="about.html">ABOUT</a></li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
-            </div>
 
-            <div class="col-xs-12 balls hero hero-about">
-                <h1>KEEP IT SIMPLE</h1>
-            </div>
-        </div> <!-- end: row -->
+    <div class="container wrapper">
 
-        <div class="">
-            <div class="row  wow slideInUp" data-wow-duration="1s">
-                <div class="col-xs-12 content">
-                    <h4>USER EXPERIENCE - FRONT-END DEVELOPER</h4>
-                    <h1>“What separates design from art is that design is meant to be… functional.” ― Cameron Moll</h1>
-                    <p>As a designer my goal is to strive for excellence and focus on learning and develop
-                       innovative solutions of translating a products vision into engaging and functional interactive design.
-                        The idea of building a great product that achieves an emotional connection with the users and
-                        enhances people lives is an invigorating thrill that pushes my forward-thinking and style. My strengths
-                        are in design, development and understanding of user-centered design techniques and
-                        principles to build a product that achieves the goal and delivers the intended user experience.
-                    </p>
-                </div>
-            </div><!-- end: row -->
+        <div class="col-xs-12 behind-text">
+            <h2>VISUAL DESI G N VIS U A L</h2>
+        </div>
 
-            <div class="row wow slideInRight"  data-wow-duration="1s" data-wow-delay="1s">
-               <div id="cases" class="col-xs-12 section_cases">
-                   <h2>CASE STUDIES</h2>
-                   <ul>
-                       <li><a href="indigo.html">INDIGO</a></li>
-                       <li><a href="mawmapp.html">MAWMAPP</a></li>
-                       <li><a href="comapa.html">COMAPA</a></li>
-                       <li><a href="terra.html">TERRA-SENSE</a></li>
-                   </ul>
-               </div>
-           </div>
 
-            <div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" >
-                <div class="col-xs-12 content">
-                    <h4>YOU LOVE?</h4>
-                    <h2>Collaboration, <strong>big ideas</strong> and great relationship them we are on the same page.</h2>
-                    <p><a href="mailto:julissaroa.w@gmail.com" target="_blank" class="btn">EMAIL ME</a></p>
-                    <p>Something went wrong! Opps. Here is my email <a href="mailto:julissaroa.w@gmail.com">julissaroa.w@gmail.com</a></p>
+        <div class="page-content">
+            <div class="row background">
+                <!--<div class="col-xs-12">-->
+                        <!--<ul class="list">-->
+                            <!--<li><a href="indigo.html">INDIGO</a></li>-->
+                            <!--&lt;!&ndash;<li><a href="terra.html">TERRA-SENSE</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="comapa.html">COMAPA</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="mawmapp.html">MAWMAPP</a></li>&ndash;&gt;-->
+                        <!--</ul>-->
+                <!--</div>-->
+                <div class="col-xs-9">
+                    <div class="owl-carousel">
+                        <div class="item1"><a href="indigo.html">INDIGO</a></h4></div>
+                        <div class="item2"><h4><a href="terra.html">TERRA-SENSE</a></h4></div>
+                        <div class="item3"><h4><a href="comapa.html">COMAPA</a></h4></div>
+                        <div class="item4"><h4><a href="mawmapp.html">MAWMAPP</a></h4></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <footer class="footer">
-                <div class="container">
-                    <p style="display:inline-block; padding-top:20px"><a href="index.html">&copy;JulissaRoa2016</a></p>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.linkedin.com/in/julissa-roa-81abaa43">LinkedIn</a></li>
-                        <li><a href="https://twitter.com/roajulissa">Twitter</a></li>
-                        <li><a href="https://www.facebook.com/julissaroadesigner">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/julissaroa/">Instagram</a></li>
-                        <li><a href="https://www.behance.net/julissaroa">Behance</a></li>
-                    </ul>
-                </div>
-            </footer>
-         </div>
+    </div> <!-- end: container -->
 
-    </div> <!-- end: container-fluid -->
+</div> <!-- end: container-fluid -->
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $('.strikethrough').addClass("hidden");
-
-        $('.strikethrough').hover(function() {
-            var $this = $(this);
-
-            if ($this.hasClass("hidden")) {
-                $(this).removeClass("hidden").addClass("visible");
-
-            } else {
-                $(this).removeClass("visible").addClass("hidden");
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
             }
-        });
-    });
+        }
+    })
 </script>
 
-    <script type="text/javascript">
-        // Bouncing Balls. By Rob Glazebrook
-        // The balls are randomized in size, color, opacity, and bounce direction. They'll bounce off the walls of their container and generally make a rather pretty show of things.
-
-        var ballCount = 25,
-                ballMinSize = 20,
-                ballMaxSize = 65,
-                container = $('.balls');
-
-        $(function() {
-            initBalls();
-            balls = window.setInterval(moveBalls,40); // 24 FPS
-            $(window).resize(function() { moveBallsIntoBounds(); });
-        });
-
-        // Random number generator. Takes a minimum, maximum, and a boolean for whether the random number should be an integer.
-        function rand(min,max,isInt) {
-            var min = min || 0,
-                    max = max || 1,
-                    isInt = isInt || false,
-                    num = Math.random()*(max - min) + min;
-            return (isInt) ? Math.round(num) : num;
-        }
-
-        // Creates the balls, puts them in the container, and gives them a random size, color, opacity, starting location, and direction/speed of movement.
-        function initBalls() {
-            container.css({'position':'relative'});
-            for (i=0;i<ballCount;i++) {
-                var newBall = $('<b />').appendTo(container),
-                        size = rand(ballMinSize,ballMaxSize);
-                newBall.css({
-                    'position':'absolute',
-                    'width': size+'px',
-                    'height': size+'px',
-                    'opacity': rand(.1,.9),
-                    'background-color': 'rgb('+rand(20,05,true)+','+rand(0,105,true)+','+rand(400,505,true)+')',
-                    'top': rand(0,container.height()-size),
-                    'left': rand(0,container.width()-size)
-                }).attr({
-                    'data-dX':rand(-10,10),
-                    'data-dY':rand(1,10)
-                });
-            }
-        }
-
-        // Moves the balls based on their direction/speed of movement (saved as a data attribute). If the movement will take them outside of the container, they reverse direction along that axis.
-        function moveBalls() {
-            var maxX = container.width(),
-                    maxY = container.height();
-            $('b',container).each(function(i,b) {
-                var ball = $(b),
-                        pos = ball.position()
-                x = pos.left,
-                        y = pos.top,
-                        dX = parseFloat(ball.attr('data-dX')),
-                        dY = parseFloat(ball.attr('data-dY')),
-                        size = ball.height();
-                if(x+dX+size > maxX || x+dX < 0) ball.attr('data-dX',(dX=-dX));
-                if(y+dY+size > maxY || y+dY < 0) ball.attr('data-dY',(dY=-dY));
-                ball.css({'top':y+dY,'left':x+dX});
-            });
-        }
-
-        // Move the balls back within the bounds of the container if the window (ergo, possibly the container) is resized. Because we're positioning from the top/left corners, we only have to worry about the bottom/right sides.
-        function moveBallsIntoBounds() {
-            var maxX = container.width(),
-                    maxY = container.height();
-            $('b',container).each(function(i,b) {
-                var ball = $(b),
-                        pos = ball.position()
-                x = pos.left,
-                        y = pos.top,
-                        size = ball.height();
-                if (x+size > maxX) ball.css({ left: maxX-size+'px' });;
-                if (y+size > maxY) ball.css({ top: maxY-size+'px' });;
-            });
-        }
-    </script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-    <script>
-        new WOW(
-                {
-                    boxClass: 'wow',
-                    animateClass: 'animated',
-                    offset: 0,
-                    mobile: true,
-                    live: true
-                }
-        ).init();
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
 </body>
 </html>
