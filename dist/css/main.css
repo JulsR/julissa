@@ -4,6 +4,10 @@ body{
     position: relative;
 }
 
+p{
+    font-family: 'Lato', sans-serif;
+}
+
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
@@ -11,207 +15,167 @@ body{
 
     /* Navbar */
     .navbar-default{
-        background-color: #f7f7f7;
+        background-color: transparent;
         background-image: none;
         border-color: transparent;
         box-shadow: none;
         font-family: 'Fira Sans', sans-serif;
-        text-align: center;
-        padding: 5px 20px;
+    }
+
+    .navbar-nav {
+        margin:10px 0;
+        padding-left:20px;
+    }
+    .navbar-nav > li {
+        padding-top: 17px;
+        padding-right: 13px;
+        float:right;
+        display:inline-block;
+    }
+
+    .navbar-default .navbar-nav>li>a{
         color: #000;
-        border-bottom: 1px solid #e5e5e5;
-    }
-
-    .navbar-toggle{
-        float: left;
-        font-family:'Playfair Display', serif;
-    }
-
-    /* navbar-collapse btn icon */
-    .navbar-default .navbar-toggle{
-        border-color: transparent;
-    }
-
-    .sr-only{
-        font-size: 1.1em;
-        position: relative;
-    }
-
-    .navbar-default .navbar-toggle .icon-bar{
-        background-color: #000000;
-        width: 40px;
-        height: 2px;
-        display: table-caption;
-    }
-
-    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-        background-color: transparent;
-    }
-
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        padding: 5px 0;
-        border-color: rgba(1, 1, 1, 0.06);
-    }
-
-    .nav>li{
-        padding: 2px 10px;
     }
 
     .nav>li>a:focus, .nav>li>a:hover{
         background-color: transparent;
         border-color: transparent;
+        color: #0f0f0f;
     }
     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
         padding-bottom: 5px;
         background-color: transparent;
         background-image: none;
         box-shadow: none;
+        color: #000000;
     }
 
     .navbar-default .navbar-nav>.active>a, .navbar-default
     .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
         background-color: transparent;
+        color: #0a0a0a;
     }
 
-    /* Navbar-Branc */
+    /* Navbar-Brand */
     .navbar-default .navbar-brand {
         padding-top: 23px;
         font-family: 'Reenie Beanie', cursive;
-        font-size: 2em;
-        color: #0f0f0f;
-        float: right;
-    }
-
-    .navbar-default .navbar-nav .navbar-right>li>a .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+        font-size: 2.4em;
         color: #000000;
     }
 
-    /* CSS used here will be applied after bootstrap.css */
-    .nav > li.dropdown.open {
-        position: static;
-    }
-
-    .nav > li.dropdown.open .dropdown-menu {
-        display:table;
-        width: 100%;
-        text-align: center;
-        left:0;
-        right:0;
-    }
-
-    .dropdown-menu{
-        background-color: #f7f7f7;
-        padding: 20px 40px;
-        font-family: 'Playfair Display', serif;
-        font-size: 1.1em;
-        border-top:1px solid rgba(0,0,0,.15);
-        border-radius: 0;
-        background-clip: border-box;
-    }
-
-    .dropdown-menu>li {
-        display: inline-block;
-    }
-
-    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
-        background-color: transparent;
-        background-image: none;
-        text-decoration: line-through;
-    }
-
-/*  Index and About Page */
-    .background{
-        background-image: url("../img/test.png");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: opacity(80%);
-        height: 690px;
-    }
-
-    .list{
-        padding-top: 150px;
-    }
-
-    .list li{
-        padding: 0 20px;
-        font-family:;
-        font-size: 20em;
-        float: left;
-    }
-
-    .list li>a{
+    .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
         color: #0f0f0f;
     }
 
-    .list li>a:hover{
-        width: 100px;
-        height: 100px;
-        background-color: red;
+    .navbar-default .navbar-nav .navbar-right>li>a .navbar-default .navbar-nav>li>a:focus,
+    .navbar-default .navbar-nav>li>a:hover{
+        color: #0f0f0f;
+    }
+
+
+    /*  Index and About Page */
+
+    .carousel{
+        padding-top: 100px;
+        position: static;
+    }
+
+    .carousel-control.left{
+        left: 13px;
+        background-image: none;
+    }
+
+    .carousel-control.right{
+        right: -9px;
+        background-image: none;
+    }
+
+    .carousel-control{
+        position: fixed;
+        top:127px;
+        width: 35%;
+        font-family: 'Lato', sans-serif;
+        font-size: 3em;
+        font-weight: 100;
+        color: #0f0f0f;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        opacity: 1.9;
+    }
+
+    .carousel-indicators{
+        left: 25%;
+        bottom: -530px;
+    }
+
+    .carousel-indicators .active{
+        background-color: transparent;
+        width:100px;
+        height:15px;
+        color: darkgoldenrod;
+    }
+
+    .carousel-indicators .active li>a{
+        color: darkgoldenrod;
+    }
+
+
+    .carousel-indicators li{
+        text-indent:0px;
+        width:100%;
+        height: 20px;
+        border:none;
+        font-family: Impact;
+        font-size: 3.5em;
+        font-weight: 900;
+        letter-spacing: 21px;
+        line-height: 158px;
+    }
+
+    .carousel-indicators li{
+        color: #0f0f0f;
+    }
+
+    .carousel-indicators li:hover, .carousel-indicators li:focus{
+        color: darkgoldenrod;
+        text-decoration: none;
+    }
+
+
+    .carousel-inner{
         position: relative;
-        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-        -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-        animation-name: example;
-        animation-duration: 4s;
-        animation-delay: 2s;
     }
 
-    @keyframes example {
-        0% {
-            background-color: red;
-            left: 0px;
-        }
-        50% {
-            background-color: yellow;
-            left: 200px;
-        }
-        100% {
-            background-color: red;
-            left: 0px;
-        }
+    .carousel-caption{
+        padding-top: 10px;
+        position: ab;
+        left: 5%;
+        bottom: 260px;
+        z-index: 99;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
 
-    .item1{
-        background-image: url("../img/23_coma.png");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: opacity(80%);
-        height: 350px;
+    .carousel-caption h3{
+        font-family: 'Purple Purse', cursive;
+        font-size: 15em;
+        color: #0f0f0f;
     }
 
-    .item2{
-        background-image: url("../img/11_maw.png");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: opacity(80%);
-        height: 350px;
+    .sr-only{
+        position: relative;
+        font-size: 0.5em;
+        font-weight: 400;
+        color: #777;
     }
 
-    .item3{
-        background-image: url("../img/14_indigo-min.png");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: opacity(80%);
-        height: 350px;
+    .item a{
+        text-decoration: none;
     }
 
-    .item4{
-        background-image: url("../img/23_coma.png");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: opacity(80%);
-        height: 350px;
+    .item a:active{
+        text-decoration: none;
     }
+
 
     /* about.html */
     .intro_bio h2{
@@ -233,12 +197,13 @@ body{
 
     /*  Footer */
     footer{
+        margin-top: 50px;
         font-size: 0.8em;
         text-align: center;
         width: 100%;
-        left: 0;
-        position: absolute;
-        bottom: 0;
+        left: -50px;
+        position: relative;
+        bottom: 10px;
     }
 
     footer .navbar-brand, .navbar-nav>li>a{
@@ -257,6 +222,12 @@ body{
 
     footer .nav>li{
         display: inline-block;
+    }
+
+    #copyright{
+        display:inline-block;
+        padding-top:20px;
+        padding-left: 90px;
     }
 
     /* ========   WORK SAMPLE  ========  */
@@ -288,6 +259,10 @@ body{
         font-size: 1em;
     }
 
+    .wrapper h3 {
+        font-weight: 900;
+    }
+
     .wrapper h4{
         font-weight: 100;
     }
@@ -295,6 +270,7 @@ body{
     .wrapper p{
         font-family: 'Fira Sans', sans-serif;
         font-size: 0.9em;
+        font-weight: 100;
     }
 
     .wrapper ul{
@@ -305,9 +281,15 @@ body{
 
     .behind-text{
         font-size: 9em;
-        color: rgba(255, 255, 255, 0.07);
-        z-index: 1;
+        color: #FFFFFF;
+        z-index: -1;
         position: fixed;
+    }
+
+    .behind-text h2{
+        font-family: 'Lato', Arial, sans-serif;
+        font-weight: 900;
+        font-size: 1em;
     }
 
     .behind-text p{
@@ -343,6 +325,7 @@ body{
         position: relative;
         vertical-align: middle;
         width: 90%;
+
     }
     .page-header p:before {
         right: 0.5em;
@@ -360,7 +343,7 @@ body{
 
     /*      Indigo.html     */
     .wrapper a{
-        color: #ffffff;
+        color: #0f0f0f;
     }
 
     .wrapper a:hover{
@@ -371,7 +354,10 @@ body{
     /*  Mawmapp.html */
     .parallax-maw{
         margin: 20px 0;
-        background-image: url("../img/12_maw.gif");
+        background-image: url("../img/1_indigo.png");
+        /*background-attachment: fixed;*/
+        /*background-position: center;*/
+        /*background-repeat: no-repeat;*/
         background-size: cover;
         height: 200px;
     }
@@ -389,8 +375,9 @@ body{
     .page-header_coma h3{
         margin-top: 0;
         padding-bottom: 10px;
-        font-family: 'Bungee Outline', cursive;
+        font-family: 'Lato', Arial, sans-serif;
         font-size: 4.2em;
+        font-weight: 100;
         text-align: right;
     }
 
@@ -400,7 +387,7 @@ body{
     }
     .page-header_coma p:before,
     .page-header_coma p:after {
-        background-color:#ffffff;
+        background-color:#000000;
         content: "";
         display: inline-block;
         height: 1px;
@@ -466,63 +453,60 @@ body{
 
     .navbar-default .navbar-brand{
         margin-top: -5px;
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        padding:0;
-        border-color: rgba(1, 1, 1, 0.06);
-    }
-
-    .nav>li>a:focus, .nav>li>a:hover{
-        background-color: transparent;
-        border-color: transparent;
-    }
-    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
-        padding-bottom: 0;
-    }
 
     .nav>li{
         padding:0 10px;
     }
 
     /* CSS used here will be applied after bootstrap.css */
-    .nav {
-        margin-bottom: 0;
-    }
-
-    .nav > li.dropdown.open {
-        position: static;
-    }
-
-    .nav > li.dropdown.open .dropdown-menu {
-        display:table;
-        width: 100%;
-        text-align: center;
-        left:0;
-        right:0;
-    }
-
-    .dropdown-menu{
-        padding: 20px 40px;
-        font-size: 0.8em;
-    }
-
-    .dropdown-menu>li {
-        display: table-cell;
-    }
-
-    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
-        background-color: transparent;
-        background-image: none;
-        text-decoration: line-through;
-    }
 
     .page-content{
         padding-bottom: 120px;
     }
 
-/* Index and About pages */
+    /* Index and About pages */
+
+    .carousel{
+        padding-top: 70px;
+    }
+
+    .carousel-indicators{
+        left: 60%;
+    }
+
+    .carousel-indicators li{
+        font-size: 6em;
+        font-weight: 500;
+        letter-spacing: 21px;
+        line-height: 123px;
+    }
+
+    .carousel-control.left{
+        left:-35px;
+    }
+
+    .carousel-control.right{
+        right: 0px;
+    }
+
+    .carousel-control{
+        top:350px;
+        width: 35%;
+        font-size: 6em;
+    }
+
+
+    .carousel-caption{
+        padding-top: 30px;
+        left: 18%;
+    }
+
+    .carousel-caption h3{
+        font-size: 10em;
+    }
 
 
 
@@ -536,7 +520,7 @@ body{
     }
 
 
-/* Footer    */
+    /* Footer    */
 
     footer{
         padding: 40px 10px;
@@ -556,7 +540,7 @@ body{
         padding: 18px 4px;
     }
 
-/*  General CSS Style of pages*/
+    /*  General CSS Style of pages*/
     .wrapper h1{
         font-size: 1.6em;
     }
@@ -645,15 +629,12 @@ body{
 @media screen and (min-width: 1024px) {
 
     /* Navbar */
-    .navbar-default {
-        /*padding: 5px 40px;*/
-    }
 
-    .dropdown-menu {
-        font-size: 1.2em;
-    }
+    /*  Index and About Page     */
 
-/*  Index and About Page     */
+    .carousel-caption h3{
+        font-size: 24em;
+    }
 
 
     /*   About.html  */
@@ -675,7 +656,7 @@ body{
         color: #0f0f0f;
     }
 
-/*  General CSS Styles - Work Sample     */
+    /*  General CSS Styles - Work Sample     */
     .wrapper h1 {
         font-size: 1.5em;
     }
@@ -773,15 +754,6 @@ body{
         padding: 10px 40px;
     }
 
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        padding: 0 1px;
-    }
-
-    .dropdown-menu{
-        font-size: 1em;
-    }
-
-
     /*  Index & About Page */
     .hero h1{
         padding-top: 40px;
@@ -819,8 +791,8 @@ body{
     }
 
 
-/* ========== WORK SAMPLE  ==========*/
-/* General Styles */
+    /* ========== WORK SAMPLE  ==========*/
+    /* General Styles */
     .wrapper h1{
         font-size: 2em;
     }
@@ -875,16 +847,9 @@ body{
     .nav>li>a{
         font-size: 2em;
     }
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        padding: 0 1px;
-    }
 
     .navbar-default .navbar-brand{
         font-size: 4em;
-    }
-
-    .dropdown-menu{
-        font-size: 1em;
     }
 
 
