@@ -112,11 +112,12 @@ p{
         background-color: transparent;
         width:100px;
         height:15px;
-        color: darkgoldenrod;
+        font-family: 'Monoton', cursive;
+        color:  #262626;
     }
 
     .carousel-indicators .active li>a{
-        color: darkgoldenrod;
+        color:  #262626;
     }
 
 
@@ -125,7 +126,7 @@ p{
         width:100%;
         height: 20px;
         border:none;
-        font-family: Impact;
+        font-family: 'Limelight', cursive;
         font-size: 3.5em;
         font-weight: 900;
         letter-spacing: 21px;
@@ -137,7 +138,8 @@ p{
     }
 
     .carousel-indicators li:hover, .carousel-indicators li:focus{
-        color: darkgoldenrod;
+        font-family: 'Monoton', cursive;
+        color: #f2dede;
         text-decoration: none;
     }
 
@@ -178,8 +180,12 @@ p{
 
 
     /* about.html */
-    .intro_bio h2{
-        font-size: 2.5em;
+    .intro_about{
+        position: static;
+    }
+
+    .content_bio {
+        padding: 0 30px;
     }
 
     .intro_contact h4{
@@ -229,6 +235,123 @@ p{
         padding-top:20px;
         padding-left: 90px;
     }
+
+    /*  PORTOFOLIO PAGE */
+
+    .content_pieces{
+        max-width: 960px;
+        margin: 10px auto;
+        background-size: cover;
+        height: 250px;
+        text-align: center;
+    }
+
+   .piece_one {
+        background-image: url("../img/mockup.png");
+
+    }
+
+    .piece_two {
+        background-image: url("../img/comapa/3_coma.png");
+    }
+
+    .piece_three{
+        background-image: url("../img/mawmapp/13_maw.png");
+    }
+
+    .piece_four{
+        background-image: url("../img/bitfarm/01_bit.png");
+    }
+
+    input {
+        -webkit-appearance: none;
+        border-radius: 0;
+        cursor: pointer;
+    }
+
+    .all-buttons {
+        width: 300px;
+        margin: auto;
+    }
+    .button-wrapper {
+        margin: 100px 0;
+        position: relative;
+        display: inline-block;
+    }
+
+    /** Button 8 **/
+    .slide-border {
+        overflow: hidden;
+    }
+
+    .button8 {
+        height: 100%;
+        width: 100%;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        border: 0;
+        border-radius: 2px;
+        font-family: 'Limelight', cursive;
+        font-size: 3em;
+        font-weight: 700;
+        transition: 300ms;
+        opacity: 0.8;
+        z-index: 1;
+    }
+    .button8div {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: -900px;
+        /*padding: 40px 100px;*/
+        opacity: 0.8;
+        border-radius: 1px;
+        z-index: 0;
+        transition: 300ms;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+    }
+
+    .slide-border:hover .button8div {
+        left: 0;
+    }
+
+    .piece_one .button8 {
+         color: #fff0f5;
+     }
+
+    .piece_one .slide-border:hover .button8div {
+        border: 4px solid #fff0f5;
+    }
+
+    .piece_two .button8 {
+        color: #d4c402;
+    }
+
+    .piece_two .slide-border:hover .button8div {
+        border: 4px solid #d4c402;
+    }
+
+    .piece_three .button8 {
+        color: #16c5d4;
+    }
+
+    .piece_three .slide-border:hover .button8div {
+        border: 4px solid #16c5d4;
+    }
+
+    .piece_four .button8 {
+        color: #0c725b;
+    }
+
+    .piece_four .slide-border:hover .button8div {
+        border: 4px solid #0c725b;
+    }
+
+
 
     /* ========   WORK SAMPLE  ========  */
 
@@ -354,7 +477,7 @@ p{
     /*  Mawmapp.html */
     .parallax-maw{
         margin: 20px 0;
-        background-image: url("../img/1_indigo.png");
+        background-image: url("../img/indigo/1_indigo.png");
         /*background-attachment: fixed;*/
         /*background-position: center;*/
         /*background-repeat: no-repeat;*/
@@ -511,12 +634,21 @@ p{
 
 
     /*  About.html  */
-    .intro_bio h2{
-        font-size: 2.5em;
+    .intro_about{
+        position: absolute;
+    }
+
+    .content_bio {
+        padding: 0;
+    }
+
+    .intro_about p{
+        font-weight: 100;
     }
 
     #contact{
         font-size: 2.6em;
+        font-weight: 900;
     }
 
 
@@ -539,6 +671,22 @@ p{
     footer .navbar-brand, .navbar-nav>li>a{
         padding: 18px 4px;
     }
+
+    /* PORTFOLIO PAGE */
+    .content_pieces{
+        margin: 20px auto;
+        height: 400px;
+    }
+
+    .button8 {
+        font-size: 10em;
+    }
+    .button8div {
+        height: 100%;
+        width: 100%;
+    }
+
+
 
     /*  General CSS Style of pages*/
     .wrapper h1{
@@ -588,6 +736,14 @@ p{
 
     .hero-text p{
         font-size: 1.2em;
+    }
+
+    /* Case-studies */
+    .case_list li>a{
+        font-size: 3em;
+        font-weight: 900;
+        letter-spacing: 80px;
+        line-height: 90px;
     }
 
     /*  Indigo.html      */
@@ -642,7 +798,8 @@ p{
 
     /*  Footer   */
     footer {
-        padding: 20px 0;
+        margin-top: 20px;
+        padding: 0;
         text-align: inherit;
     }
 
