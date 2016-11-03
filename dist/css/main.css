@@ -1,6 +1,6 @@
 /*==========CSS Document ========*/
 body{
-    background-color: #f7f7f7;
+    background: linear-gradient(to bottom,  #f3f3f3 0%,#f5f5f5 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     position: relative;
 }
 
@@ -104,6 +104,7 @@ p{
     }
 
     .carousel-indicators{
+        padding-left: 15px;
         left: 25%;
         bottom: -530px;
     }
@@ -126,9 +127,9 @@ p{
         width:100%;
         height: 20px;
         border:none;
-        font-family: 'Limelight', cursive;
-        font-size: 3em;
-        font-weight: 900;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5em;
+        font-weight: 100;
         letter-spacing: 21px;
         line-height: 158px;
     }
@@ -139,7 +140,7 @@ p{
 
     .carousel-indicators li:hover, .carousel-indicators li:focus{
         font-family: 'Monoton', cursive;
-        color: #f2dede;
+        color: #262626;
         text-decoration: none;
     }
 
@@ -157,11 +158,6 @@ p{
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
 
-    .carousel-caption h3{
-        font-family: 'Purple Purse', cursive;
-        font-size: 15em;
-        color: #0f0f0f;
-    }
 
     .sr-only{
         position: relative;
@@ -245,6 +241,11 @@ p{
         text-align: center;
     }
 
+    .portfolio_list ul>li{
+        height: 180px;
+    }
+
+
     .portfolio_list li>a{
         font-weight: 100;
     }
@@ -272,125 +273,6 @@ p{
     .portfolio_list li:nth-child(4){
         font-size: 4.7em;
     }
-
-
-    /*.content_pieces{*/
-        /*max-width: 960px;*/
-        /*margin: 10px auto;*/
-        /*background-size: cover;*/
-        /*height: 250px;*/
-        /*text-align: center;*/
-    /*}*/
-
-   /*.piece_one {*/
-        /*background-image: url("../img/indigo/13_indigo.png");*/
-       /*background-size: 50%;*/
-
-    /*}*/
-
-    /*.piece_two {*/
-        /*background-image: url("../img/comapa/test.png");*/
-        /*background-size: 50%;*/
-    /*}*/
-
-    /*.piece_three{*/
-        /*background-image: url("../img/mawmapp/13_maw.png");*/
-        /*background-size: 50%;*/
-    /*}*/
-
-    /*.piece_four{*/
-        /*background-image: url("../img/bitfarm/01_bit.png");*/
-    /*}*/
-
-    /*input {*/
-        /*-webkit-appearance: none;*/
-        /*border-radius: 0;*/
-        /*cursor: pointer;*/
-    /*}*/
-
-    /*.all-buttons {*/
-        /*width: 300px;*/
-        /*margin: auto;*/
-    /*}*/
-    /*.button-wrapper {*/
-        /*margin: 100px 0;*/
-        /*position: relative;*/
-        /*display: inline-block;*/
-    /*}*/
-
-    /*!** Button 8 **!*/
-    /*.slide-border {*/
-        /*overflow: hidden;*/
-    /*}*/
-
-    /*.button8 {*/
-        /*height: 100%;*/
-        /*width: 100%;*/
-        /*border: 0;*/
-        /*outline: 0;*/
-        /*background-color: transparent;*/
-        /*border: 0;*/
-        /*border-radius: 2px;*/
-        /*font-family: 'Lato', sans-serif;*/
-        /*font-size: 3em;*/
-        /*font-weight: 700;*/
-        /*transition: 300ms;*/
-        /*opacity: 0.8;*/
-        /*z-index: 1;*/
-    /*}*/
-    /*.button8div {*/
-        /*height: 100%;*/
-        /*width: 100%;*/
-        /*position: absolute;*/
-        /*top: 0px;*/
-        /*left: -900px;*/
-        /*!*padding: 40px 100px;*!*/
-        /*opacity: 0.8;*/
-        /*border-radius: 1px;*/
-        /*z-index: 0;*/
-        /*transition: 300ms;*/
-        /*box-sizing:border-box;*/
-        /*-moz-box-sizing:border-box;*/
-        /*-webkit-box-sizing:border-box;*/
-    /*}*/
-
-    /*.slide-border:hover .button8div {*/
-        /*left: 0;*/
-    /*}*/
-
-    /*.piece_one .button8 {*/
-         /*color: #cc5c45;*/
-     /*}*/
-
-    /*.piece_one .slide-border:hover .button8div {*/
-        /*border: 4px solid #cc5c45;*/
-    /*}*/
-
-    /*.piece_two .button8 {*/
-        /*color: #d4c402;*/
-    /*}*/
-
-    /*.piece_two .slide-border:hover .button8div {*/
-        /*border: 4px solid #d4c402;*/
-    /*}*/
-
-    /*.piece_three .button8 {*/
-        /*color: #16c5d4;*/
-    /*}*/
-
-    /*.piece_three .slide-border:hover .button8div {*/
-        /*border: 4px solid #16c5d4;*/
-    /*}*/
-
-    /*.piece_four .button8 {*/
-        /*color: #0c725b;*/
-    /*}*/
-
-    /*.piece_four .slide-border:hover .button8div {*/
-        /*border: 4px solid #0c725b;*/
-    /*}*/
-
-
 
     /* ========   WORK SAMPLE  ========  */
 
@@ -633,7 +515,7 @@ p{
 
     .carousel-indicators li{
         font-size: 5.6em;
-        font-weight: 500;
+        font-weight: 200;
         letter-spacing: 21px;
         line-height: 123px;
     }
@@ -720,25 +602,6 @@ p{
     .portfolio_list li:nth-child(4){
         font-size: 9em;
     }
-
-
-    /*.content_pieces{*/
-        /*margin: 20px auto;*/
-        /*height: 400px;*/
-    /*}*/
-
-    /*.button-wrapper{*/
-        /*margin: 149px 0;*/
-    /*}*/
-
-    /*.button8 {*/
-        /*font-size: 5em;*/
-    /*}*/
-    /*.button8div {*/
-        /*height: 100%;*/
-        /*width: 100%;*/
-    /*}*/
-
 
 
     /*  General CSS Style of pages*/
@@ -913,8 +776,6 @@ p{
     }
 
     .page-header_coma h1{
-        /*margin-top: 0;*/
-        /*padding-bottom: 5px;*/
         font-size: 5em;
         font-weight: 900;
     }
@@ -941,10 +802,6 @@ p{
         text-align: right;
         padding:0 25px;
     }
-
-    /*.cs-coma_color{*/
-        /*padding:60px 0px;*/
-    /*}*/
 
     .cs-coma_brand{
         padding: 10px 0;
