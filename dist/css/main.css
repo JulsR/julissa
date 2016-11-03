@@ -127,7 +127,7 @@ p{
         height: 20px;
         border:none;
         font-family: 'Limelight', cursive;
-        font-size: 3.5em;
+        font-size: 3em;
         font-weight: 900;
         letter-spacing: 21px;
         line-height: 158px;
@@ -181,6 +181,7 @@ p{
 
     /* about.html */
     .intro_about{
+        margin-top: 40px;
         position: static;
     }
 
@@ -227,6 +228,7 @@ p{
     }
 
     footer .nav>li{
+        padding-top: 0;
         display: inline-block;
     }
 
@@ -238,118 +240,155 @@ p{
 
     /*  PORTOFOLIO PAGE */
 
-    .content_pieces{
-        max-width: 960px;
-        margin: 10px auto;
-        background-size: cover;
-        height: 250px;
+    .portfolio_list{
+        padding-top: 20px;
         text-align: center;
     }
 
-   .piece_one {
-        background-image: url("../img/mockup.png");
-
+    .portfolio_list li>a{
+        font-weight: 100;
     }
 
-    .piece_two {
-        background-image: url("../img/comapa/3_coma.png");
+    .portfolio_list li>a:active,   .portfolio_list li>a:hover{
+        font-family: 'Monoton', cursive;
+        font-weight: 200;
+        color: #1a1a1a;
+        text-decoration: none;
     }
 
-    .piece_three{
-        background-image: url("../img/mawmapp/13_maw.png");
+    .portfolio_list li:nth-child(1){
+        font-size: 7em;
+        font-weight: 100;
     }
 
-    .piece_four{
-        background-image: url("../img/bitfarm/01_bit.png");
+    .portfolio_list li:nth-child(2){
+        font-size: 5em;
     }
 
-    input {
-        -webkit-appearance: none;
-        border-radius: 0;
-        cursor: pointer;
+    .portfolio_list li:nth-child(3){
+        font-size: 4.5em;
     }
 
-    .all-buttons {
-        width: 300px;
-        margin: auto;
-    }
-    .button-wrapper {
-        margin: 100px 0;
-        position: relative;
-        display: inline-block;
+    .portfolio_list li:nth-child(4){
+        font-size: 4.7em;
     }
 
-    /** Button 8 **/
-    .slide-border {
-        overflow: hidden;
-    }
 
-    .button8 {
-        height: 100%;
-        width: 100%;
-        border: 0;
-        outline: 0;
-        background-color: transparent;
-        border: 0;
-        border-radius: 2px;
-        font-family: 'Limelight', cursive;
-        font-size: 3em;
-        font-weight: 700;
-        transition: 300ms;
-        opacity: 0.8;
-        z-index: 1;
-    }
-    .button8div {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0px;
-        left: -900px;
-        /*padding: 40px 100px;*/
-        opacity: 0.8;
-        border-radius: 1px;
-        z-index: 0;
-        transition: 300ms;
-        box-sizing:border-box;
-        -moz-box-sizing:border-box;
-        -webkit-box-sizing:border-box;
-    }
+    /*.content_pieces{*/
+        /*max-width: 960px;*/
+        /*margin: 10px auto;*/
+        /*background-size: cover;*/
+        /*height: 250px;*/
+        /*text-align: center;*/
+    /*}*/
 
-    .slide-border:hover .button8div {
-        left: 0;
-    }
+   /*.piece_one {*/
+        /*background-image: url("../img/indigo/13_indigo.png");*/
+       /*background-size: 50%;*/
 
-    .piece_one .button8 {
-         color: #fff0f5;
-     }
+    /*}*/
 
-    .piece_one .slide-border:hover .button8div {
-        border: 4px solid #fff0f5;
-    }
+    /*.piece_two {*/
+        /*background-image: url("../img/comapa/test.png");*/
+        /*background-size: 50%;*/
+    /*}*/
 
-    .piece_two .button8 {
-        color: #d4c402;
-    }
+    /*.piece_three{*/
+        /*background-image: url("../img/mawmapp/13_maw.png");*/
+        /*background-size: 50%;*/
+    /*}*/
 
-    .piece_two .slide-border:hover .button8div {
-        border: 4px solid #d4c402;
-    }
+    /*.piece_four{*/
+        /*background-image: url("../img/bitfarm/01_bit.png");*/
+    /*}*/
 
-    .piece_three .button8 {
-        color: #16c5d4;
-    }
+    /*input {*/
+        /*-webkit-appearance: none;*/
+        /*border-radius: 0;*/
+        /*cursor: pointer;*/
+    /*}*/
 
-    .piece_three .slide-border:hover .button8div {
-        border: 4px solid #16c5d4;
-    }
+    /*.all-buttons {*/
+        /*width: 300px;*/
+        /*margin: auto;*/
+    /*}*/
+    /*.button-wrapper {*/
+        /*margin: 100px 0;*/
+        /*position: relative;*/
+        /*display: inline-block;*/
+    /*}*/
 
-    .piece_four .button8 {
-        color: #0c725b;
-    }
+    /*!** Button 8 **!*/
+    /*.slide-border {*/
+        /*overflow: hidden;*/
+    /*}*/
 
-    .piece_four .slide-border:hover .button8div {
-        border: 4px solid #0c725b;
-    }
+    /*.button8 {*/
+        /*height: 100%;*/
+        /*width: 100%;*/
+        /*border: 0;*/
+        /*outline: 0;*/
+        /*background-color: transparent;*/
+        /*border: 0;*/
+        /*border-radius: 2px;*/
+        /*font-family: 'Lato', sans-serif;*/
+        /*font-size: 3em;*/
+        /*font-weight: 700;*/
+        /*transition: 300ms;*/
+        /*opacity: 0.8;*/
+        /*z-index: 1;*/
+    /*}*/
+    /*.button8div {*/
+        /*height: 100%;*/
+        /*width: 100%;*/
+        /*position: absolute;*/
+        /*top: 0px;*/
+        /*left: -900px;*/
+        /*!*padding: 40px 100px;*!*/
+        /*opacity: 0.8;*/
+        /*border-radius: 1px;*/
+        /*z-index: 0;*/
+        /*transition: 300ms;*/
+        /*box-sizing:border-box;*/
+        /*-moz-box-sizing:border-box;*/
+        /*-webkit-box-sizing:border-box;*/
+    /*}*/
+
+    /*.slide-border:hover .button8div {*/
+        /*left: 0;*/
+    /*}*/
+
+    /*.piece_one .button8 {*/
+         /*color: #cc5c45;*/
+     /*}*/
+
+    /*.piece_one .slide-border:hover .button8div {*/
+        /*border: 4px solid #cc5c45;*/
+    /*}*/
+
+    /*.piece_two .button8 {*/
+        /*color: #d4c402;*/
+    /*}*/
+
+    /*.piece_two .slide-border:hover .button8div {*/
+        /*border: 4px solid #d4c402;*/
+    /*}*/
+
+    /*.piece_three .button8 {*/
+        /*color: #16c5d4;*/
+    /*}*/
+
+    /*.piece_three .slide-border:hover .button8div {*/
+        /*border: 4px solid #16c5d4;*/
+    /*}*/
+
+    /*.piece_four .button8 {*/
+        /*color: #0c725b;*/
+    /*}*/
+
+    /*.piece_four .slide-border:hover .button8div {*/
+        /*border: 4px solid #0c725b;*/
+    /*}*/
 
 
 
@@ -372,7 +411,7 @@ p{
     }
 
     .wrapper h1{
-        font-family: 'Lato', sans-serif;
+        /*font-family: 'Lato', sans-serif;*/
         font-size: 1.1em;
     }
 
@@ -387,7 +426,7 @@ p{
     }
 
     .wrapper h4{
-        font-weight: 100;
+        font-weight: 600;
     }
 
     .wrapper p{
@@ -397,14 +436,13 @@ p{
     }
 
     .wrapper ul{
-        font-family: 'Fira Sans', sans-serif;
         font-size: 0.8em;
         list-style-type: none;
     }
 
     .behind-text{
         font-size: 9em;
-        color: #FFFFFF;
+        color: rgba(255, 255, 255, 0.64);
         z-index: -1;
         position: fixed;
     }
@@ -460,7 +498,7 @@ p{
     }
 
     .cs-section_intro{
-        padding-top: 150px;
+        padding-top: 100px;
     }
 
 
@@ -473,14 +511,21 @@ p{
         color: gainsboro;
     }
 
+    .parallax-ind{
+        margin: 20px 0;
+        background-image: url("../img/indigo/1_indigo.png");
+        background-size: cover;
+        height: 200px;
+    }
+
+    .brief_one{
+        padding-bottom: 20px;
+    }
 
     /*  Mawmapp.html */
     .parallax-maw{
         margin: 20px 0;
-        background-image: url("../img/indigo/1_indigo.png");
-        /*background-attachment: fixed;*/
-        /*background-position: center;*/
-        /*background-repeat: no-repeat;*/
+        background-image: url("../img/mawmapp/14_maw.png");
         background-size: cover;
         height: 200px;
     }
@@ -493,6 +538,10 @@ p{
 
     .cs-section_intro .intro ul{
         padding-left: 0;
+    }
+
+    .page-header_coma h1{
+        font-size: 2em;
     }
 
     .page-header_coma h3{
@@ -508,24 +557,6 @@ p{
         overflow: hidden;
         text-align: right;
     }
-    .page-header_coma p:before,
-    .page-header_coma p:after {
-        background-color:#000000;
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
-        width: 90%;
-    }
-    .page-header_coma p:before {
-        right: -33.5em;
-        margin-left: -5%;
-    }
-    .page-header_coma p:after {
-        left: -13.5em;
-        margin-right: -90%;
-    }
 
     .cs-section_intro .intro_img{
         padding-top: 20px;
@@ -533,7 +564,7 @@ p{
 
     .parallax-coma{
         margin: 20px 0;
-        background-image: url("../img/25_coma.gif");
+        background-image: url("../img/comapa/23_coma.png");
         background-size: cover;
         height: 200px;
     }
@@ -587,7 +618,7 @@ p{
     /* CSS used here will be applied after bootstrap.css */
 
     .page-content{
-        padding-bottom: 120px;
+        padding-bottom: 50px;
     }
 
     /* Index and About pages */
@@ -601,7 +632,7 @@ p{
     }
 
     .carousel-indicators li{
-        font-size: 6em;
+        font-size: 5.6em;
         font-weight: 500;
         letter-spacing: 21px;
         line-height: 123px;
@@ -618,7 +649,7 @@ p{
     .carousel-control{
         top:350px;
         width: 35%;
-        font-size: 6em;
+        font-size: em;
     }
 
 
@@ -673,18 +704,40 @@ p{
     }
 
     /* PORTFOLIO PAGE */
-    .content_pieces{
-        margin: 20px auto;
-        height: 400px;
-    }
 
-    .button8 {
+    .portfolio_list li:nth-child(1){
         font-size: 10em;
     }
-    .button8div {
-        height: 100%;
-        width: 100%;
+
+    .portfolio_list li:nth-child(2){
+        font-size: 9em;
     }
+
+    .portfolio_list li:nth-child(3){
+        font-size: 8em;
+    }
+
+    .portfolio_list li:nth-child(4){
+        font-size: 9em;
+    }
+
+
+    /*.content_pieces{*/
+        /*margin: 20px auto;*/
+        /*height: 400px;*/
+    /*}*/
+
+    /*.button-wrapper{*/
+        /*margin: 149px 0;*/
+    /*}*/
+
+    /*.button8 {*/
+        /*font-size: 5em;*/
+    /*}*/
+    /*.button8div {*/
+        /*height: 100%;*/
+        /*width: 100%;*/
+    /*}*/
 
 
 
@@ -738,17 +791,14 @@ p{
         font-size: 1.2em;
     }
 
-    /* Case-studies */
-    .case_list li>a{
-        font-size: 3em;
-        font-weight: 900;
-        letter-spacing: 80px;
-        line-height: 90px;
-    }
 
     /*  Indigo.html      */
     .coma-brand_ind{
         padding-top: 98px;
+    }
+
+    .parallax-ind{
+        height: 450px;
     }
 
     /*  Mawmapp.html     */
@@ -795,6 +845,10 @@ p{
 
     /*   About.html  */
 
+    .intro_about{
+        margin-top: 180px;
+    }
+
 
     /*  Footer   */
     footer {
@@ -828,7 +882,7 @@ p{
     }
 
     .cs-section_intro {
-        padding: 175px 100px 0px 100px;
+        padding: 5px 100px 0px 100px;
     }
 
     .cs-section_sketches {
@@ -858,6 +912,13 @@ p{
         margin-left: 8.33333333%;
     }
 
+    .page-header_coma h1{
+        /*margin-top: 0;*/
+        /*padding-bottom: 5px;*/
+        font-size: 5em;
+        font-weight: 900;
+    }
+
     .page-header_coma h3{
         margin-top: 0;
         padding-bottom: 5px;
@@ -881,9 +942,9 @@ p{
         padding:0 25px;
     }
 
-    .cs-coma_color{
-        padding:60px 100px;
-    }
+    /*.cs-coma_color{*/
+        /*padding:60px 0px;*/
+    /*}*/
 
     .cs-coma_brand{
         padding: 10px 0;

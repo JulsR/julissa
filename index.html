@@ -34,14 +34,6 @@
         background:linear-gradient(to bottom,  #f7eeee 0%,#ffffff 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         color: #000;
     }
-
-    nav.navbar.navbar-default.navbar-fixed-top{
-        background-color: rgba(74, 74, 74, 0.01);
-        border-bottom: none;
-    }
-
-
-
 </style>
 
 <body>
@@ -85,46 +77,27 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <a href="indigo.html">
                             <img src="dist/img/main/foto1.png" alt="Image">
                             <div class="carousel-caption">
-                            <!--<h3>01</h3>-->
                             </div>
-                            </a>
                         </div>
                         <div class="item">
-                            <a href="comapa.html">
-                                <img src="dist/img/main/foto3.png" alt="Image">
-                                <div class="carousel-caption">
-                                    <!--<h3>02</h3>-->
-                                </div>
-                            </a>
+                            <img src="dist/img/main/foto3.png" alt="Image">
+                            <div class="carousel-caption">
+                            </div>
                         </div>
                         <div class="item">
-                            <a href="terra.html">
                             <img src="dist/img/main/foto4.png" alt="Image">
                             <div class="carousel-caption">
-                            <!--<h3>03</h3>-->
                             </div>
-                            </a>
                         </div>
                         <div class="item">
-                            <a href="mawmapp.html">
                             <img src="dist/img/main/foto5.png" alt="Image">
                             <div class="carousel-caption">
-                            <!--<h3>04</h3>-->
                             </div>
-                            </a>
                         </div>
                     </div>
 
-                    <!-- Controls -->
-                    <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
-                        <!--<span class="sr-only">Previous</span>-->
-                    <!--</a>-->
-                    <!--<a class="right carousel-control visible-xs" href="#carousel-example-generic" role="button" data-slide="next">-->
-                        <!--<span class="sr-only">Next</span>-->
-                    <!--</a>-->
                 </div>
             </div>
         </div>
@@ -132,85 +105,6 @@
     </div> <!-- end: container -->
 
 </div> <!-- end: container-fluid -->
-
-<script>
-    // The balls are randomized in size, color, opacity, and bounce direction. They'll bounce off the walls of their container and generally make a rather pretty show of things.
-
-    var ballCount = 15,
-            ballMinSize = 8,
-            ballMaxSize = 75,
-            container = $('.balls');
-
-    $(function() {
-        initBalls();
-        balls = window.setInterval(moveBalls,40); // 24 FPS
-        $(window).resize(function() { moveBallsIntoBounds(); });
-    });
-
-    // Random number generator. Takes a minimum, maximum, and a boolean for whether the random number should be an integer.
-    function rand(min,max,isInt) {
-        var min = min || 0,
-                max = max || 1,
-                isInt = isInt || false,
-                num = Math.random()*(max - min) + min;
-        return (isInt) ? Math.round(num) : num;
-    }
-
-    // Creates the balls, puts them in the container, and gives them a random size, color, opacity, starting location, and direction/speed of movement.
-    function initBalls() {
-        container.css({'position':'relative'});
-        for (i=0;i<ballCount;i++) {
-            var newBall = $('<b />').appendTo(container),
-                    size = rand(ballMinSize,ballMaxSize);
-            newBall.css({
-                'position':'absolute',
-                'width': size+'px',
-                'height': size+'px',
-                'opacity': rand(.1,.9),
-                'background-color': 'rgb('+rand(255,255,true)+','+rand(255,255,true)+','+rand(255,255,true)+')',
-                'top': rand(0,container.height()-size),
-                'left': rand(0,container.width()-size)
-            }).attr({
-                'data-dX':rand(-6,1),
-                'data-dY':rand(3,0)
-            });
-        }
-    }
-
-    // Moves the balls based on their direction/speed of movement (saved as a data attribute). If the movement will take them outside of the container, they reverse direction along that axis.
-    function moveBalls() {
-        var maxX = container.width(),
-                maxY = container.height();
-        $('b',container).each(function(i,b) {
-            var ball = $(b),
-                    pos = ball.position()
-            x = pos.left,
-                    y = pos.top,
-                    dX = parseFloat(ball.attr('data-dX')),
-                    dY = parseFloat(ball.attr('data-dY')),
-                    size = ball.height();
-            if(x+dX+size > maxX || x+dX < 0) ball.attr('data-dX',(dX=-dX));
-            if(y+dY+size > maxY || y+dY < 0) ball.attr('data-dY',(dY=-dY));
-            ball.css({'top':y+dY,'left':x+dX});
-        });
-    }
-
-    // Move the balls back within the bounds of the container if the window (ergo, possibly the container) is resized. Because we're positioning from the top/left corners, we only have to worry about the bottom/right sides.
-    function moveBallsIntoBounds() {
-        var maxX = container.width(),
-                maxY = container.height();
-        $('b',container).each(function(i,b) {
-            var ball = $(b),
-                    pos = ball.position()
-            x = pos.left,
-                    y = pos.top,
-                    size = ball.height();
-            if (x+size > maxX) ball.css({ left: maxX-size+'px' });;
-            if (y+size > maxY) ball.css({ top: maxY-size+'px' });;
-        });
-    }
-</script>
-
 
 
 </body>
