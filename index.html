@@ -19,88 +19,180 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- CSS Document -->
     <link href="dist/css/main.css" rel="stylesheet">
-    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css">-->
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato:100,400|Monoton|Reenie+Beanie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fredoka+One|Lato:100,400|Monoton|Reenie+Beanie|Shrikhand|Six+Caps|Vidaloka" rel="stylesheet">
 
 </head>
 
 <style>
-    body{
-        background:linear-gradient(to bottom,  #dcdcdc 0%,#ffffff 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    .hero{
+        margin-left: -15px;
+        margin-right: -15px;
+        /*background-image: url("dist/img/back10.png");*/
+        background: linear-gradient(to bottom,  #ff3019 0%,#cf0404 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        color: #FFFFFF;
     }
+
+    .navbar-default .navbar-brand{
+        color: #FFFFFF;
+    }
+
+    .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+        color: #FFFFFF;
+    }
+
+    .navbar-default .navbar-nav>li>a{
+        color: #FFFFFF;
+    }
+
+    .navbar-default .navbar-nav .navbar-right>li>a .navbar-default
+    .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+        color: #FFFFFF;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default
+    .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+        color: whitesmoke;
+    }
+
+    .behind-text h2{
+        color: rgba(255, 127, 127, 0.06);
+    }
+
 </style>
 
 <body>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-12">
-            <nav class="navbar navbar-default nav-links navbar-fixed-top">
-                <div class="container">
-                   <a class="navbar-brand" href="index.html">Julissa Roa</a>
+    <div class="hero">
+        <div class="row">
+            <div class="col-xs-12">
+                <nav class="navbar navbar-default">
 
-                   <ul class="nav navbar-nav navbar-right">
-                       <li class="active">
-                       <a href="case-studies.html">PORTFOLIO</a>
-                       </li>
-                       <li><a href="about.html">ABOUT</a></li>
-                   </ul>
-               </div>
-           </nav>
-       </div>
+                        <a class="navbar-brand" href="index.html">Julissa Roa</a>
 
-   </div> <!-- end: row -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                <a href="#section_portfolio">PORTFOLIO</a>
+                            </li>
+                            <li><a href="#section_about">ABOUT</a></li>
+                        </ul>
+
+                </nav>
+            </div>
+        </div> <!-- end: row -->
 
 
-    <div class="container">
-
-        <div class="col-xs-12 behind-text">
-            <h2>VISUAL DESI G N VI SUAL</h2>
-        </div>
-
-        <div class="page-content">
-            <div class="col-xs-12 col-md-8 col-md-offset-2 carousel">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">VISUAL</a></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1" style="margin-left: -19px">GRAPHIC</li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2" >WEB</li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3" style="padding-left: 20px">DESIGN</li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="dist/img/indigo/2_ind.png" alt="Image">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="dist/img/comapa/3_coma.png" alt="Image">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="dist/img/bitfarm/02_bit.png" alt="Image">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="dist/img/indigo/2_ind.png" alt="Image">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="row section_hero">
+            <div class="col-xs-12 intro_hero">
+                <h1>I WOULD SAY:</h1>
+                <h1>LET'S KEEP IT SIMPLE. </h1>
             </div>
         </div>
+    </div>
 
-    </div> <!-- end: container -->
+    <div class="row" style="background-color: #7fffd4">
+        <div class="col-xs-12 cs-sections section_about" id="section_about">
+            <h4>IT'S PERSONAL</h4>
+            <h1>"I can always find love, but eventually I get horny for my creativity."
+                - Gilda Radner</h1>
+            <br>
+            <p>My hands-on expertise is on UX design which allows me to create concepts and interactive
+                initiatives. Personally I'm drawn by the innovative solution and take great pleasure in
+                using my creativity, logic and design skills while developing cross-platform design services
+                and applications. My strengths are in design, development and understanding of the user experience.
+            </p>
+        </div>
+    </div>
+
+    <div class="row section_portfolio" id="section_portfolio">
+        <div class="col-xs-12 col-md-4" style="padding-right: 0;padding-left: 0;">
+            <div class="col-xs-12 col-md-" id="item_one">
+                <h2>GRAPHIC</h2>
+            </div>
+            <a href="mawmapp.html"><img src="dist/img/mawmapp/6_maw.png" class="img-responsive" alt="Image"></a>
+        </div>
+        <div class="col-xs-12 col-md-4" style="padding-right: 0;padding-left: 0;">
+            <a href="indigo.html"><img src="dist/img/indigo/17_indigo.png" class="img-responsive" alt="Image"></a>
+            <div class="col-xs-12 col-md-" id="item_two">
+                <h2>Typography</h2>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4" style="padding-right: 0;padding-left: 0;">
+            <img src="dist/img/bitfarm/bit.png" class="img-responsive" alt="Image">
+            <a href="comapa.html"><img src="dist/img/comapa/4_coma.png" class="img-responsive" alt="Image"></a>
+        </div>
+        <div class="col-xs-12 col-md-8" style="padding-right: 0;padding-left: 0;">
+            <div class="col-xs-12 col-md-" id="item_three">
+                <h2>MOBILE EXPERIENCE</h2>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4" style="padding-right: 0;padding-left: 0;">
+            <img src="dist/img/socbox.png" class="img-responsive" alt="Image">
+        </div>
+        <div class="col-xs-12 col-md-5" style="padding-right: 0;padding-left: 0;">
+            <div class="col-xs-12 col-md-" id="item_four">
+                <h2>TECHNOLOGY</h2>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4" style="padding-right: 0;padding-left: 0;">
+            <img src="dist/img/graphic.png" class="img-responsive" alt="Image">
+        </div>
+        <div class="col-xs-12 col-md-3" style="padding-right: 0;padding-left: 0;">
+            <div class="col-xs-12 col-md-" id="item_five">
+                <h2>DESIGN</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12 cs-sections section_contact">
+            <h6>FOCUS</h6>
+            –––
+            <p>User Experience</p>
+            <p>Visual Design</p>
+            <p>Graphic Design</p>
+            <p>Front-End Development</p>
+            <br>
+            <h1>CONTACT</h1>
+            –––––––––
+            <p>Love to hear from you.</p>
+            <p>Here is my email<strong><a href="mailto:julissaroa.w@gmail.com"> julissaroa.w@gmail.com</a></strong></p>
+        </div>
+    </div>
 
 </div> <!-- end: container-fluid -->
+
+
+    <script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+    </script>
+
 
 
 </body>

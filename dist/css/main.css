@@ -15,6 +15,7 @@ p{
 
     /* Navbar */
     .navbar-default{
+        padding-top: 20px;
         background-color: transparent;
         background-image: none;
         border-color: transparent;
@@ -74,139 +75,154 @@ p{
     }
 
 
-    /*  Index and About Page */
+      /*Index and About Page*/
+    /*.section_hero{*/
+        /*background-image: url("../img/test.png");*/
+        /*background-size: cover;*/
+    /*}*/
 
-    .carousel{
-        padding-top: 100px;
-        position: static;
+    .intro_hero{
+        padding: 100px 20px 60px 30px;
     }
 
-    .carousel-control.left{
-        left: 13px;
-        background-image: none;
+    .intro_hero h1{
+        /*font-family: 'Monoton', cursive;*/
+        font-size: 4em;
+        font-weight: 900;
+
     }
 
-    .carousel-control.right{
-        right: -9px;
-        background-image: none;
+    .intro_hero span{
+        font-size: 0.8em;
+        font-style: italic;
     }
 
-    .carousel-control{
-        position: fixed;
-        top:127px;
-        width: 35%;
-        font-family: 'Lato', sans-serif;
+    .cs-sections{
+        padding: 100px 20px 60px 30px;
+    }
+
+    .section_about{
+        background-color: whitesmoke;
+        color: #202020;
+    }
+
+    .section_about h1{
+        font-size: 3.5em;
+        font-weight: 900;
+    }
+
+    .section_about p{
+        font-size: 1.3em;
+    }
+
+
+    /* Portfolio Section */
+    #item_one{
+        padding-top: 150px;
+        background-color: #11d8d1;
+        height: 362px;
+        font-family: 'Vidaloka', serif;
+        text-align: center;
+    }
+
+    #item_one h2{
+        font-size: 4em;
+        color: #FFFFFF;
+        letter-spacing: 20px;
+    }
+
+    #item_two{
+        padding-top: 150px;
+        background-color: #ed143d;
+        height: 395px;
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+    }
+
+    #item_two h2{
         font-size: 3em;
-        font-weight: 100;
-        color: #0f0f0f;
-        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        opacity: 1.9;
+        color: #FFFFFF;
     }
 
-    .carousel-indicators{
-        padding-left: 15px;
-        left: 25%;
-        bottom: -530px;
-    }
 
-    .carousel-indicators .active{
-        background-color: transparent;
-        width:100px;
-        height:15px;
+    #item_three{
+        padding-top: 100px;
+        background-color:#ff3f4d;
+        height: 362px;
         font-family: 'Monoton', cursive;
-        color:  #262626;
+        text-align: center;
     }
 
-    .carousel-indicators .active li>a{
-        color:  #262626;
+    #item_three h2{
+        font-size: 3em;
+        color: #FFFFFF;
     }
 
-
-    .carousel-indicators li{
-        text-indent:0px;
-        width:100%;
-        height: 20px;
-        border:none;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5em;
-        font-weight: 100;
-        letter-spacing: 21px;
-        line-height: 158px;
+    #item_four{
+        padding-top: 150px;
+        background-color: #4169e1;
+        height: 362px;
+        font-family: 'Six Caps', sans-serif;
+        text-align: center;
     }
 
-    .carousel-indicators li{
-        color: #0f0f0f;
+    #item_four h2{
+        font-size: 4em;
+        color: #FFFFFF;
+        letter-spacing: 20px;
     }
 
-    .carousel-indicators li:hover, .carousel-indicators li:focus{
-        font-family: 'Monoton', cursive;
-        color: #262626;
-        text-decoration: none;
+    #item_five{
+        padding-top: 150px;
+        background-color: #ff00ff;
+        height: 362px;
+        font-family: 'Shrikhand', cursive;
+        text-align: center;
     }
 
-
-    .carousel-inner{
-        position: relative;
-    }
-
-    .carousel-caption{
-        padding-top: 10px;
-        position: ab;
-        left: 5%;
-        bottom: 260px;
-        z-index: 99;
-        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    #item_five h2{
+        font-size: 3.8em;
+        color: #FFFFFF;
     }
 
 
-    .sr-only{
-        position: relative;
-        font-size: 0.5em;
-        font-weight: 400;
-        color: #777;
+
+    .section_portfolio img{
+        filter: hue-rotate(190deg);
     }
 
-    .item a{
-        text-decoration: none;
-    }
-
-    .item a:active{
-        text-decoration: none;
+    .section_portfolio img:hover{
+        filter: grayscale(10%);
     }
 
 
-    /* about.html */
-    .intro_about{
-        margin-top: 40px;
-        position: static;
+    .section_contact{
+        padding: 150px 20px 60px 30px;
+        background-color: whitesmoke;
+        color: #202020;
     }
 
-    .content_bio {
-        padding: 0 30px;
+    .section_contact h1{
+        font-size: 4.5em;
     }
 
-    .intro_contact h4{
-        font-size: 1.8em;
+    .section_contact p{
+        font-size: 1.3em;
     }
 
-    .intro_list h3{
-        font-size: 1em;
+    .section_contact a{
+        color: #f04124;
     }
-
-    .intro_list a{
-        font-size: 1.7em;
-    }
-
 
     /*  Footer */
     footer{
-        margin-top: 50px;
+        margin-top: 0px;
         font-size: 0.8em;
         text-align: center;
         width: 100%;
         left: -50px;
         position: relative;
-        bottom: 10px;
+        /*bottom: 10px;*/
     }
 
     footer .navbar-brand, .navbar-nav>li>a{
@@ -234,45 +250,6 @@ p{
         padding-left: 90px;
     }
 
-    /*  PORTOFOLIO PAGE */
-
-    .portfolio_list{
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .portfolio_list ul>li{
-        height: 180px;
-    }
-
-
-    .portfolio_list li>a{
-        font-weight: 100;
-    }
-
-    .portfolio_list li>a:active,   .portfolio_list li>a:hover{
-        font-family: 'Monoton', cursive;
-        font-weight: 200;
-        color: #1a1a1a;
-        text-decoration: none;
-    }
-
-    .portfolio_list li:nth-child(1){
-        font-size: 7em;
-        font-weight: 100;
-    }
-
-    .portfolio_list li:nth-child(2){
-        font-size: 5em;
-    }
-
-    .portfolio_list li:nth-child(3){
-        font-size: 4.5em;
-    }
-
-    .portfolio_list li:nth-child(4){
-        font-size: 4.7em;
-    }
 
     /* ========   WORK SAMPLE  ========  */
 
@@ -380,7 +357,7 @@ p{
     }
 
     .cs-section_intro{
-        padding-top: 100px;
+        padding-top: 95px;
     }
 
 
@@ -488,7 +465,7 @@ p{
     }
 
     .navbar-default .navbar-brand{
-        margin-top: -5px;
+        margin-top: -3px;
         font-size: 3em;
     }
 
@@ -497,6 +474,11 @@ p{
         padding:0 10px;
     }
 
+    .navbar-default .navbar-nav>li>a{
+        font-weight: 500;
+    }
+
+    .navbar-default .navbar-nav>li>a
     /* CSS used here will be applied after bootstrap.css */
 
     .page-content{
@@ -505,63 +487,88 @@ p{
 
     /* Index and About pages */
 
-    .carousel{
-        padding-top: 70px;
+    .intro_hero{
+        padding: 200px 20px 154px 74px;
     }
 
-    .carousel-indicators{
-        left: 60%;
+    .intro_hero{
     }
 
-    .carousel-indicators li{
-        font-size: 5.6em;
-        font-weight: 200;
-        letter-spacing: 21px;
-        line-height: 123px;
+    .intro_hero h1{
+        font-size: 5.5em;
+
     }
 
-    .carousel-control.left{
-        left:-35px;
+    .cs-sections{
+        padding: 200px 200px 151px 74px;
     }
 
-    .carousel-control.right{
-        right: 0px;
+    .section_about h1{
+        font-size: 4.5em;
     }
 
-    .carousel-control{
-        top:350px;
-        width: 35%;
-        font-size: em;
+    .section_about p{
+        font-size: 1.1em;
+    }
+
+    /* Portfolio Section */
+    #item_one{
+        padding-top: 150px;
+        height: 362px;
+    }
+
+    #item_one h2{
+        font-size: 4em;
+    }
+
+    #item_two{
+        padding-top: 150px;
+        height: 395px;
+    }
+
+    #item_two h2{
+        font-size: 3em;
     }
 
 
-    .carousel-caption{
-        padding-top: 30px;
-        left: 18%;
+    #item_three{
+        padding-top: 100px;
+        height: 362px;
     }
 
-    .carousel-caption h3{
-        font-size: 10em;
+    #item_three h2{
+        font-size: 5em;
     }
 
-
-
-    /*  About.html  */
-    .intro_about{
-        position: absolute;
+    #item_four{
+        padding-top: 150px;
+        height: 361px;
     }
 
-    .content_bio {
-        padding: 0;
+    #item_four h2{
+        font-size: 4em;
     }
 
-    .intro_about p{
-        font-weight: 100;
+    #item_five{
+        padding-top: 150px;
+        height: 362px;
     }
 
-    #contact{
-        font-size: 2.6em;
-        font-weight: 900;
+    #item_five h2{
+        font-size: 3.8em;
+    }
+
+    /* Contact Section */
+    .section_contact{
+        padding: 136px 200px 81px 74px;
+    }
+
+    .section_contact h1{
+        font-size: 6em;
+    }
+
+    .section_contact p{
+        font-size: 1.8em;
     }
 
 
@@ -585,24 +592,6 @@ p{
         padding: 18px 4px;
     }
 
-    /* PORTFOLIO PAGE */
-
-    .portfolio_list li:nth-child(1){
-        font-size: 10em;
-    }
-
-    .portfolio_list li:nth-child(2){
-        font-size: 9em;
-    }
-
-    .portfolio_list li:nth-child(3){
-        font-size: 8em;
-    }
-
-    .portfolio_list li:nth-child(4){
-        font-size: 9em;
-    }
-
 
     /*  General CSS Style of pages*/
     .wrapper h1{
@@ -616,6 +605,7 @@ p{
     .wrapper p{
         font-family: 'Lato', sans-serif;
         font-size: 1em;
+        font-weight: 400;
     }
 
     .wrapper ul{
@@ -631,6 +621,7 @@ p{
     .intro>ul>li{
         padding-bottom:7px;
         font-size: 1.1em;
+        font-weight: 400;
     }
 
     .cs-section_app{
@@ -668,7 +659,6 @@ p{
     .parallax-maw{
         height: 450px;
     }
-
 
     /*  Comapa.html     */
 
@@ -708,10 +698,6 @@ p{
 
     /*   About.html  */
 
-    .intro_about{
-        margin-top: 180px;
-    }
-
 
     /*  Footer   */
     footer {
@@ -745,7 +731,7 @@ p{
     }
 
     .cs-section_intro {
-        padding: 5px 100px 0px 100px;
+        padding: 165px 100px 0px 100px;
     }
 
     .cs-section_sketches {
@@ -916,7 +902,7 @@ p{
 @media screen and (min-width: 2560px){
     /* Navbar */
     .navbar-default{
-        padding: 30px 40px;
+        padding: 40px 60px;
     }
 
     .nav>li>a{
@@ -930,13 +916,17 @@ p{
 
     /* Index.html */
     .hero h1{
-        font-size: 19.5em;
+        font-size: 13.5em;
     }
 
     .hero h2{
         margin-bottom: -420px;
         padding-top: 160px;
         font-size: 8.5em;
+    }
+
+    .intro_hero{
+        padding: 200px 73px;
     }
 
     .content{
